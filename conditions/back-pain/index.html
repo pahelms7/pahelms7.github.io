@@ -22,6 +22,8 @@
   <!-- Preload LCP hero image, swap filename once image is ready -->
   <link rel="preload" as="image"
     href="/assets/images/conditions/back-pain-relief-bethesda-md.webp"
+    imagesrcset="/assets/images/conditions/back-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/back-pain-relief-bethesda-md.webp 1200w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
   <!-- Resource hints -->
@@ -330,14 +332,8 @@
       .hero-image-col img { height: 56vw; min-height: 240px; object-fit: cover; }
       .hero-img-placeholder { aspect-ratio: 16/9; max-height: none; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -932,10 +928,7 @@
             <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
             <span aria-current="page">Back Pain</span>
           </nav>
-          <div class="hero-tag">
-            <span class="hero-tag-dot" aria-hidden="true"></span>
-            Bethesda, MD
-          </div>
+          <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Back Pain Relief · Bethesda, MD</div>
           <h1>Back Pain Relief<br><span>in Bethesda, MD</span></h1>
           <!-- SEO: clinical specificity in first 2-3 sentences for AI citation eligibility -->
           <p class="hero-lead">Back pain is the most common musculoskeletal condition we treat. It is rarely caused by a single thing. The most frequent sources are lumbar disc irritation, sacroiliac joint dysfunction, thoracic vertebral restriction, and paraspinal muscle strain, each of which responds to a different treatment approach. Whether you are managing upper back tightness from a desk job, lower right back pain after a long run, or an ache that has been there so long you cannot remember when it started, Dr. Paul Helms will help you find the cause and work through it.</p>
@@ -955,6 +948,7 @@
         <div class="hero-image-col">
           <img
             src="/assets/images/conditions/back-pain-relief-bethesda-md.webp"
+            srcset="/assets/images/conditions/back-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/back-pain-relief-bethesda-md.webp 1200w"
             sizes="(max-width: 768px) 100vw, 50vw"
             alt="Back pain treatment at Helms Performance in Bethesda, MD"
             width="1200" height="1500"

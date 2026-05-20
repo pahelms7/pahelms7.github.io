@@ -22,6 +22,8 @@
   <!-- Preload LCP hero image — must be as early as possible for PageSpeed -->
   <link rel="preload" as="image"
     href="/assets/images/conditions/elbow-pain-relief-bethesda-md.webp"
+    imagesrcset="/assets/images/conditions/elbow-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/elbow-pain-relief-bethesda-md.webp 1200w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
   <!-- Resource hints -->
@@ -321,14 +323,8 @@
       .hero-image-col img { height: 56vw; min-height: 240px; object-fit: cover; }
       .hero-img-placeholder { aspect-ratio: 16/9; max-height: none; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -943,7 +939,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Elbow Pain</span>
         </nav>
-        <div class="hero-tag"><span class="hero-tag-dot"></span>Bethesda, MD</div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Elbow Pain Relief · Bethesda, MD</div>
         <h1>Elbow Pain Relief<br><span>in Bethesda, MD</span></h1>
         <p class="hero-lead">Whether you're a lifter dealing with elbow pain when lifting heavy, or a desk worker whose forearm aches after a long day at the keyboard, the discomfort has a way of following you through everything you do. Dr. Paul Helms identifies the specific source of your pain and builds a care plan that gets you back to moving freely.</p>
         <div class="hero-actions">
@@ -961,6 +957,7 @@
       <div class="hero-image-col">
                   <img
             src="/assets/images/conditions/elbow-pain-relief-bethesda-md.webp"
+            srcset="/assets/images/conditions/elbow-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/elbow-pain-relief-bethesda-md.webp 1200w"
             sizes="(max-width: 768px) 100vw, 50vw"
             alt="Elbow pain treatment at Helms Performance in Bethesda, MD"
             width="6000" height="4000"
@@ -993,17 +990,17 @@
   <div class="pillars bg-dk" aria-label="Our approach">
     <div class="pillars-grid">
       <div class="pillar fade">
-        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 1.2-.504 2.4-1.35 3.45l1.11 3.55-3.55-1.11A9 9 0 1 1 21 12z"/></svg>
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 5V3"/><path d="M12 21v-2"/><path d="M5 12H3"/><path d="M21 12h-2"/><path d="M6.5 6.5L5 5"/><path d="M19 19l-1.5-1.5"/><path d="M6.5 17.5L5 19"/><path d="M19 5l-1.5 1.5"/></svg>
         <h3>Relieve pain</h3>
         <p>Targeted soft tissue work, Active Release Technique, and chiropractic care address the source of your elbow pain, not just the symptom.</p>
       </div>
       <div class="pillar fade d1">
-        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 4v5h-5"/><circle cx="12" cy="12" r="3"/></svg>
         <h3>Restore movement</h3>
         <p>Bring back the full range of motion your elbow needs, whether for lifting, gripping, reaching, or just getting through the day comfortably.</p>
       </div>
       <div class="pillar fade d2">
-        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5a4.95 4.95 0 0 0 0 7l7 7 7-7a4.95 4.95 0 0 0 0-7 4.95 4.95 0 0 0-7 0"/><path d="M6.5 6.5a4.95 4.95 0 0 1 7 0"/></svg>
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9v6"/><path d="M21 9v6"/><path d="M5 7v10"/><path d="M19 7v10"/><path d="M5 12h14"/></svg>
         <h3>Rebuild strength</h3>
         <p>Build the forearm and shoulder strength that keeps elbow pain from coming back, so you stay out of pain for the long term.</p>
       </div>

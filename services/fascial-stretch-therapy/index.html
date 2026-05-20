@@ -21,7 +21,8 @@
 
   <!-- Preload LCP hero image: must be as early as possible for PageSpeed -->
   <link rel="preload" as="image"
-    href="../Images/piriformis-fascial-stretch-therapy-bethesda-md.webp"
+    href="/assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md.webp"
+    imagesrcset="/assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md-small.webp 600w, /assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md.webp 1200w"
     imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
@@ -467,14 +468,8 @@
       .hero-image-col { order: -1; }
       .hero-image-col img { height: 56vw; min-height: 240px; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -958,10 +953,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Fascial Stretch Therapy</span>
         </nav>
-        <div class="hero-tag" aria-hidden="true">
-          <span class="hero-tag-dot"></span>
-          Bethesda, MD · Fascial Stretch Therapy
-        </div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Fascial Stretch Therapy · Bethesda, MD</div>
         <h1>Fascial Stretch Therapy<br><span>Near You in Bethesda, MD</span></h1>
         <p class="hero-lead">Whether you're a runner whose hips have been tight for months, a desk worker carrying tension in your neck and shoulders, or someone in their 60s who just wants to bend down and tie their shoes without that familiar pull, fascial stretch therapy can help. FST is practitioner-assisted stretching that works on the fascia, the connective tissue surrounding every muscle and joint in your body. We offer it right here in Bethesda as part of a hands-on approach to helping you feel and move better.</p>
         <div class="hero-actions">
@@ -980,6 +972,7 @@
       <div class="hero-image-col">
         <img
           src="/assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md.webp"
+          srcset="/assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md-small.webp 600w, /assets/images/services/piriformis-fascial-stretch-therapy-bethesda-md.webp 1200w"
           sizes="(max-width: 768px) 100vw, 50vw"
           alt="Fascial stretch therapy piriformis treatment at Helms Performance in Bethesda, MD"
           width="4032" height="2268"
@@ -1001,10 +994,6 @@
         <div class="stat-item">
           <span class="stat-num">4–6</span>
           <span class="stat-label">Sessions typically delivers lasting results for chronic tightness</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">Fully clothed</span>
-          <span class="stat-label">No special prep. Just wear comfortable, form-fitting clothing</span>
         </div>
         <div class="stat-item">
           <span class="stat-num">Same-week</span>

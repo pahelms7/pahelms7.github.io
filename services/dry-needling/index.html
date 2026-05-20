@@ -23,7 +23,7 @@
   <!-- Preload LCP hero image — must be as early as possible for PageSpeed -->
   <link rel="preload" as="image"
     href="/assets/images/services/dry-needling-uppertrap-bethesda-md.webp"
-    imagesrcset="../../Images/dry-needling-uppertrap-small.webp 508w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 6000w"
+    imagesrcset="/assets/images/services/dry-needling-uppertrap-small.webp 509w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 1200w"
     imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
@@ -293,14 +293,8 @@
       .hero-image-col { order: -1; }
       .hero-image-col img { height: 56vw; min-height: 240px; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -948,10 +942,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Dry Needling</span>
         </nav>
-        <div class="hero-tag">
-          <span class="hero-tag-dot"></span>
-          Bethesda, MD
-        </div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Dry Needling · Bethesda, MD</div>
         <h1>Dry Needling<br><span>in Bethesda, MD</span></h1>
         <p class="hero-lead">Stubborn muscle pain, trigger points, an injury that just will not fully heal. Whether you are a runner, a desk worker, a retiree, or anywhere in between, dry needling reaches the root of the problem so you can get back to the life you love.</p>
         <div class="hero-actions">
@@ -972,7 +963,7 @@
       <div class="hero-image-col">
         <img
           src="/assets/images/services/dry-needling-uppertrap-bethesda-md.webp"
-          srcset="../../Images/dry-needling-uppertrap-small.webp 509w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 6000w"
+          srcset="/assets/images/services/dry-needling-uppertrap-small.webp 509w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 1200w"
           sizes="(max-width: 768px) 100vw, 50vw"
           alt="Dry needling upper trapezius treatment at Helms Performance in Bethesda, MD"
           width="6000" height="4000"

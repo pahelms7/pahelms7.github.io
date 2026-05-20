@@ -22,6 +22,8 @@
 
     <link rel="preload" as="image"
     href="/assets/images/conditions/sciatica-pain-relief-bethesda-md.webp"
+    imagesrcset="/assets/images/conditions/sciatica-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/sciatica-pain-relief-bethesda-md.webp 1200w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
   <!-- Resource hints -->
@@ -323,14 +325,8 @@
       .hero-image-col img { height: 56vw; min-height: 240px; object-fit: cover; }
       .hero-img-placeholder { aspect-ratio: 16/9; max-height: none; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -478,6 +474,12 @@
     .cond-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
     .cond-card h3 { color: var(--navy); margin-bottom: 0.3rem; }
     .cond-card p  { font-size: 0.875rem; color: var(--muted); max-width: none; }
+    .cond-card .learn-more {
+      display: inline-block; margin-top: 0.75rem;
+      font-size: 0.875rem; font-weight: 600;
+      color: var(--navy); text-decoration: none;
+    }
+    .cond-card .learn-more:hover { color: var(--teal); text-decoration: underline; }
 
     /* ---- COMPARISON TABLE -------------------------------------- */
     .compare-intro { color: var(--muted); margin-bottom: var(--lg); max-width: 60ch; }
@@ -931,10 +933,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Sciatica</span>
         </nav>
-        <div class="hero-tag">
-          <span class="hero-tag-dot" aria-hidden="true"></span>
-          Sciatica Chiropractor &middot; Bethesda, MD
-        </div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Sciatica Chiropractor · Bethesda, MD</div>
         <h1 id="hero-heading">Sciatica Chiropractor<br><span>in Bethesda, MD</span></h1>
         <p class="hero-lead">That shooting pain from your lower back down through your leg can make sitting through a long workday, sleeping through the night, or getting back to a morning run feel impossible. Whether you're a desk worker whose pain flares on the commute or an active person who just wants to move comfortably again, Dr. Paul Helms combines chiropractic adjustments, Active Release Technique, and physical therapy to find the source of your sciatica and help you get back to the activities you love.</p>
         <div class="hero-actions">
@@ -953,6 +952,7 @@
       <div class="hero-image-col">
         <img
             src="/assets/images/conditions/sciatica-pain-relief-bethesda-md.webp"
+            srcset="/assets/images/conditions/sciatica-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/sciatica-pain-relief-bethesda-md.webp 1200w"
             sizes="(max-width: 768px) 100vw, 50vw"
             alt="Sciatica pain treatment at Helms Performance in Bethesda, MD"
             width="1200" height="1500"
@@ -1053,7 +1053,7 @@
     <div class="wrap">
       <div class="sh fade">
         <span class="eyebrow">Who We Help</span>
-        <h2 id="who-h">Sciatica Doesn't Discriminate. Neither Do We.</h2>
+        <h2 id="who-h">Sciatica Doesn't Discriminate</h2>
         <p>Whether you're training for a marathon or trying to get through a grocery run without wincing, sciatica is limiting your life. Dr. Helms works with patients of all ages and activity levels. Everyone is welcome.</p>
       </div>
       <div class="who-grid">
@@ -1101,26 +1101,32 @@
         <div class="cond-card fade">
           <h3>Chiropractic Adjustments</h3>
           <p>Spinal and joint adjustments reduce pressure on the sciatic nerve by restoring proper alignment in the lower back and pelvis, where nerve compression most often begins.</p>
+          <a href="/services/sports-chiropractor/" class="learn-more">Learn more →</a>
         </div>
         <div class="cond-card fade d1">
           <h3>Active Release Technique</h3>
           <p>Active Release Technique: a hands-on, movement-based therapy that releases tight muscles, tendons, and fascia (especially in the hip and piriformis region) that may be compressing the sciatic nerve.</p>
+          <a href="/services/active-release-technique/" class="learn-more">Learn more →</a>
         </div>
         <div class="cond-card fade d2">
           <h3>Sports Physical Therapy</h3>
           <p>Sports physical therapy restores the movement patterns and strength that take sustained pressure off the nerve and significantly reduce the chance of sciatica returning over time.</p>
+          <a href="/services/sports-physical-therapy/" class="learn-more">Learn more →</a>
         </div>
         <div class="cond-card fade d3">
           <h3>Dry Needling</h3>
           <p>Dry needling reaches deep into muscle tissue to release trigger points in the glutes, hip rotators, and lower back that can press directly on the sciatic nerve and keep symptoms active.</p>
+          <a href="/services/dry-needling/" class="learn-more">Learn more →</a>
         </div>
         <div class="cond-card fade">
           <h3>Myofascial Release</h3>
           <p>Myofascial release: a sustained gentle-pressure technique that loosens connective tissue restrictions contributing to nerve compression and the radiating pain that follows.</p>
+          <a href="/services/myofascial-release/" class="learn-more">Learn more →</a>
         </div>
         <div class="cond-card fade d1">
           <h3>Fascial Stretch Therapy</h3>
           <p>Fascial stretch therapy addresses the connective tissue running alongside the sciatic nerve pathway, restoring length and reducing the tension that keeps symptoms active.</p>
+          <a href="/services/fascial-stretch-therapy/" class="learn-more">Learn more →</a>
         </div>
       </div>
     </div>
@@ -1156,12 +1162,12 @@
             </tr>
             <tr>
               <td>
-                Active Release Technique
-                <br><span class="compare-badge badge-best">Best for muscle-driven sciatica</span>
+                Dry Needling
+                <br><span class="compare-badge badge-best">Best for trigger point-driven sciatica</span>
               </td>
-              <td>Releases the piriformis and surrounding hip muscles compressing the sciatic nerve</td>
-              <td>Piriformis syndrome, muscle-related nerve compression</td>
-              <td>Most effective when combined with structural care</td>
+              <td>Releases deep trigger points in the glutes, hip rotators, and lower back that compress or irritate the sciatic nerve</td>
+              <td>Piriformis syndrome, muscle tension-driven nerve compression, chronic pain</td>
+              <td>Most effective when combined with structural and movement-based care</td>
             </tr>
             <tr>
               <td>
@@ -1195,7 +1201,7 @@
       </div>
       <p style="margin-top: 1.5rem; color: var(--muted); font-size: 0.9375rem; max-width: 65ch;" class="fade">At Helms Performance, we combine chiropractic, Active Release Technique, and physical therapy in a single plan, so we can address both the structural cause and the soft tissue tension at the same time. That combination tends to produce faster, more lasting results than any one approach on its own.</p>
       <div class="compare-cta fade">
-        <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-navy" aria-label="Book an appointment to treat your sciatica (opens in new tab)">Book An Appointment</a>
+        <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red" aria-label="Book an appointment to treat your sciatica (opens in new tab)">Book An Appointment</a>
       </div>
     </div>
   </section>

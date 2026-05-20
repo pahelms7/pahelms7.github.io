@@ -23,6 +23,8 @@
   <!-- Preload LCP hero image -->
   <link rel="preload" as="image"
     href="/assets/images/conditions/knee-pain-relief-bethesda-md.webp"
+    imagesrcset="/assets/images/conditions/knee-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/knee-pain-relief-bethesda-md.webp 1200w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
   <!-- Resource hints -->
@@ -328,14 +330,8 @@
       .hero-image-col img { height: 56vw; min-height: 240px; object-fit: cover; }
       .hero-img-placeholder { aspect-ratio: 16/9; max-height: none; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -863,14 +859,6 @@
           },
           {
             "@type": "Question",
-            "name": "What causes knee pain in women specifically?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Women tend to have a wider hip angle (known as the Q-angle), which changes how forces travel through the knee with every step. Hormonal influences on ligament laxity and patterns of muscle activation also contribute to higher rates of patellofemoral pain, IT band syndrome, and ACL injury in women. These are real structural and physiological differences that Dr. Helms accounts for when developing a treatment plan."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "How long does knee pain treatment take?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -960,10 +948,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Knee Pain</span>
         </nav>
-        <div class="hero-tag">
-          <span class="hero-tag-dot"></span>
-          Bethesda, MD
-        </div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Knee Pain Relief · Bethesda, MD</div>
         <h1>Knee Pain Relief<br><span>in Bethesda, MD</span></h1>
         <p class="hero-lead">Whether you are a runner whose knee gives out at mile three, a desk worker whose knees ache on the stairs, or someone who has been managing knee pain for years, Dr. Paul Helms can help. At Helms Performance in Bethesda, MD, we combine sports chiropractic and physical therapy to find the source of your knee pain and build a plan to get you moving comfortably again.</p>
         <div class="hero-actions">
@@ -982,6 +967,7 @@
       <div class="hero-image-col">
                   <img
             src="/assets/images/conditions/knee-pain-relief-bethesda-md.webp"
+            srcset="/assets/images/conditions/knee-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/knee-pain-relief-bethesda-md.webp 1200w"
             sizes="(max-width: 768px) 100vw, 50vw"
             alt="Knee pain treatment at Helms Performance in Bethesda, MD"
             width="1200" height="1500"
@@ -1306,6 +1292,7 @@
           </ol>
 
           <!-- Internal links -->
+          <h3 style="color:var(--navy); margin-top:var(--md); margin-bottom:0.75rem; font-size:1rem; text-transform:uppercase; letter-spacing:0.06em; font-size:0.8125rem;">Common Treatments for Knee Pain</h3>
           <div class="related-links" aria-label="Related services">
             <a href="/services/sports-chiropractor/" class="related-link">
               <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
@@ -1318,6 +1305,10 @@
             <a href="/services/active-release-technique/" class="related-link">
               <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
               Active Release Technique
+            </a>
+            <a href="/services/dry-needling/" class="related-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              Dry Needling
             </a>
           </div>
         </div>
@@ -1420,11 +1411,6 @@
         <details>
           <summary>What is the difference between chiropractic and physical therapy for knee pain? <span class="faq-plus" aria-hidden="true">+</span></summary>
           <p class="faq-body">Sports chiropractic focuses on joint mechanics and nerve function, including the knee and the structures above it, such as the hip, pelvis, and lumbar spine. Physical therapy focuses on movement rehabilitation, building the muscle strength and coordination that protect the joint. At Helms Performance, both disciplines are available under one roof and are often used together for more complete knee pain treatment. You do not have to choose one or coordinate between two separate providers.</p>
-        </details>
-
-        <details>
-          <summary>What causes knee pain in women specifically? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Women tend to have a wider hip angle (known as the Q-angle), which changes how forces travel through the knee with every step. Hormonal influences on ligament laxity and patterns of muscle activation also contribute to higher rates of patellofemoral pain (pain around or behind the kneecap), IT band syndrome, and ACL injury in women. These are real structural and physiological differences. Dr. Helms accounts for all of them when developing a treatment plan.</p>
         </details>
 
         <details>

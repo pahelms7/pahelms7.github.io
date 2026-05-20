@@ -19,6 +19,8 @@
 
   <link rel="preload" as="image"
     href="/assets/images/conditions/ankle-pain-relief-bethesda-md.webp"
+    imagesrcset="/assets/images/conditions/ankle-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/ankle-pain-relief-bethesda-md.webp 1200w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -378,14 +380,8 @@
       .hero-image-col { order: -1; }
       .hero-image-col img { height: 56vw; min-height: 240px; object-fit: cover; }
     }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3);
-      color: #f7a0a6; border-radius: 100px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0.3rem 0.85rem; margin-bottom: 1.5rem;
-    }
-    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
     .hero h1 { color: #fff; max-width: 15ch; margin-bottom: 1.25rem; }
     .hero h1 span { color: #7fafc8; }
     .hero-lead {
@@ -819,10 +815,7 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <span aria-current="page">Ankle Pain</span>
         </nav>
-        <div class="hero-tag">
-          <span class="hero-tag-dot"></span>
-          Bethesda, MD
-        </div>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Ankle Pain Relief · Bethesda, MD</div>
         <h1>Ankle Pain Relief<br><span>in Bethesda, MD</span></h1>
         <p class="hero-lead">Whether you rolled your ankle during a run, developed sudden ankle pain without any injury, or simply woke up with discomfort you cannot explain, Dr. Paul Helms at Helms Performance in Bethesda helps you find the source and move freely again. Sports chiropractic and physical therapy together, for everyone from competitive athletes to anyone whose ankle is making daily life harder than it should be.</p>
         <div class="hero-actions">
@@ -841,6 +834,8 @@
       <div class="hero-image-col">
         <img
           src="/assets/images/conditions/ankle-pain-relief-bethesda-md.webp"
+          srcset="/assets/images/conditions/ankle-pain-relief-bethesda-md-small.webp 600w, /assets/images/conditions/ankle-pain-relief-bethesda-md.webp 1200w"
+          sizes="(max-width: 768px) 100vw, 50vw"
           alt="Ankle pain treatment at Helms Performance in Bethesda, MD"
           width="2400" height="3000"
           fetchpriority="high"
@@ -1162,9 +1157,9 @@
           <div class="related-links">
             <span class="related-links-label">Related services at Helms Performance</span>
             <div class="related-link-list">
-              <a href="/services/active-release-technique/" class="related-link">
+              <a href="/services/dry-needling/" class="related-link">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                Active Release Technique
+                Dry Needling
               </a>
               <a href="/services/sports-physical-therapy/" class="related-link">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
