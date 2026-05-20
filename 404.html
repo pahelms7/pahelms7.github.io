@@ -5,6 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>Page Not Found — Helms Performance</title>
+  <script>
+    // Redirect map: old WordPress paths → new paths
+    var redirects = {
+      // Services (with /home-2/ prefix)
+      '/home-2/services/sports-chiropractor/':       '/services/sports-chiropractor/',
+      '/home-2/services/sports-physical-therapy/':   '/services/sports-physical-therapy/',
+      '/home-2/services/active-release-technique/':  '/services/active-release-technique/',
+      '/home-2/services/fascial-stretch-therapy/':   '/services/fascial-stretch-therapy/',
+      '/home-2/services/myofascial-release/':        '/services/myofascial-release/',
+      '/home-2/services/manual-therapy/':            '/services/manual-therapy/',
+      '/home-2/services/therapeutic-massage/':       '/services/therapeutic-massage/',
+      '/home-2/services/functional-strength-training/': '/services/functional-strength-training/',
+      '/home-2/services/':                           '/services/',
+      // Dry needling (was missing trailing slash on old site)
+      '/services/dry-needling':                      '/services/dry-needling/',
+      // Conditions (with /home-2/ prefix, and slug rename)
+      '/home-2/conditions/back-pain-relief/':        '/conditions/back-pain/',
+      '/home-2/conditions/neck-pain-relief/':        '/conditions/neck-pain/',
+      '/home-2/conditions/shoulder-pain-relief/':    '/conditions/shoulder-pain/',
+      '/home-2/conditions/knee-pain-relief/':        '/conditions/knee-pain/',
+      '/home-2/conditions/hip-pain-relief/':         '/conditions/hip-pain/',
+      '/home-2/conditions/sciatica-pain-relief/':    '/conditions/sciatica/',
+      '/home-2/conditions/elbow-pain-relief/':       '/conditions/elbow-pain/',
+      '/home-2/conditions/ankle-pain-relief/':       '/conditions/ankle-pain/',
+      '/home-2/conditions/wrist-pain-relief/':       '/conditions/wrist-pain/',
+      '/home-2/conditions/tmj-pain-relief/':         '/conditions/tmj/',
+      '/home-2/conditions/':                         '/conditions/',
+      // Condition slugs without /home-2/ (in case Google indexed these)
+      '/conditions/back-pain-relief/':               '/conditions/back-pain/',
+      '/conditions/neck-pain-relief/':               '/conditions/neck-pain/',
+      '/conditions/shoulder-pain-relief/':           '/conditions/shoulder-pain/',
+      '/conditions/knee-pain-relief/':               '/conditions/knee-pain/',
+      '/conditions/hip-pain-relief/':                '/conditions/hip-pain/',
+      '/conditions/sciatica-pain-relief/':           '/conditions/sciatica/',
+      '/conditions/elbow-pain-relief/':              '/conditions/elbow-pain/',
+      '/conditions/ankle-pain-relief/':              '/conditions/ankle-pain/',
+      '/conditions/wrist-pain-relief/':              '/conditions/wrist-pain/',
+      '/conditions/tmj-pain-relief/':                '/conditions/tmj/',
+      // Old file-based URLs
+      '/home-2/':                                    '/',
+    };
+
+    (function () {
+      var path = window.location.pathname;
+      // Normalize: ensure trailing slash for lookup
+      var normalized = path.endsWith('/') ? path : path + '/';
+
+      var destination = redirects[path] || redirects[normalized];
+
+      if (destination) {
+        // Use replace so the old URL doesn't stay in browser history
+        window.location.replace(destination);
+      }
+    })();
+  </script>
   <style>
     body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #f8f8f8; }
     .not-found {
