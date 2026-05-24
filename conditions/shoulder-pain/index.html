@@ -505,7 +505,10 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@type": [
+          "MedicalBusiness",
+          "LocalBusiness"
+        ],
         "@id": "https://helmsperformance.com/#organization",
         "name": "Helms Performance",
         "url": "https://helmsperformance.com",
@@ -518,11 +521,39 @@
           "postalCode": "20814",
           "addressCountry": "US"
         },
-        "medicalSpecialty": ["Chiropractic", "PhysicalTherapy"],
+        "medicalSpecialty": [
+          "Chiropractic",
+          "PhysicalTherapy"
+        ],
         "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "09:00:00", "closes": "18:00:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00:00", "closes": "19:00:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00:00", "closes": "17:00:00" }
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday"
+            ],
+            "opens": "09:00:00",
+            "closes": "18:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00:00",
+            "closes": "19:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "09:00:00",
+            "closes": "17:00:00"
+          }
+        ],
+        "priceRange": "$$",
+        "image": [
+          "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+          "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+          "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
         ]
       },
       {
@@ -543,7 +574,9 @@
           "@type": "MedicalAudience",
           "audienceType": "Patient"
         },
-        "isPartOf": { "@id": "https://helmsperformance.com/#organization" }
+        "isPartOf": {
+          "@id": "https://helmsperformance.com/#organization"
+        }
       },
       {
         "@type": "FAQPage",
@@ -551,32 +584,50 @@
           {
             "@type": "Question",
             "name": "What causes shoulder pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Shoulder pain can come from many sources, including rotator cuff problems, joint dysfunction, pinched nerves in the cervical spine, overuse injuries, muscle tension from posture, and sudden injuries. Because the shoulder involves multiple joints, muscles, and tendons working together, pinpointing the exact source takes a thorough assessment. At Helms Performance in Bethesda, MD, Dr. Paul Helms evaluates the shoulder, the neck, and the surrounding soft tissue to understand what is actually driving the pain." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Shoulder pain can come from many sources, including rotator cuff problems, joint dysfunction, pinched nerves in the cervical spine, overuse injuries, muscle tension from posture, and sudden injuries. Because the shoulder involves multiple joints, muscles, and tendons working together, pinpointing the exact source takes a thorough assessment. At Helms Performance in Bethesda, MD, Dr. Paul Helms evaluates the shoulder, the neck, and the surrounding soft tissue to understand what is actually driving the pain."
+            }
           },
           {
             "@type": "Question",
             "name": "Can a chiropractor help with shoulder pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Chiropractic care is effective for shoulder pain that involves joint dysfunction, nerve compression from the cervical spine, or soft tissue problems around the shoulder joint. At Helms Performance, Dr. Paul Helms combines chiropractic with physical therapy under one roof, so patients get comprehensive care that addresses the joint, the soft tissue, and the movement patterns that contribute to shoulder pain." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Chiropractic care is effective for shoulder pain that involves joint dysfunction, nerve compression from the cervical spine, or soft tissue problems around the shoulder joint. At Helms Performance, Dr. Paul Helms combines chiropractic with physical therapy under one roof, so patients get comprehensive care that addresses the joint, the soft tissue, and the movement patterns that contribute to shoulder pain."
+            }
           },
           {
             "@type": "Question",
             "name": "How do I relieve shoulder pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The right approach depends on what is causing the pain. In the short term, rest and ice can help with acute injuries, while gentle movement often benefits chronic pain. Hands-on care, including chiropractic adjustment, Active Release Technique, and targeted physical therapy exercises, addresses the underlying cause rather than just managing the symptom. Dr. Paul Helms at Helms Performance in Bethesda, MD can evaluate your shoulder and build a plan specific to your situation." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The right approach depends on what is causing the pain. In the short term, rest and ice can help with acute injuries, while gentle movement often benefits chronic pain. Hands-on care, including chiropractic adjustment, Active Release Technique, and targeted physical therapy exercises, addresses the underlying cause rather than just managing the symptom. Dr. Paul Helms at Helms Performance in Bethesda, MD can evaluate your shoulder and build a plan specific to your situation."
+            }
           },
           {
             "@type": "Question",
             "name": "Is shoulder blade pain serious?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Most shoulder blade pain comes from musculoskeletal causes: tight rhomboid muscles, thoracic spine dysfunction, poor posture, or referred pain from the neck. These conditions respond well to chiropractic and physical therapy. However, shoulder blade pain that is severe, comes with shortness of breath, radiates to the jaw or left arm, or appears alongside other systemic symptoms should be evaluated by a physician promptly." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most shoulder blade pain comes from musculoskeletal causes: tight rhomboid muscles, thoracic spine dysfunction, poor posture, or referred pain from the neck. These conditions respond well to chiropractic and physical therapy. However, shoulder blade pain that is severe, comes with shortness of breath, radiates to the jaw or left arm, or appears alongside other systemic symptoms should be evaluated by a physician promptly."
+            }
           },
           {
             "@type": "Question",
             "name": "How should I sleep with shoulder pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Sleeping on the unaffected side, with a pillow tucked between your arms to reduce stress on the shoulder joint, helps many patients. Avoid sleeping directly on the painful shoulder or in positions that force the arm into an awkward angle overhead. If shoulder pain regularly disrupts your sleep, it is worth having the shoulder evaluated so the underlying cause can be addressed." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sleeping on the unaffected side, with a pillow tucked between your arms to reduce stress on the shoulder joint, helps many patients. Avoid sleeping directly on the painful shoulder or in positions that force the arm into an awkward angle overhead. If shoulder pain regularly disrupts your sleep, it is worth having the shoulder evaluated so the underlying cause can be addressed."
+            }
           },
           {
             "@type": "Question",
             "name": "What is the difference between chiropractic and physical therapy for shoulder pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Chiropractic care focuses on the joints, the cervical spine, and the nervous system, making it effective when shoulder pain involves joint dysfunction or nerve compression from the neck. Physical therapy focuses on rebuilding strength, restoring range of motion, and correcting the movement patterns that contributed to the problem. At Helms Performance, Dr. Paul Helms offers both disciplines under one roof, so patients do not have to choose, and care can address every layer of the problem." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chiropractic care focuses on the joints, the cervical spine, and the nervous system, making it effective when shoulder pain involves joint dysfunction or nerve compression from the neck. Physical therapy focuses on rebuilding strength, restoring range of motion, and correcting the movement patterns that contributed to the problem. At Helms Performance, Dr. Paul Helms offers both disciplines under one roof, so patients do not have to choose, and care can address every layer of the problem."
+            }
           }
         ]
       }

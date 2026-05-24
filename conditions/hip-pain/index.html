@@ -812,12 +812,40 @@
       "longitude": -77.0941841
     },
     "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "09:00:00", "closes": "18:00:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00:00", "closes": "19:00:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00:00", "closes": "17:00:00"}
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday"
+        ],
+        "opens": "09:00:00",
+        "closes": "18:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Thursday",
+        "opens": "09:00:00",
+        "closes": "19:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "09:00:00",
+        "closes": "17:00:00"
+      }
     ],
     "priceRange": "$$",
-    "medicalSpecialty": ["Sports Medicine", "Chiropractic", "Physical Therapy"]
+    "medicalSpecialty": [
+      "Sports Medicine",
+      "Chiropractic",
+      "Physical Therapy"
+    ],
+    "image": [
+      "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+      "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+      "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
+    ]
   }
   </script>
 
@@ -842,24 +870,58 @@
     "name": "Hip Pain Relief in Bethesda, MD",
     "url": "https://helmsperformance.com/conditions/hip-pain/",
     "description": "Dr. Paul Helms at Helms Performance evaluates and treats hip pain when walking, hip flexor pain, hip bursitis, labral tears, and hip pain related to sciatica or lower back issues in Bethesda, MD.",
-    "medicalAudience": {"@type": "MedicalAudience", "audienceType": "Patient"},
+    "medicalAudience": {
+      "@type": "MedicalAudience",
+      "audienceType": "Patient"
+    },
     "about": {
       "@type": "MedicalCondition",
       "name": "Hip Pain",
-      "alternateName": ["hip flexor pain", "hip bursitis", "hip joint pain", "hip pain when walking", "hip pain when sitting"],
-      "associatedAnatomy": {"@type": "AnatomicalStructure", "name": "Hip Joint"},
+      "alternateName": [
+        "hip flexor pain",
+        "hip bursitis",
+        "hip joint pain",
+        "hip pain when walking",
+        "hip pain when sitting"
+      ],
+      "associatedAnatomy": {
+        "@type": "AnatomicalStructure",
+        "name": "Hip Joint"
+      },
       "possibleTreatment": [
-        {"@type": "MedicalTherapy", "name": "Sports Chiropractic"},
-        {"@type": "MedicalTherapy", "name": "Sports Physical Therapy"},
-        {"@type": "MedicalTherapy", "name": "Active Release Technique"},
-        {"@type": "MedicalTherapy", "name": "Soft Tissue Therapy"}
+        {
+          "@type": "MedicalTherapy",
+          "name": "Sports Chiropractic"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Sports Physical Therapy"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Active Release Technique"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Soft Tissue Therapy"
+        }
       ]
     },
     "author": {
       "@type": "Person",
       "name": "Dr. Paul Helms",
       "jobTitle": "Doctor of Chiropractic",
-      "worksFor": {"@type": "LocalBusiness", "name": "Helms Performance"}
+      "worksFor": {
+        "@type": "LocalBusiness",
+        "name": "Helms Performance",
+        "telephone": "+13015785197",
+        "priceRange": "$$",
+        "image": [
+          "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+          "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+          "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
+        ]
+      }
     }
   }
   </script>

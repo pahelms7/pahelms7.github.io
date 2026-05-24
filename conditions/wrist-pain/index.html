@@ -496,7 +496,10 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@type": [
+          "MedicalBusiness",
+          "LocalBusiness"
+        ],
         "@id": "https://helmsperformance.com/#organization",
         "name": "Helms Performance",
         "url": "https://helmsperformance.com",
@@ -509,11 +512,39 @@
           "postalCode": "20814",
           "addressCountry": "US"
         },
-        "medicalSpecialty": ["Chiropractic", "PhysicalTherapy"],
+        "medicalSpecialty": [
+          "Chiropractic",
+          "PhysicalTherapy"
+        ],
         "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "09:00:00", "closes": "18:00:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00:00", "closes": "19:00:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00:00", "closes": "17:00:00" }
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday"
+            ],
+            "opens": "09:00:00",
+            "closes": "18:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00:00",
+            "closes": "19:00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "09:00:00",
+            "closes": "17:00:00"
+          }
+        ],
+        "priceRange": "$$",
+        "image": [
+          "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+          "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+          "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
         ]
       },
       {
@@ -522,13 +553,30 @@
         "url": "https://helmsperformance.com/conditions/wrist-pain/",
         "name": "Wrist Pain Relief in Bethesda, MD | Helms Performance",
         "description": "Ulnar wrist pain or general wrist pain in Bethesda, MD? Dr. Paul Helms offers chiropractic and physical therapy to find the source and get you back to what you love.",
-        "isPartOf": { "@id": "https://helmsperformance.com/#organization" },
+        "isPartOf": {
+          "@id": "https://helmsperformance.com/#organization"
+        },
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://helmsperformance.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://helmsperformance.com/conditions/" },
-            { "@type": "ListItem", "position": 3, "name": "Wrist Pain Relief", "item": "https://helmsperformance.com/conditions/wrist-pain/" }
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://helmsperformance.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Conditions",
+              "item": "https://helmsperformance.com/conditions/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Wrist Pain Relief",
+              "item": "https://helmsperformance.com/conditions/wrist-pain/"
+            }
           ]
         }
       },
@@ -538,32 +586,50 @@
           {
             "@type": "Question",
             "name": "What causes ulnar wrist pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Ulnar wrist pain, felt along the pinky side of the wrist, most often comes from injury or irritation to the triangular fibrocartilage complex (TFCC), a group of ligaments and cartilage that stabilizes the wrist joint. Other common causes include ulnar impaction syndrome, where the ulna bone presses against the adjacent carpal bones, ECU tendinitis affecting the extensor carpi ulnaris tendon, and wrist sprains. At Helms Performance in Bethesda, MD, Dr. Paul Helms assesses the specific structures involved before building a treatment plan." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ulnar wrist pain, felt along the pinky side of the wrist, most often comes from injury or irritation to the triangular fibrocartilage complex (TFCC), a group of ligaments and cartilage that stabilizes the wrist joint. Other common causes include ulnar impaction syndrome, where the ulna bone presses against the adjacent carpal bones, ECU tendinitis affecting the extensor carpi ulnaris tendon, and wrist sprains. At Helms Performance in Bethesda, MD, Dr. Paul Helms assesses the specific structures involved before building a treatment plan."
+            }
           },
           {
             "@type": "Question",
             "name": "Can a chiropractor help with wrist pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Chiropractic care can be effective for wrist pain that involves joint restriction, carpal bone misalignment, or nerve compression from the cervical spine or thoracic outlet. At Helms Performance, Dr. Paul Helms combines chiropractic with Active Release Technique and physical therapy under one roof, addressing the wrist joint, the surrounding soft tissue, and the movement patterns that may be contributing to the problem." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Chiropractic care can be effective for wrist pain that involves joint restriction, carpal bone misalignment, or nerve compression from the cervical spine or thoracic outlet. At Helms Performance, Dr. Paul Helms combines chiropractic with Active Release Technique and physical therapy under one roof, addressing the wrist joint, the surrounding soft tissue, and the movement patterns that may be contributing to the problem."
+            }
           },
           {
             "@type": "Question",
             "name": "What is the difference between ulnar wrist pain and carpal tunnel syndrome?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Carpal tunnel syndrome involves the median nerve and produces symptoms on the thumb side of the wrist and hand, including numbness and tingling in the thumb, index, and middle fingers. Ulnar wrist pain involves the pinky side of the wrist and hand, affecting the ring and little fingers when a nerve is involved. The two conditions require different assessment and treatment. A thorough evaluation is the only reliable way to distinguish between them, because the symptoms can overlap and both can be present at the same time." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Carpal tunnel syndrome involves the median nerve and produces symptoms on the thumb side of the wrist and hand, including numbness and tingling in the thumb, index, and middle fingers. Ulnar wrist pain involves the pinky side of the wrist and hand, affecting the ring and little fingers when a nerve is involved. The two conditions require different assessment and treatment. A thorough evaluation is the only reliable way to distinguish between them, because the symptoms can overlap and both can be present at the same time."
+            }
           },
           {
             "@type": "Question",
             "name": "How long does wrist pain take to heal?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Recovery time depends on what is causing the pain and how long it has been present. Acute wrist sprains often improve within a few weeks with the right care. Chronic conditions like TFCC injury, de Quervain's tenosynovitis, or carpal tunnel syndrome generally take longer, often eight to twelve weeks or more. Early treatment consistently produces faster results than waiting, because chronic pain tends to involve more layers of soft tissue restriction and compensatory movement patterns that take more time to address." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Recovery time depends on what is causing the pain and how long it has been present. Acute wrist sprains often improve within a few weeks with the right care. Chronic conditions like TFCC injury, de Quervain's tenosynovitis, or carpal tunnel syndrome generally take longer, often eight to twelve weeks or more. Early treatment consistently produces faster results than waiting, because chronic pain tends to involve more layers of soft tissue restriction and compensatory movement patterns that take more time to address."
+            }
           },
           {
             "@type": "Question",
             "name": "When should I see a doctor for wrist pain?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Wrist pain that follows a fall or direct impact and comes with visible deformity, severe swelling, or inability to bear weight on the wrist should be evaluated promptly to rule out a fracture. Wrist pain that persists beyond two to three weeks, worsens over time, or significantly limits daily activities is worth having assessed by a clinician rather than managed with rest alone. At Helms Performance in Bethesda, MD, Dr. Paul Helms can evaluate your wrist and help you understand what is causing the pain and what can be done about it." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wrist pain that follows a fall or direct impact and comes with visible deformity, severe swelling, or inability to bear weight on the wrist should be evaluated promptly to rule out a fracture. Wrist pain that persists beyond two to three weeks, worsens over time, or significantly limits daily activities is worth having assessed by a clinician rather than managed with rest alone. At Helms Performance in Bethesda, MD, Dr. Paul Helms can evaluate your wrist and help you understand what is causing the pain and what can be done about it."
+            }
           },
           {
             "@type": "Question",
             "name": "What is TFCC and can it heal without surgery?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The TFCC, or triangular fibrocartilage complex, is a group of ligaments and cartilage on the ulnar side of the wrist that stabilizes the joint and cushions the carpal bones. TFCC tears are a common cause of ulnar wrist pain. Many TFCC injuries, particularly partial tears and degenerative changes, can improve significantly with conservative care including chiropractic, Active Release Technique, and physical therapy. Surgery is typically considered when conservative treatment has not produced adequate improvement after several months." }
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The TFCC, or triangular fibrocartilage complex, is a group of ligaments and cartilage on the ulnar side of the wrist that stabilizes the joint and cushions the carpal bones. TFCC tears are a common cause of ulnar wrist pain. Many TFCC injuries, particularly partial tears and degenerative changes, can improve significantly with conservative care including chiropractic, Active Release Technique, and physical therapy. Surgery is typically considered when conservative treatment has not produced adequate improvement after several months."
+            }
           }
         ]
       }
