@@ -119,7 +119,7 @@
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Helms Performance Blog Articles",
-    "numberOfItems": 39,
+    "numberOfItems": 42,
     "itemListElement": [
       { "@type": "ListItem", "position": 1,  "url": "https://helmsperformance.com/blog/what-is-dry-needling/",                    "name": "What Is Dry Needling?" },
       { "@type": "ListItem", "position": 2,  "url": "https://helmsperformance.com/blog/does-dry-needling-hurt/",                   "name": "Does Dry Needling Hurt?" },
@@ -159,7 +159,10 @@
       { "@type": "ListItem", "position": 36, "url": "https://helmsperformance.com/blog/knee-pain-when-bending/",                   "name": "Knee Pain When Bending" },
       { "@type": "ListItem", "position": 37, "url": "https://helmsperformance.com/blog/can-sciatica-cause-knee-pain/",             "name": "Can Sciatica Cause Knee Pain?" },
       { "@type": "ListItem", "position": 38, "url": "https://helmsperformance.com/blog/hip-flexor-pain/",                          "name": "Hip Flexor Pain: Causes, Symptoms, and Relief" },
-      { "@type": "ListItem", "position": 39, "url": "https://helmsperformance.com/blog/lower-back-and-hip-pain/",                  "name": "Lower Back and Hip Pain: Are They Connected?" }
+      { "@type": "ListItem", "position": 39, "url": "https://helmsperformance.com/blog/lower-back-and-hip-pain/",                  "name": "Lower Back and Hip Pain: Are They Connected?" },
+      { "@type": "ListItem", "position": 40, "url": "https://helmsperformance.com/blog/can-tmj-cause-ear-pain/",                  "name": "Can TMJ Cause Ear Pain?" },
+      { "@type": "ListItem", "position": 41, "url": "https://helmsperformance.com/blog/sudden-ankle-pain-without-injury/",       "name": "Sudden Ankle Pain Without Injury" },
+      { "@type": "ListItem", "position": 42, "url": "https://helmsperformance.com/blog/ulnar-wrist-pain/",                        "name": "Ulnar Wrist Pain" }
     ]
   }
   </script>
@@ -671,6 +674,7 @@
       <button class="pill" data-filter="knee" role="listitem" aria-pressed="false">Knee Pain</button>
       <button class="pill" data-filter="hip" role="listitem" aria-pressed="false">Hip Pain</button>
       <button class="pill" data-filter="tmj" role="listitem" aria-pressed="false">TMJ</button>
+      <button class="pill" data-filter="ankle-wrist" role="listitem" aria-pressed="false">Ankle &amp; Wrist</button>
     </div>
   </div>
 </div>
@@ -1136,6 +1140,28 @@
         </div>
       </article>
 
+      <!-- === CLUSTER 12: ELBOW / ANKLE / WRIST === -->
+
+      <article class="article-card condition-card fade d2" data-category="ankle-wrist">
+        <div class="badge badge-condition">Ankle Pain</div>
+        <h3>Sudden Ankle Pain Without Injury</h3>
+        <p>Ankle pain that shows up without a twist or fall can be unsettling. It often traces back to overuse, footwear, or referred patterns from higher up the leg. Here's what it could mean and when to get it checked.</p>
+        <div class="card-foot">
+          <em>Coming Soon</em>
+          <span class="read-time">5 min</span>
+        </div>
+      </article>
+
+      <article class="article-card condition-card fade" data-category="ankle-wrist">
+        <div class="badge badge-condition">Wrist Pain</div>
+        <h3>Ulnar Wrist Pain: What's Causing It</h3>
+        <p>Pain on the pinky side of the wrist is common in people who lift, type, or bear weight through their hands. This guide walks through the usual causes and how Helms Performance approaches treatment in Bethesda.</p>
+        <div class="card-foot">
+          <em>Coming Soon</em>
+          <span class="read-time">5 min</span>
+        </div>
+      </article>
+
       <!-- Empty state (shown when no filter match) -->
       <div class="empty-state" id="empty-state" aria-live="polite">
         <p>No articles found for this topic yet. Check back soon, or <a href="/blog/" style="color:var(--navy);font-weight:600;">view all articles</a>.</p>
@@ -1278,7 +1304,7 @@
         p.classList.remove('active', 'active-condition');
         p.setAttribute('aria-pressed', 'false');
       });
-      var isCondition = ['back-sciatica','neck-shoulder','knee','hip','tmj'].indexOf(filter) !== -1;
+      var isCondition = ['back-sciatica','neck-shoulder','knee','hip','tmj','ankle-wrist'].indexOf(filter) !== -1;
       pill.classList.add(isCondition ? 'active-condition' : 'active');
       pill.setAttribute('aria-pressed', 'true');
 
