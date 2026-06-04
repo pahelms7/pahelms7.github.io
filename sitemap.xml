@@ -22,12 +22,18 @@
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog posts -->
+  <url>
+    <loc>https://helmsperformance.com/blog/art-vs-graston-technique/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://helmsperformance.com/blog/does-dry-needling-hurt/</loc>
     <lastmod>2026-06-01</lastmod>
