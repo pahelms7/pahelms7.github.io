@@ -22,12 +22,24 @@
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog posts -->
+  <url>
+    <loc>https://helmsperformance.com/blog/what-is-dry-needling/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/how-does-dry-needling-work/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://helmsperformance.com/blog/what-is-myofascial-release/</loc>
     <lastmod>2026-06-06</lastmod>
