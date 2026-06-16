@@ -3,13 +3,22 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
-  <!-- Microsoft Clarity -->
+  <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "w5jyh1xhzq");
+    (function(){
+      function loadClarity(){
+        if (window.__clarityLoaded) return; window.__clarityLoaded = true;
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w5jyh1xhzq");
+      }
+      var evts = ['scroll','mousemove','touchstart','keydown','click'];
+      function go(){ evts.forEach(function(e){ window.removeEventListener(e, go); }); loadClarity(); }
+      evts.forEach(function(e){ window.addEventListener(e, go, {passive:true}); });
+      setTimeout(loadClarity, 3000);
+    })();
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -648,7 +657,7 @@
     }
     .footer-brand strong { display: block; color: #fff; font-size: 1.0625rem; margin-bottom: 0.625rem; }
     .footer-brand p { font-size: 0.9rem; max-width: 28ch; line-height: 1.65; }
-    .footer-col h4 {
+    .footer-col h3 {
       color: rgba(255,255,255,.3); font-size: 0.6875rem;
       letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.875rem;
     }
@@ -1346,7 +1355,7 @@
           <p>Sports chiropractic and physical therapy in Bethesda, MD.</p>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <h3>Services</h3>
           <ul>
             <li><a href="/services/myofascial-release">Myofascial Release</a></li>
             <li><a href="/services/dry-needling/">Dry Needling</a></li>
@@ -1356,7 +1365,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Links</h4>
+          <h3>Links</h3>
           <ul>
             <li><a href="/about">About Dr. Helms</a></li>
             <li><a href="/conditions">Conditions</a></li>
@@ -1365,7 +1374,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Hours</h4>
+          <h3>Hours</h3>
           <div class="footer-hours">
             <div>Mon, Tue, Wed: 9AM to 6PM</div>
             <div>Thursday: 9AM to 7PM</div>

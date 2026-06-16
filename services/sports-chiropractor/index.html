@@ -3,13 +3,22 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
-  <!-- Microsoft Clarity -->
+  <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "w5jyh1xhzq");
+    (function(){
+      function loadClarity(){
+        if (window.__clarityLoaded) return; window.__clarityLoaded = true;
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w5jyh1xhzq");
+      }
+      var evts = ['scroll','mousemove','touchstart','keydown','click'];
+      function go(){ evts.forEach(function(e){ window.removeEventListener(e, go); }); loadClarity(); }
+      evts.forEach(function(e){ window.addEventListener(e, go, {passive:true}); });
+      setTimeout(loadClarity, 3000);
+    })();
   </script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -421,7 +430,7 @@
     footer { background: #111827; color: rgba(255,255,255,.55); padding-block: 7rem 4rem; }
     .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; margin-bottom: 4rem; }
     .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-top: 0.875rem; max-width: 28ch; }
-    .footer-col h4 { font-size: 0.875rem; font-weight: 600; color: #fff; margin-bottom: 1rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    .footer-col h3 { font-size: 0.875rem; font-weight: 600; color: #fff; margin-bottom: 1rem; letter-spacing: 0.04em; text-transform: uppercase; }
     .footer-col ul { display: flex; flex-direction: column; gap: 0.625rem; }
     .footer-col a { font-size: 0.9rem; transition: color 150ms; }
     .footer-col a:hover { color: #fff; }
@@ -967,7 +976,7 @@
           <p>Sports chiropractic and sports physical therapy in Bethesda, MD. We help people move better and feel better, from their first flare-up to their next season.</p>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <h3>Services</h3>
           <ul>
             <li><a href="/services/sports-chiropractor/">Sports Chiropractic</a></li>
             <li><a href="/services/sports-physical-therapy/">Sports Physical Therapy</a></li>
@@ -980,7 +989,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Conditions</h4>
+          <h3>Conditions</h3>
           <ul>
             <li><a href="/conditions/shoulder-pain/">Shoulder Pain</a></li>
             <li><a href="/conditions/back-pain/">Back Pain</a></li>
@@ -992,7 +1001,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Visit Us</h4>
+          <h3>Visit Us</h3>
           <address style="font-style:normal;">
             <p class="footer-address">7625 Wisconsin Ave, Suite 219<br>Bethesda, MD 20814</p>
           </address>
