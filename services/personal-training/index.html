@@ -8,6 +8,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-2SST8FVX7Z');
+    // Track click-to-call as a GA4 key event (Phone_Call_Conversion) -> Google Ads phone-call conversion
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href^="tel:"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'Phone_Call_Conversion', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +27,12 @@
   <meta name="theme-color" content="#162e4a">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://helmsperformance.com/services/personal-training-bethesda">
+  <link rel="canonical" href="https://helmsperformance.com/services/personal-training/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://helmsperformance.com/services/personal-training-bethesda">
+  <meta property="og:url" content="https://helmsperformance.com/services/personal-training/">
   <meta property="og:title" content="Personal Trainer Near Me — Bethesda, MD | Helms Performance">
   <meta property="og:description" content="Looking for a personal trainer near you in Bethesda, MD? Dr. Paul Helms builds one-on-one programs that relieve pain, restore movement, and build lasting strength — for every age and starting point.">
   <meta property="og:site_name" content="Helms Performance">

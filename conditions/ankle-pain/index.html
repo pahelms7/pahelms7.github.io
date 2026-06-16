@@ -8,6 +8,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-2SST8FVX7Z');
+    // Track click-to-call as a GA4 key event (Phone_Call_Conversion) -> Google Ads phone-call conversion
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href^="tel:"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'Phone_Call_Conversion', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

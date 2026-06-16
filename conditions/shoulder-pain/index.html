@@ -8,6 +8,15 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-2SST8FVX7Z');
+    // Track click-to-call as a GA4 key event (Phone_Call_Conversion) -> Google Ads phone-call conversion
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href^="tel:"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'Phone_Call_Conversion', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +26,12 @@
   <meta name="theme-color" content="#162e4a">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://helmsperformance.com/conditions/shoulder-pain-relief-bethesda/">
+  <link rel="canonical" href="https://helmsperformance.com/conditions/shoulder-pain/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://helmsperformance.com/conditions/shoulder-pain-relief-bethesda/">
+  <meta property="og:url" content="https://helmsperformance.com/conditions/shoulder-pain/">
   <meta property="og:title" content="Chiropractic for Shoulder Pain in Bethesda, MD | Helms Performance">
   <meta property="og:description" content="Looking for chiropractic care for shoulder pain in Bethesda, MD? Dr. Paul Helms combines sports chiropractic and physical therapy to find the source of your shoulder pain and help you get back to the activities you love.">
   <meta property="og:site_name" content="Helms Performance">
@@ -571,8 +580,8 @@
       },
       {
         "@type": "MedicalWebPage",
-        "@id": "https://helmsperformance.com/conditions/shoulder-pain-relief-bethesda/#webpage",
-        "url": "https://helmsperformance.com/conditions/shoulder-pain-relief-bethesda/",
+        "@id": "https://helmsperformance.com/conditions/shoulder-pain/#webpage",
+        "url": "https://helmsperformance.com/conditions/shoulder-pain/",
         "name": "Chiropractic for Shoulder Pain in Bethesda, MD",
         "description": "Dr. Paul Helms provides chiropractic care and physical therapy for shoulder pain in Bethesda, MD. Treating rotator cuff pain, pain between shoulder blades, sudden shoulder pain without injury, frozen shoulder, and more.",
         "about": {
