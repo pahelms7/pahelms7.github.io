@@ -34,6 +34,15 @@
         phone_number: link.getAttribute('href').replace('tel:', '')
       });
     });
+    // Track "Book An Appointment" clicks (Jane booking, opens new tab) as a GA4 event
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href*="janeapp.com"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'booking_appointment_click', {
+        link_url: link.getAttribute('href')
+      });
+    });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
