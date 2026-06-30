@@ -528,20 +528,9 @@
       background-repeat: no-repeat; background-position: right 0.875rem center; background-size: 16px;
       padding-right: 2.5rem; cursor: pointer;
     }
-    .char-count { font-size: 0.75rem; color: var(--muted); text-align: right; margin-top: -0.75rem; margin-bottom: 0.25rem; }
     .form-submit { margin-top: 0.5rem; }
     .form-note { font-size: 0.8125rem; color: var(--muted); margin-top: 0.875rem; max-width: unset; display: flex; align-items: flex-start; gap: 0.4rem; line-height: 1.55; }
     .form-note svg { flex-shrink: 0; margin-top: 1px; stroke: var(--muted); }
-
-    /* Form success state */
-    .form-success {
-      display: none; background: #ecfdf5;
-      border: 1.5px solid #6ee7b7; border-radius: var(--r-sm);
-      padding: 1.375rem 1.5rem; margin-bottom: 1.5rem;
-    }
-    .form-success.visible { display: block; }
-    .form-success h3 { color: #065f46; margin-bottom: 0.25rem; font-size: 1rem; }
-    .form-success p { color: #047857; font-size: 0.9375rem; max-width: unset; }
 
     /* Info panel */
     .contact-info-wrap { position: sticky; top: 84px; }
@@ -813,67 +802,18 @@
         <div class="contact-form-wrap fade">
           <span class="eyebrow">Get in Touch</span>
           <h2 id="contact-h">Send Us a Message</h2>
-          <p>We respond to all inquiries within one business day. For a faster response, call us directly or book online.</p>
+          <p>Have a question before you book? Email us directly and we'll get back to you within one business day, often sooner. For a faster response, call us or book online.</p>
 
-          <!-- Success message -->
-          <div class="form-success" id="form-success" role="alert" aria-live="polite">
-            <h3>Message received!</h3>
-            <p>Thanks for reaching out. We'll be back in touch within one business day  often sooner. You can also call <a href="tel:3015785197" style="color:#047857">301-578-5197</a> if you need a faster response.</p>
+          <div class="form-submit">
+            <a href="mailto:paul@helmsperformance.com" class="btn btn-navy">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+              Email Us
+            </a>
           </div>
-
-          <form action="#" method="POST" id="contact-form-el" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="first_name" autocomplete="given-name" required placeholder="Jane">
-              </div>
-              <div class="form-group">
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="last_name" autocomplete="family-name" required placeholder="Smith">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Phone number <span class="optional">(optional)</span></label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="301-555-0100">
-            </div>
-
-            <div class="form-group">
-              <label for="reason">What brings you in?</label>
-              <select id="reason" name="reason" required>
-                <option value="" disabled selected>Select one...</option>
-                <option value="pain-injury">Pain or injury</option>
-                <option value="sports-performance">Sports performance</option>
-                <option value="chronic-condition">Chronic condition</option>
-                <option value="post-surgical">Post-surgical recovery</option>
-                <option value="general-wellness">General wellness</option>
-                <option value="question">General question</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="Tell us a bit about what's going on and how we can help. The more detail you share, the better prepared we'll be." maxlength="1000"></textarea>
-              <p class="char-count" id="char-count" aria-live="polite" aria-atomic="true">0 / 1000</p>
-            </div>
-
-            <div class="form-submit">
-              <button type="submit" class="btn btn-navy">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                Send Message
-              </button>
-            </div>
-            <p class="form-note">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-              Your information is private and will never be shared with third parties.
-            </p>
-          </form>
+          <p class="form-note">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Your information is private and will never be shared with third parties.
+          </p>
         </div>
 
         <!-- Info panel -->
@@ -1100,30 +1040,6 @@
 
       document.addEventListener('click', function (e) { if (!e.target.closest('#main-nav')) closeAll(); });
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
-    }());
-
-    /* Textarea character counter */
-    (function () {
-      var ta = document.getElementById('message');
-      var cc = document.getElementById('char-count');
-      if (!ta || !cc) return;
-      ta.addEventListener('input', function () {
-        cc.textContent = ta.value.length + ' / 1000';
-      });
-    }());
-
-    /* Form submit  demo handler (replace action="#" with real backend) */
-    (function () {
-      var form    = document.getElementById('contact-form-el');
-      var success = document.getElementById('form-success');
-      if (!form || !success) return;
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        form.hidden = true;
-        success.classList.add('visible');
-        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        success.focus();
-      });
     }());
 
     /* Fade-in on scroll */
