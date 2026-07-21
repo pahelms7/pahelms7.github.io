@@ -4,25 +4,25 @@
   <!-- Core pages -->
   <url>
     <loc>https://helmsperformance.com/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/about/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/contact/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -30,67 +30,67 @@
   <!-- Blog posts -->
   <url>
     <loc>https://helmsperformance.com/blog/what-is-dry-needling/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/how-does-dry-needling-work/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/what-is-myofascial-release/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/myofascial-release-vs-massage/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/art-vs-graston-technique/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/does-dry-needling-hurt/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/dry-needling-vs-acupuncture/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/strength-training-women-over-50/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/is-dry-needling-legal-in-maryland/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/strength-training-for-seniors/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/sports-chiro-vs-physical-therapy/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -98,67 +98,67 @@
   <!-- Services -->
   <url>
     <loc>https://helmsperformance.com/services/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/sports-chiropractor/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/sports-physical-therapy/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/active-release-technique/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/dry-needling/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/fascial-stretch-therapy/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/myofascial-release/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/manual-therapy/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/therapeutic-massage/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/functional-strength-training/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/services/personal-training/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -166,67 +166,67 @@
   <!-- Conditions -->
   <url>
     <loc>https://helmsperformance.com/conditions/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/back-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/neck-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/shoulder-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/knee-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/hip-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/sciatica/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/elbow-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/ankle-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/wrist-pain/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://helmsperformance.com/conditions/tmj/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
