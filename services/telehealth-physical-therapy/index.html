@@ -48,33 +48,33 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dry Needling in Bethesda, MD | Helms Performance</title>
-  <meta name="description" content="Relieve stubborn muscle pain and trigger points with dry needling near you in Bethesda, MD. Dr. Paul Helms helps runners, desk workers, and everyone in between get back to the activities they love.">
-  <meta name="keywords" content="dry needling Bethesda MD, dry needling near me, dry needling therapy, dry needling physical therapy, dry needling for plantar fasciitis, dry needling for sciatica">
+  <title>Virtual Physical Therapy Online | Telehealth PT | Helms Performance</title>
+  <meta name="description" content="Virtual physical therapy for runners, lifters, and weekend athletes. Dr. Paul Helms treats the injury and coaches the training that keeps you strong and pain-free.">
+  <meta name="keywords" content="virtual physical therapy, online physical therapy, telehealth physical therapy, virtual pt, telehealth pt, online pt, physical therapy online, physical therapy telehealth, virtual physical therapy near me">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#162e4a">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://helmsperformance.com/services/dry-needling/">
+  <link rel="canonical" href="https://helmsperformance.com/services/telehealth-physical-therapy/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://helmsperformance.com/services/dry-needling/">
-  <meta property="og:title" content="Dry Needling in Bethesda, MD | Helms Performance">
-  <meta property="og:description" content="Relieve stubborn muscle pain and trigger points with dry needling in Bethesda, MD. Dr. Paul Helms helps you get back to the activities you love.">
+  <meta property="og:url" content="https://helmsperformance.com/services/telehealth-physical-therapy/">
+  <meta property="og:title" content="Virtual Physical Therapy Online | Telehealth PT | Helms Performance">
+  <meta property="og:description" content="Virtual physical therapy and online coaching for runners, lifters, and weekend athletes. Dr. Paul Helms treats the injury and coaches the training that keeps you strong and pain-free.">
   <meta property="og:site_name" content="Helms Performance">
-  <meta property="og:image" content="https://helmsperformance.com/assets/images/services/dry-needling-uppertrap-bethesda-md.webp">
+  <meta property="og:image" content="https://helmsperformance.com/assets/images/services/functional-strength-training-img1.webp">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="800">
-  <meta property="og:image:alt" content="Dry needling in Bethesda, MD — Helms Performance">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Telehealth physical therapy with Helms Performance, guided exercise at home">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://helmsperformance.com/assets/images/services/dry-needling-uppertrap-bethesda-md.webp">
+  <meta name="twitter:image" content="https://helmsperformance.com/assets/images/services/functional-strength-training-img1.webp">
 
-  <!-- Preload LCP hero image — must be as early as possible for PageSpeed -->
+  <!-- Preload LCP hero image -->
   <link rel="preload" as="image"
-    href="/assets/images/services/dry-needling-uppertrap-bethesda-md.webp"
-    imagesrcset="/assets/images/services/dry-needling-uppertrap-small.webp 509w, /assets/images/services/dry-needling-uppertrap-bethesda-md-med.webp 800w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 1200w"
+    href="/assets/images/services/functional-strength-training-img1.webp"
+    imagesrcset="/assets/images/services/functional-strength-training-img1-small.webp 600w, /assets/images/services/functional-strength-training-img1-med.webp 800w, /assets/images/services/functional-strength-training-img1.webp 1200w"
     imagesizes="(max-width: 768px) 100vw, 50vw"
     fetchpriority="high">
 
@@ -85,6 +85,7 @@
   <link rel="dns-prefetch" href="https://maps.gstatic.com">
   <link rel="dns-prefetch" href="https://helmsperformance.janeapp.com">
 
+  <!-- Non-blocking font load -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap"></noscript>
 
@@ -123,6 +124,24 @@
       color: var(--ink);
       background: var(--bg);
       font-synthesis: none;
+    }
+
+    /* ---- SKIP LINK --------------------------------------------- */
+    .skip-link {
+      position: absolute; top: -100%; left: 1rem;
+      background: var(--navy); color: #fff;
+      padding: 0.5rem 1.25rem; border-radius: var(--r-sm);
+      font-size: 0.9rem; font-weight: 600;
+      z-index: 9999; text-decoration: none;
+      transition: top 0.12s;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    /* ---- FOCUS RINGS ------------------------------------------- */
+    :focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 3px;
+      border-radius: 3px;
     }
 
     /* ---- TYPE --------------------------------------------------- */
@@ -169,6 +188,7 @@
       transition: background 150ms, color 150ms, border-color 150ms, box-shadow 150ms;
       white-space: nowrap; line-height: 1;
       touch-action: manipulation;
+      min-height: 48px;
     }
     .btn-red   { background: #D8313E;   color: #fff; border-color: #D8313E; }
     .btn-red:hover { background: #c1121f; border-color: #c1121f; box-shadow: 0 4px 14px rgba(230,57,70,.3); }
@@ -336,7 +356,7 @@
     }
     .hero-image-col img {
       width: 100%; height: clamp(420px, 68vh, 700px);
-      object-fit: cover; object-position: center;
+      object-fit: cover; object-position: 38% center;
       border-radius: 16px; display: block;
     }
     @media (max-width: 768px) {
@@ -355,8 +375,9 @@
     .hero-actions { display: flex; gap: var(--sm); flex-wrap: wrap; align-items: center; }
     .hero-trust {
       margin-top: var(--lg);
-      display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+      display: flex; align-items: center; gap: 0.5rem;
       font-size: 0.8125rem; color: rgba(255,255,255,.35); letter-spacing: 0.04em;
+      flex-wrap: wrap;
     }
     .hero-trust-sep { opacity: .4; }
     @media (max-width: 600px) {
@@ -373,7 +394,7 @@
     }
     .trust-items {
       display: flex; align-items: center; justify-content: center;
-      gap: 2rem; flex-wrap: wrap;
+      gap: 2.5rem; flex-wrap: wrap;
     }
     .trust-item {
       display: flex; align-items: center; gap: 0.5rem;
@@ -403,6 +424,45 @@
       .pillars-grid { grid-template-columns: 1fr; }
       .pillar { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
       .pillar:last-child { border-bottom: none; }
+    }
+
+    /* ---- BREADCRUMB -------------------------------------------- */
+    .breadcrumb {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.375rem;
+      font-size: 0.8125rem; color: rgba(255,255,255,.45);
+      margin-bottom: 1rem;
+    }
+    .breadcrumb a { color: rgba(255,255,255,.65); transition: color 150ms; }
+    .breadcrumb a:hover { color: #fff; }
+    .bc-sep {
+      width: 14px; height: 14px; flex-shrink: 0;
+      stroke: rgba(255,255,255,.25); fill: none; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+    .breadcrumb [aria-current="page"] { color: rgba(255,255,255,.65); font-weight: 600; }
+
+    /* ---- TWO DISCIPLINES (disc-card style, matching chiro page) ---- */
+    .two-disc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+    .disc-card { background: var(--surface); border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    .disc-card-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+    .disc-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .disc-icon-navy { background: rgba(29,53,87,.1); color: var(--navy); }
+    .disc-icon-teal { background: rgba(69,123,157,.12); color: var(--teal); }
+    .disc-card h3 { font-size: 1.125rem; color: var(--navy); }
+    .disc-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .disc-list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.9375rem; color: var(--muted); line-height: 1.5; }
+    .disc-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 0.55rem; }
+    .disc-dot-navy { background: var(--navy); }
+    .disc-dot-teal { background: var(--teal); }
+    .disc-together { background: var(--navy); border-radius: 12px; padding: 1.875rem 2rem; margin-top: 1.5rem; display: flex; align-items: flex-start; gap: 1.25rem; }
+    .disc-together-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #7fc4e8; }
+    .disc-together h3 { color: #fff; margin-bottom: 0.5rem; font-size: 1.0625rem; }
+    .disc-together p { color: rgba(255,255,255,.65); font-size: 0.9375rem; max-width: none; line-height: 1.65; }
+    .disc-cta-link { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 1rem; font-size: 0.8125rem; font-weight: 600; color: var(--teal); text-decoration: none; }
+    .disc-cta-link:hover { color: var(--navy); }
+    @media (max-width: 768px) {
+      .two-disc-grid { grid-template-columns: 1fr; }
+      .disc-together { flex-direction: column; gap: 1rem; }
     }
 
     /* ---- WHAT IS ----------------------------------------------- */
@@ -448,48 +508,6 @@
     }
     .vs-block p { color: rgba(255,255,255,.68); font-size: 0.875rem; max-width: none; line-height: 1.65; }
 
-    /* ---- COMPARISON TABLE -------------------------------------- */
-    .compare-section {
-      margin-top: var(--xl);
-      padding-top: var(--lg);
-      border-top: 1px solid var(--border);
-    }
-    .compare-h {
-      color: var(--navy); font-size: 1.25rem; font-weight: 600;
-      margin-bottom: var(--md);
-    }
-    .compare-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1.25rem; margin-bottom: 1.25rem;
-    }
-    @media (max-width: 580px) { .compare-grid { grid-template-columns: 1fr; } }
-    .compare-col {
-      border-radius: var(--r); overflow: hidden;
-      border: 1.5px solid var(--border);
-    }
-    .compare-col--dn { border-color: var(--teal); }
-    .compare-header {
-      padding: 0.875rem 1.25rem;
-      background: var(--bg);
-    }
-    .compare-col--dn .compare-header {
-      background: var(--navy);
-    }
-    .compare-badge {
-      font-size: 0.8125rem; font-weight: 600;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--muted);
-    }
-    .compare-col--dn .compare-badge { color: #fff; }
-    .compare-list { padding: 1.125rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
-    .compare-list li { font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
-    .compare-list li strong { color: var(--ink); font-weight: 600; display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.1rem; }
-    .compare-note {
-      font-size: 0.875rem; color: var(--muted); line-height: 1.65;
-      border-left: 3px solid var(--teal);
-      padding-left: 0.875rem; max-width: 60ch;
-    }
-
     /* ---- CONDITIONS -------------------------------------------- */
     .cond-grid {
       display: grid;
@@ -502,48 +520,85 @@
       border-left: 3px solid var(--red);
       box-shadow: 0 1px 3px rgba(0,0,0,.05);
       transition: box-shadow 200ms, transform 200ms;
-      text-decoration: none; display: block; color: inherit;
-      min-height: 44px;
     }
     .cond-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
     .cond-card h3 { color: var(--navy); margin-bottom: 0.3rem; }
     .cond-card p  { font-size: 0.875rem; color: var(--muted); max-width: none; }
     .cond-link { font-size: 0.8125rem; font-weight: 600; color: var(--teal); display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; }
 
-    /* ---- TESTIMONIALS ------------------------------------------ */
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-      gap: 1.5rem;
+    /* ---- COMPARE (TWO DISCIPLINES) ----------------------------- */
+    .compare-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--md);
     }
-    .review-card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
+    @media (max-width: 768px) { .compare-grid { grid-template-columns: 1fr; gap: var(--sm); } }
+
+    .compare-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
       border-radius: var(--r);
-      padding: 1.75rem;
-      display: flex; flex-direction: column;
+      padding: var(--md);
     }
-    .review-stars {
-      display: flex; gap: 3px; margin-bottom: 1rem;
+    .compare-card-header {
+      display: flex; align-items: center; gap: 0.875rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,.1);
     }
-    .review-stars svg { width: 16px; height: 16px; }
-    .review-quote {
-      font-size: 1rem; color: rgba(255,255,255,.82);
-      line-height: 1.72; margin-bottom: auto;
-      padding-bottom: 1.25rem;
-      font-style: italic;
+    .compare-icon {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(127,175,200,.15);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .review-meta { display: flex; flex-direction: column; gap: 0.2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.1); }
-    .review-name { font-size: 0.9375rem; font-weight: 600; color: #fff; }
-    .review-type { font-size: 0.8125rem; color: rgba(255,255,255,.42); }
-    .review-note {
-      margin-top: var(--md); text-align: center;
-      font-size: 0.8125rem; color: rgba(255,255,255,.3);
+    .compare-icon svg { width: 22px; height: 22px; stroke: #7fafc8; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .compare-card-header h3 { color: #fff; font-size: 1.125rem; }
+    .compare-card-header span { font-size: 0.8125rem; color: rgba(255,255,255,.45); display: block; margin-top: 0.1rem; }
+
+    .compare-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .compare-item {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      font-size: 0.9rem; color: rgba(255,255,255,.68); line-height: 1.5;
     }
-    .review-note a {
-      color: rgba(255,255,255,.5);
-      text-decoration: underline;
+    .compare-check {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(69,123,157,.3);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      margin-top: 1px;
     }
+    .compare-check svg { width: 10px; height: 10px; stroke: #7fafc8; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+    .compare-note {
+      margin-top: 1.25rem; padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+      font-size: 0.8125rem; color: rgba(255,255,255,.58);
+      font-style: italic; line-height: 1.6;
+    }
+
+    .compare-cta-link {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      margin-top: 1rem; font-size: 0.875rem; font-weight: 600;
+      color: #7fafc8; transition: color 150ms;
+    }
+    .compare-cta-link:hover { color: #fff; }
+
+    .compare-both {
+      margin-top: var(--md);
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r);
+      padding: var(--md);
+      display: flex; align-items: flex-start; gap: 1.25rem;
+    }
+    @media (max-width: 640px) { .compare-both { flex-direction: column; } }
+    .compare-both-icon {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(230,57,70,.15);
+      border: 1px solid rgba(230,57,70,.25);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .compare-both-icon svg { width: 24px; height: 24px; stroke: #f7a0a6; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .compare-both-text h3 { color: #fff; margin-bottom: 0.5rem; }
+    .compare-both-text p { color: rgba(255,255,255,.62); font-size: 0.9375rem; max-width: 70ch; line-height: 1.7; }
 
     /* ---- EXPECT ------------------------------------------------- */
     .expect-grid {
@@ -572,8 +627,8 @@
     .step-body p { font-size: 0.9rem; color: var(--muted); max-width: none; line-height: 1.55; }
 
     .expect-visual {
-      background: linear-gradient(145deg, var(--navy-dk) 0%, #1a4a6b 100%);
       border-radius: var(--r);
+      background: linear-gradient(145deg, var(--navy-dk) 0%, #1a4a6b 100%);
       padding: var(--lg) var(--md);
       display: flex; flex-direction: column; gap: 1.25rem;
     }
@@ -617,25 +672,6 @@
     .about-badge strong { display: block; font-size: 0.95rem; margin-bottom: 0.1rem; }
     .about-badge span   { font-size: 0.78rem; color: rgba(255,255,255,.6); }
 
-    /* About stats row */
-    .about-stats {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 0.875rem; margin-bottom: 1.5rem;
-    }
-    @media (max-width: 560px) { .about-stats { grid-template-columns: repeat(2, 1fr); } }
-    .about-stat {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: var(--r-sm); padding: 0.875rem 1rem;
-      text-align: center;
-    }
-    .about-stat-num {
-      display: block; font-size: 1.375rem; font-weight: 600;
-      color: var(--navy); line-height: 1.2; margin-bottom: 0.25rem;
-    }
-    .about-stat-label {
-      font-size: 0.78rem; color: var(--muted); line-height: 1.4;
-    }
-
     .about-copy h2 { color: var(--navy); margin-bottom: 0.875rem; }
     .about-copy p  { color: var(--muted); margin-bottom: 1.1rem; }
 
@@ -662,7 +698,6 @@
       align-items: flex-start; gap: var(--sm);
       font-size: 1.0625rem; font-weight: 600;
       color: var(--ink); user-select: none;
-      min-height: 44px; padding-block: 0.25rem;
     }
     .faq-wrap summary::-webkit-details-marker { display: none; }
     .faq-plus {
@@ -693,7 +728,8 @@
 
     /* ---- MAP ---------------------------------------------------- */
     .map-wrap {
-      width: 100%; height: 360px;
+      width: 100%;
+      height: 360px;
       line-height: 0;
       border-top: 1px solid rgba(0,0,0,.08);
     }
@@ -731,6 +767,36 @@
     }
     @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } }
 
+    /* ---- MOBILE STICKY CTA ------------------------------------- */
+    .mobile-cta-bar {
+      display: none;
+      position: fixed; bottom: 0; inset-inline: 0;
+      background: var(--navy-dk);
+      padding: 0.875rem 1.25rem env(safe-area-inset-bottom, 0);
+      z-index: 190;
+      box-shadow: 0 -4px 24px rgba(0,0,0,.3);
+      border-top: 1px solid rgba(255,255,255,.1);
+      align-items: center; justify-content: space-between; gap: 0.875rem;
+    }
+    @media (max-width: 768px) { .mobile-cta-bar { display: flex; } }
+    .mobile-cta-text { flex: 1; min-width: 0; }
+    .mobile-cta-text strong { display: block; color: #fff; font-size: 0.9375rem; line-height: 1.25; }
+    .mobile-cta-text span { font-size: 0.75rem; color: rgba(255,255,255,.5); }
+    .mobile-cta-bar .btn { padding: 0.75rem 1.25rem; font-size: 0.875rem; white-space: nowrap; flex-shrink: 0; }
+    .mobile-cta-close {
+      background: none; border: none; cursor: pointer;
+      padding: 0; width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.4); flex-shrink: 0; line-height: 1;
+      transition: color 150ms; touch-action: manipulation;
+    }
+    .mobile-cta-close:hover { color: rgba(255,255,255,.8); }
+    .mobile-cta-close svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    @media (max-width: 768px) {
+      body { padding-bottom: 80px; }
+    }
+
     /* ---- CONTENT VISIBILITY ------------------------------------ */
     .trust-bar, .pillars, .section, .section-sm, .cta-band {
       content-visibility: auto;
@@ -740,7 +806,7 @@
     /* ---- ANIMATIONS -------------------------------------------- */
     .fade {
       opacity: 0; transform: translateY(20px);
-      transition: opacity .5s ease, transform .5s ease;
+      transition: opacity .4s ease-out, transform .4s ease-out;
     }
     .fade.in { opacity: 1; transform: translateY(0); }
     .d1 { transition-delay: .1s; }
@@ -753,58 +819,7 @@
         opacity: 1; transform: none; transition: none;
       }
     }
-
-    /* ---- SKIP LINK --------------------------------------------- */
-    .skip-link {
-      position: absolute; top: -100%; left: 1rem;
-      background: var(--navy); color: #fff;
-      font-size: 0.9rem; font-weight: 600;
-      padding: 0.625rem 1.125rem; border-radius: var(--r-sm);
-      z-index: 9999; text-decoration: none;
-    }
-    .skip-link:focus {
-      top: 1rem;
-      outline: 3px solid var(--teal);
-      outline-offset: 2px;
-    }
-
-    /* ---- FOCUS RINGS ------------------------------------------- */
-    :focus-visible {
-      outline: 3px solid var(--teal);
-      outline-offset: 2px;
-      border-radius: var(--r-sm);
-    }
-    .btn:focus-visible { outline-offset: 3px; }
-
-    /* ---- SMOOTH SCROLL ----------------------------------------- */
-    @media (prefers-reduced-motion: no-preference) {
-      html { scroll-behavior: smooth; }
-    }
-
-    /* ---- FAQ OPEN ANIMATION ------------------------------------ */
-    @media (prefers-reduced-motion: no-preference) {
-      details[open] > .faq-body {
-        animation: faq-reveal 200ms ease-out;
-      }
-      @keyframes faq-reveal {
-        from { opacity: 0; transform: translateY(-6px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-    }
-      .breadcrumb {
-      display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.375rem;
-      font-size: 0.8125rem; color: rgba(255,255,255,.45);
-      margin-bottom: 1rem;
-    }
-    .breadcrumb a { color: rgba(255,255,255,.65); transition: color 150ms; }
-    .breadcrumb a:hover { color: #fff; }
-    .bc-sep {
-      width: 14px; height: 14px; flex-shrink: 0;
-      stroke: rgba(255,255,255,.25); fill: none; stroke-width: 2;
-      stroke-linecap: round; stroke-linejoin: round;
-    }
-    .breadcrumb [aria-current="page"] { color: rgba(255,255,255,.65); font-weight: 600; }
-</style>
+  </style>
 
   <!-- JSON-LD: FAQPage schema -->
   <script type="application/ld+json">
@@ -814,79 +829,66 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Does dry needling hurt?",
+        "name": "What is telehealth physical therapy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most patients feel a brief twitch or deep pressure when the thin filament reaches the trigger point. This local twitch response is a sign the treatment is working. It is not a sharp or lasting pain. Many people describe it as a momentary muscle cramp followed by a sense of release. Mild soreness afterward, similar to how you feel after a hard workout, is common for 24 to 48 hours and is a normal part of the healing process."
+          "text": "Telehealth physical therapy, also called virtual or online physical therapy, is a physical therapy session delivered over secure video instead of in person. You connect with Dr. Paul Helms from home using a phone, tablet, or computer. He assesses how you move, watches your form in real time, and guides you through hands-on-informed exercises and treatment strategies. It is the same expert care as an in-clinic visit, delivered remotely so you can be seen without the drive."
         }
       },
       {
         "@type": "Question",
-        "name": "Is dry needling the same as acupuncture?",
+        "name": "How does virtual physical therapy work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "They both use thin filaments, but they are different disciplines with different goals. Acupuncture comes from traditional Chinese medicine and works with energy meridians. Dry needling is grounded in Western anatomy and sports medicine. It specifically targets trigger points and dysfunctional muscle tissue based on your pain pattern and clinical findings."
+          "text": "You book online and receive a secure video link. At your appointment, Dr. Helms talks through your history and goals, then asks you to perform a few simple movements so he can assess your strength, mobility, and movement patterns on camera. From there he coaches you through targeted exercises, shows you how to adjust your setup at home or at your desk, and builds a personalized plan you can follow between visits. All you need is a device with a camera and a bit of open floor space."
         }
       },
       {
         "@type": "Question",
-        "name": "Is dry needling safe?",
+        "name": "Do you take insurance for telehealth physical therapy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. When performed by a trained provider, dry needling has an excellent safety record. The thin filaments are single-use and sterile. Serious complications are rare. Dr. Helms reviews your health history before each treatment to confirm it is the right approach for you."
+          "text": "Helms Performance is an out-of-network provider, and telehealth visits are self-pay, just like our in-person care. We keep it this way on purpose. It means Dr. Helms answers only to you, not an insurance company, so your time is spent on care instead of paperwork and pre-authorizations. You get seen quickly, often within a day or two, with a full one-on-one visit every time. Many patients use HSA or FSA funds, or submit for out-of-network reimbursement through their plan, and we are happy to provide the documentation you need to file a claim. Call the office at 301-578-5197 if you would like to talk through your options before booking."
         }
       },
       {
         "@type": "Question",
-        "name": "How many sessions will I need for dry needling?",
+        "name": "Is virtual physical therapy worth it, and who is it right for?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It depends on how long you have had the problem and how your body responds. Many patients notice meaningful improvement after 2 to 4 sessions. Chronic conditions may take longer. After your first appointment, Dr. Helms will give you a clear picture of what to expect and a realistic plan, not an open-ended course of care."
+          "text": "For many people, yes. Research shows virtual physical therapy can be just as effective as in-person care for a wide range of conditions, especially those driven by movement patterns, muscle imbalance, and strength. It is a great fit if you have a busy schedule, live far from the clinic, are managing a desk-related ache, or simply prefer being coached through exercises in your own space. Conditions that need hands-on manual therapy may be better served in person, and Dr. Helms will tell you honestly if that is the case for you."
         }
       },
       {
         "@type": "Question",
-        "name": "Is dry needling covered by insurance?",
+        "name": "Where do you offer virtual physical therapy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Coverage varies by plan. Dry needling is sometimes billed under physical therapy or chiropractic codes and may be reimbursable depending on your insurance. We recommend calling your provider before your visit. Our team can help clarify what questions to ask them."
+          "text": "Helms Performance offers virtual physical therapy to patients across the United States. Dr. Helms is licensed to provide care nationwide, so wherever you are in the country, you can book a one-on-one telehealth visit. Our in-person clinic is in Bethesda, Maryland, so if you are local and want hands-on treatment, that option is available too. If you have any questions about whether virtual care is right for your situation, contact our team before you book."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does dry needling cost?",
+        "name": "How much does telehealth physical therapy cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dry needling can be included in any appointment, with all appointments costing $165. During an appointment, Dr. Helms can use any modality or technique to help you achieve your goals. If dry needling is the right fit, he performs it at no extra charge."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can dry needling help with plantar fasciitis or sciatica?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Both are among the most common reasons patients come to us for dry needling. For plantar fasciitis, trigger points in the calf and foot muscles often contribute to heel pain that stretching alone will not resolve. For sciatica, tight hip and glute muscles can compress the sciatic nerve, and needling those areas often significantly reduces radiating pain."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is dry needling legal in Maryland?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Dry needling is legal and regulated in Maryland. Licensed chiropractors and physical therapists who have completed specific training may perform dry needling. Dr. Helms is fully licensed and trained in dry needling, so you can feel confident about the care you receive."
+          "text": "Virtual visits are self-pay, with straightforward, transparent pricing and no surprise bills. Many patients find telehealth comparable to or more affordable than in-person care once you factor in travel, parking, and time away from work, and there is no insurance middleman adding delays or denials. HSA and FSA funds are welcome. For current pricing, reach out to our team or book online and we will walk you through it before your first visit."
         }
       }
     ]
   }
   </script>
 
-  <!-- JSON-LD: MedicalBusiness (LocalBusiness) schema -->
+  <!-- JSON-LD: LocalBusiness schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": [
+      "LocalBusiness",
+      "MedicalBusiness"
+    ],
     "name": "Helms Performance",
-    "description": "Sports chiropractic and sports physical therapy in Bethesda, MD. Dr. Paul Helms offers dry needling, Active Release Technique, fascial stretch therapy, and more.",
+    "description": "Virtual physical therapy and online coaching for active people from Helms Performance. Dr. Paul Helms provides one-on-one telehealth physical therapy over secure video to runners, lifters, and weekend athletes across the United States, treating the injury and coaching the training that prevents it from returning. In-person clinic in Bethesda, MD.",
     "url": "https://helmsperformance.com",
     "telephone": "+13015785197",
     "address": {
@@ -915,23 +917,29 @@
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Thursday"
-        ],
+        "dayOfWeek": "Thursday",
         "opens": "09:00:00",
         "closes": "19:00:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Friday"
-        ],
+        "dayOfWeek": "Friday",
         "opens": "09:00:00",
         "closes": "17:00:00"
       }
     ],
-    "medicalSpecialty": "PhysicalTherapy",
     "priceRange": "$$",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "availableService": {
+      "@type": "MedicalTherapy",
+      "name": "Telehealth Physical Therapy",
+      "alternateName": ["Virtual Physical Therapy", "Online Physical Therapy"]
+    },
+    "hasMap": "https://maps.google.com/?q=Helms+Performance+7625+Wisconsin+Ave+Suite+219+Bethesda+MD+20814",
+    "medicalSpecialty": "PhysicalTherapy",
     "image": [
       "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
       "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
@@ -947,9 +955,24 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://helmsperformance.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://helmsperformance.com/services" },
-      { "@type": "ListItem", "position": 3, "name": "Dry Needling", "item": "https://helmsperformance.com/services/dry-needling/" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://helmsperformance.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://helmsperformance.com/services/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Telehealth Physical Therapy",
+        "item": "https://helmsperformance.com/services/telehealth-physical-therapy/"
+      }
     ]
   }
   </script>
@@ -957,6 +980,7 @@
 
 <body>
 
+  <!-- SKIP LINK -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- NAV -->
@@ -981,7 +1005,7 @@
           <li><a href="/services/therapeutic-massage/">Therapeutic Massage</a></li>
           <li><a href="/services/functional-strength-training/">Functional Strength Training</a></li>
           <li><a href="/services/personal-training/">Personal Training</a></li>
-          <li><a href="/services/telehealth-physical-therapy/">Telehealth Physical Therapy</a></li>
+          <li><a href="/services/telehealth-physical-therapy/" aria-current="page" style="color:var(--navy);font-weight:600;background:var(--bg);">Telehealth Physical Therapy</a></li>
         </ul>
       </li>
 
@@ -1014,12 +1038,12 @@
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
-      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
+      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="main-content" tabindex="-1" aria-label="Dry needling therapy in Bethesda MD">
+  <section class="hero" aria-label="Virtual physical therapy nationwide">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-grid-lines" aria-hidden="true"></div>
     <div class="hero-inner">
@@ -1029,39 +1053,37 @@
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           <a href="/services/">Services</a>
           <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-          <span aria-current="page">Dry Needling</span>
+          <span aria-current="page">Telehealth Physical Therapy</span>
         </nav>
-        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Dry Needling · Bethesda, MD</div>
-        <h1>Dry Needling<br><span>in Bethesda, MD</span></h1>
-        <p class="hero-lead">Stubborn muscle pain, trigger points, an injury that just will not fully heal. Whether you are a runner, a desk worker, a retiree, or anywhere in between, dry needling reaches the root of the problem so you can get back to the life you love.</p>
+        <div class="hero-tag"><span class="hero-tag-dot" aria-hidden="true"></span>Virtual Physical Therapy · Nationwide</div>
+        <h1>Virtual Physical Therapy,<br><span>From Wherever You Are</span></h1>
+        <p class="hero-lead">For runners, lifters, and weekend athletes who are hurt, coming back, or trying to stop breaking down every few months. Dr. Paul Helms works with you one-on-one over video to find what's actually driving the problem, then coaches you through the training that fixes it. You do the work. He makes sure it's the right work.</p>
         <div class="hero-actions">
-          <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
-          <a href="#what-is" class="btn btn-ghost">How it works</a>
+          <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+          <a href="#coaching" class="btn btn-ghost">See how coaching works</a>
         </div>
-        <p class="cta-sub">Online booking, same-week openings.</p>
         <div class="hero-trust">
           <span>One-on-one with Dr. Helms</span>
           <span class="hero-trust-sep">|</span>
-          <span>Sports chiro + physical therapy</span>
+          <span>Secure video visits</span>
           <span class="hero-trust-sep">|</span>
-          <span>Steps from Bethesda Metro</span>
-          <span class="hero-trust-sep">|</span>
-          <span>Bethesda, MD</span>
+          <span>Available nationwide</span>
         </div>
       </div>
 
       <div class="hero-image-col">
         <img
-          src="/assets/images/services/dry-needling-uppertrap-bethesda-md.webp"
-          srcset="/assets/images/services/dry-needling-uppertrap-small.webp 509w, /assets/images/services/dry-needling-uppertrap-bethesda-md-med.webp 800w, /assets/images/services/dry-needling-uppertrap-bethesda-md.webp 1200w"
+          src="/assets/images/services/functional-strength-training-img1.webp"
+          srcset="/assets/images/services/functional-strength-training-img1-small.webp 600w, /assets/images/services/functional-strength-training-img1-med.webp 800w, /assets/images/services/functional-strength-training-img1.webp 1200w"
           sizes="(max-width: 768px) 100vw, 50vw"
-          alt="Dry needling upper trapezius treatment at Helms Performance in Bethesda, MD"
-          width="6000" height="4000"
+          alt="Guided exercise during a telehealth physical therapy session with Helms Performance"
+          width="1200" height="675"
           fetchpriority="high"
           loading="eager"
           decoding="async">
       </div>
     </div>
+
   </section>
 
   <!-- TRUST BAR -->
@@ -1070,19 +1092,15 @@
       <div class="trust-items">
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-1a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1"/><path d="M17 11h4"/><path d="M19 9v4"/></svg>
-          One-on-one every visit
+          One-on-one with Dr. Helms
         </div>
         <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Same-day appointments available
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 10l4.55-2.28A1 1 0 0 1 21 8.6v6.8a1 1 0 0 1-1.45.88L15 14"/><rect x="3" y="6" width="12" height="12" rx="2"/></svg>
+          Secure video visits
         </div>
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Steps from Bethesda Metro
-        </div>
-        <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-          7625 Wisconsin Ave, Bethesda MD
+          See Dr. Helms from home
         </div>
       </div>
     </div>
@@ -1092,157 +1110,226 @@
   <div class="pillars bg-dk" aria-label="Our approach">
     <div class="pillars-grid">
       <div class="pillar fade">
-        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 5V3"/><path d="M12 21v-2"/><path d="M5 12H3"/><path d="M21 12h-2"/><path d="M6.5 6.5L5 5"/><path d="M19 19l-1.5-1.5"/><path d="M6.5 17.5L5 19"/><path d="M19 5l-1.5 1.5"/></svg>
-        <h3>Relieve Pain</h3>
-        <p>Dry needling deactivates trigger points and quiets overactive pain signals, often providing meaningful relief within the first few sessions.</p>
+        <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>Relieve pain</h3>
+        <p>Dr. Helms coaches you through targeted exercises and simple at-home strategies that address the source of your pain, not just the symptoms, so you start feeling better early in your care.</p>
       </div>
       <div class="pillar fade d1">
         <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 4v5h-5"/><circle cx="12" cy="12" r="3"/></svg>
-        <h3>Restore Movement</h3>
-        <p>Once tension releases, manual therapy and corrective exercises help your body move better and keep trigger points from returning.</p>
+        <h3>Restore movement</h3>
+        <p>A live movement assessment on camera reveals why you're hurting. We build a plan around how your body actually moves, then guide you back to the activities that matter most to you.</p>
       </div>
       <div class="pillar fade d2">
         <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9v6"/><path d="M21 9v6"/><path d="M5 7v10"/><path d="M19 7v10"/><path d="M5 12h14"/></svg>
-        <h3>Rebuild Strength</h3>
-        <p>Lasting recovery means building resilience. We help you develop the strength and movement patterns to stay out of pain, not just get out of it.</p>
+        <h3>Rebuild strength</h3>
+        <p>Lasting recovery means developing the strength and movement patterns that keep you out of pain. We help you build resilience with a plan you can follow from home, not just get through a flare-up.</p>
       </div>
     </div>
   </div>
 
-  <!-- WHAT IS DRY NEEDLING -->
+  <!-- WHAT IS SPORTS PHYSICAL THERAPY -->
   <section class="section bg-white" id="what-is" aria-labelledby="what-h">
     <div class="wrap">
-      <div class="what-grid">
+
+      <div id="main-content" class="what-grid">
         <div class="what-copy fade">
-          <span class="eyebrow">What Is Dry Needling?</span>
-          <h2 id="what-h">A Targeted Treatment for Tight Muscles and Trigger Points</h2>
-          <p>Dry needling is a technique in which a thin filament is inserted directly into a trigger point. A trigger point is a tight, knotted area within a muscle that causes local pain or referred pain somewhere else in the body.</p>
-          <p>When the thin filament reaches the trigger point, it stimulates a local twitch response. This brief involuntary contraction helps the muscle release tension, restore blood flow, and reset the nerve signals keeping it locked up.</p>
-          <p>The result: less pain, better range of motion, and faster recovery. At Helms Performance in Bethesda, MD, dry needling is one part of a complete approach. Dr. Helms combines it with sports chiropractic and physical therapy to address not just where you hurt, but why.</p>
+          <span class="eyebrow">What Is Telehealth Physical Therapy?</span>
+          <h2 id="what-h">Real Physical Therapy, Delivered Over Video Call</h2>
+          <p>Telehealth physical therapy, also called virtual or online physical therapy, is a physical therapy session delivered over secure video instead of in person. You connect with Dr. Paul Helms from home using a phone, tablet, or computer, and he guides you through your visit in real time.</p>
+          <p>It works because so much of great physical therapy is assessment, coaching, and exercise. Dr. Helms watches how you move, corrects your form on camera, and builds a plan around your body. It is designed for people at every activity level, from recreational runners and busy parents to desk workers with neck pain and older adults working through hip or knee problems.</p>
+          <p>Virtual visits are a great fit when travel, time, or distance make it hard to get to the clinic. And because Helms Performance also offers in-person chiropractic and physical therapy in Bethesda, Dr. Helms will always tell you honestly when a hands-on visit would serve you better.</p>
         </div>
         <div class="what-panel fade d1">
           <div class="how-step">
             <div class="step-num">1</div>
             <div class="step-text">
-              <strong>Needle Reaches The Trigger Point</strong>
-              <span>A thin filament is placed precisely into the knotted muscle tissue</span>
+              <strong>Book and Connect</strong>
+              <span>Book online and receive a secure video link. Join from home on any device with a camera, no special software or setup required.</span>
             </div>
           </div>
           <div class="how-step">
             <div class="step-num">2</div>
             <div class="step-text">
-              <strong>Local Twitch Response Fires</strong>
-              <span>A brief involuntary contraction, a sign the treatment is working</span>
+              <strong>Live Movement Assessment</strong>
+              <span>Dr. Helms talks through your history and goals, then watches you perform a few simple movements to assess your strength, mobility, and patterns on camera.</span>
             </div>
           </div>
           <div class="how-step">
             <div class="step-num">3</div>
             <div class="step-text">
-              <strong>Muscle Releases And Heals</strong>
-              <span>Blood flow returns, nerve signals reset, tension lets go</span>
+              <strong>Guided Treatment and Exercise</strong>
+              <span>He coaches you through targeted exercises and self-treatment techniques, adjusting your form in real time, so every rep counts.</span>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="step-num">4</div>
+            <div class="step-text">
+              <strong>A Plan You Can Follow at Home</strong>
+              <span>You finish with a personalized plan and clear instructions, so you know exactly what to do between visits to keep making progress.</span>
             </div>
           </div>
           <div class="vs-block">
-            <span class="vs-label">Dry needling vs. acupuncture</span>
-            <p>Both use thin filaments, but they are different disciplines. Acupuncture is rooted in traditional Chinese medicine. Dry needling is grounded in Western anatomy and sports medicine, targeting specific muscles and trigger points based on your pain pattern and clinical findings.</p>
+            <span class="vs-label">Virtual PT vs. an app or video library</span>
+            <p>A generic exercise app cannot see how you move or answer your questions. Telehealth physical therapy is a live, one-on-one visit with a doctor who assesses your body, corrects your form, and adjusts the plan as you improve. It is care built around you, not a playlist built for everyone.</p>
           </div>
         </div>
-      </div>
-
-      <!-- COMPARISON TABLE -->
-      <div class="compare-section fade">
-        <h3 class="compare-h">Dry Needling vs. Acupuncture: A Clear Comparison</h3>
-        <div class="compare-grid">
-          <div class="compare-col compare-col--dn">
-            <div class="compare-header">
-              <span class="compare-badge">Dry Needling</span>
-            </div>
-            <ul class="compare-list">
-              <li><strong>Origin</strong>Western sports medicine and anatomy</li>
-              <li><strong>Goal</strong>Release trigger points, restore muscle function and movement</li>
-              <li><strong>What it targets</strong>Specific dysfunctional muscle tissue and pain-generating trigger points</li>
-              <li><strong>Who performs it</strong>Licensed physical therapists and chiropractors with specialized training</li>
-              <li><strong>Best for</strong>Muscle pain, sports injuries, overuse conditions, referred pain</li>
-            </ul>
-          </div>
-          <div class="compare-col">
-            <div class="compare-header">
-              <span class="compare-badge">Acupuncture</span>
-            </div>
-            <ul class="compare-list">
-              <li><strong>Origin</strong>Traditional Chinese medicine, thousands of years old</li>
-              <li><strong>Goal</strong>Balance energy flow through meridian pathways in the body</li>
-              <li><strong>What it targets</strong>Specific points along energy meridians, not tied to anatomy</li>
-              <li><strong>Who performs it</strong>Licensed acupuncturists with training in TCM</li>
-              <li><strong>Best for</strong>Stress, whole-body wellness, chronic conditions, systemic balance</li>
-            </ul>
-          </div>
-        </div>
-        <p class="compare-note">At Helms Performance, Dr. Helms uses dry needling as one part of a broader sports chiropractic and physical therapy approach, not as a standalone treatment. The combination is what produces lasting results.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONDITIONS -->
+  <!-- BRIDGE: single visit -> ongoing coaching -->
+  <section class="section bg-navy" aria-labelledby="bridge-h">
+    <div class="wrap">
+      <div class="sh fade">
+        <span class="eyebrow">More Than a Single Visit</span>
+        <h2 id="bridge-h">Most People Come for the Pain. They Stay for the Coaching.</h2>
+        <p>A single visit can calm a flare-up. But the reason it came back the third time usually isn't the injury itself. It's the training load, the desk, the sleep, the way you move once you're tired. Sorting that out takes more than one appointment.</p>
+      </div>
+      <div class="compare-both fade" style="margin-top:0;">
+        <div class="compare-both-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="compare-both-text">
+          <h3>A doctor who treats the injury and a coach who keeps you strong and pain-free</h3>
+          <p>That combination is the whole point. Dr. Helms works out what's actually driving your problem, then coaches you through the training that resolves it and the habits that keep it gone. Virtual care asks more of you than a table and a pair of hands. You do the work between sessions. His job is to make sure it's the right work, and to change it as your body changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDITIONS WE TREAT -->
   <section class="section bg-gray" aria-labelledby="cond-h">
     <div class="wrap">
       <div class="sh fade">
         <span class="eyebrow">Who It Helps</span>
-        <h2 id="cond-h">Conditions We Treat With Dry Needling</h2>
-        <p>Dry needling is effective for a wide range of muscle and soft tissue conditions. Whether you are a runner dealing with plantar fasciitis, a desk worker carrying chronic neck tension, or an older adult with persistent low back pain, we can help.</p>
+        <h2 id="cond-h">Built for People Who Train</h2>
+        <p>Virtual coaching works especially well for injuries driven by training load, movement patterns, and strength, the things Dr. Helms can assess on camera and fix through programming. Whether you're chasing a marathon PR or just refuse to let your back dictate your week, the approach is the same.</p>
       </div>
       <div class="cond-grid">
-        <a href="/conditions/neck-pain/" class="cond-card fade">
-          <h3>Neck and upper back pain</h3>
-          <p>Tension headaches, tech neck, and chronic tightness from hours at a desk or looking at a screen.</p>
+        <a href="/conditions/knee-pain/" class="cond-card fade" style="display:block;color:inherit;text-decoration:none;">
+          <h3>Running Injuries</h3>
+          <p>Runner's knee, IT band pain, shin splints, Achilles trouble, and plantar fasciitis. Usually a training-load problem wearing an injury costume. We fix the load and the mechanics behind it.</p>
           <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </a>
-        <a href="/conditions/ankle-pain/" class="cond-card fade d1">
-          <h3>Plantar fasciitis</h3>
-          <p>Stubborn heel and arch pain that does not resolve with rest or stretching alone.</p>
+        <a href="/conditions/shoulder-pain/" class="cond-card fade d1" style="display:block;color:inherit;text-decoration:none;">
+          <h3>Lifting and CrossFit Injuries</h3>
+          <p>Shoulders that complain about overhead work, knees that hurt in the bottom of a squat, backs that light up on deadlifts. Dr. Helms coaches at CrossFit Bethesda and knows these barbells well.</p>
           <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </a>
-        <a href="/conditions/sciatica/" class="cond-card fade d2">
-          <h3>Sciatica and nerve pain</h3>
-          <p>Radiating pain from tight piriformis and deep hip muscles compressing the sciatic nerve.</p>
+        <a href="/conditions/back-pain/" class="cond-card fade d2" style="display:block;color:inherit;text-decoration:none;">
+          <h3>Low Back Pain and Sciatica</h3>
+          <p>The injury that quietly ends more training blocks than anything else. Responds well to targeted core and hip work, smarter loading, and someone checking your form as you build back.</p>
           <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </a>
-        <a href="/conditions/shoulder-pain/" class="cond-card fade d3">
-          <h3>Shoulder pain</h3>
-          <p>Rotator cuff tightness, impingement, and post-injury stiffness limiting your range of motion.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/knee-pain/" class="cond-card fade">
-          <h3>IT band and knee pain</h3>
-          <p>Common in runners and cyclists. Lateral leg tightness causing persistent knee discomfort.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/back-pain/" class="cond-card fade d1">
-          <h3>Low back pain</h3>
-          <p>Muscle spasm, SI joint pain, and lumbar tightness, both acute and chronic.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/" class="cond-card fade d2">
-          <h3>Sports injuries</h3>
-          <p>Muscle strains, overuse injuries, and post-injury recovery for athletes and active adults.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/tmj/" class="cond-card fade d3">
-          <h3>Jaw pain (TMJ)</h3>
-          <p>Trigger points in jaw and facial muscles that contribute to TMJ discomfort and headaches.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/hip-pain/" class="cond-card fade">
-          <h3>Hip and hip flexor pain</h3>
-          <p>Deep glute and hip flexor tension that limits your stride and lingers after activity.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
-        <a href="/conditions/elbow-pain/" class="cond-card fade d1">
-          <h3>Tennis elbow and tendonitis</h3>
-          <p>Overuse pain in the forearm and elbow that rest alone never quite resolves.</p>
-          <span class="cond-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-        </a>
+        <div class="cond-card fade d3">
+          <h3>Getting Back to Your Sport</h3>
+          <p>The gap between "cleared to train" and actually trusting your body again. We bridge it with a graded return plan so you're not guessing whether you're ready.</p>
+        </div>
+        <div class="cond-card fade">
+          <h3>Nagging Tweaks That Keep Returning</h3>
+          <p>The hamstring that grabs every few months. The hip that flares whenever mileage climbs. Recurring problems have a cause, and finding it is most of the work.</p>
+        </div>
+        <div class="cond-card fade d1">
+          <h3>Training Through and Staying Healthy</h3>
+          <p>You don't have to be hurt to work with us. Plenty of people come in to train smarter, address a weak link, and stay ahead of the injuries they can feel coming.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- COACHING PROGRAM (the offer) -->
+  <section class="section bg-white" id="coaching" aria-labelledby="coach-h">
+    <div class="wrap">
+      <div class="sh fade">
+        <span class="eyebrow">The Coaching Program</span>
+        <h2 id="coach-h">Ongoing Coaching, Built Around Your Training</h2>
+        <p>Some people need one visit to get unstuck, and that's a perfectly good outcome. Others want someone in their corner while they rebuild. Coaching is the second option: a working relationship with Dr. Helms measured in weeks, not a single appointment.</p>
+      </div>
+      <div class="cond-grid">
+        <div class="cond-card fade">
+          <h3>Regular One-on-One Sessions</h3>
+          <p>Video sessions with Dr. Helms on a rhythm that fits your training block. Every session is with him directly, so nobody is relearning your history each time.</p>
+        </div>
+        <div class="cond-card fade d1">
+          <h3>A Plan That Changes as You Do</h3>
+          <p>Your programming gets adjusted as you progress, stall, or flare up. That responsiveness is the difference between a plan and a PDF, and it's what a generic app can't do.</p>
+        </div>
+        <div class="cond-card fade d2">
+          <h3>Support Between Sessions</h3>
+          <p>Send a video of your squat, ask whether that twinge is worth backing off for, get an answer from the person who knows your case. The week between visits is where recovery is won or lost.</p>
+        </div>
+      </div>
+      <div class="fade" style="margin-top:var(--md);">
+        <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+        <p style="margin-top:.875rem;font-size:.9rem;color:var(--muted);">Start with a single visit. If ongoing coaching makes sense for what you're dealing with, Dr. Helms will walk you through the options then. No pressure to commit before anyone has looked at your problem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO DISCIPLINES — PT vs. CHIROPRACTIC -->
+  <section class="section bg-gray" aria-labelledby="compare-h">
+    <div class="wrap">
+      <div class="sh fade">
+        <span class="eyebrow">Telehealth or In-Person?</span>
+        <h2 id="compare-h">Choosing Between Virtual and In-Person Care</h2>
+        <p>Telehealth is a wonderful fit for a lot of what physical therapy does, and some situations are still better served hands-on. Here is an honest look at both, so you can pick the right starting point with confidence.</p>
+      </div>
+
+      <div class="two-disc-grid">
+
+        <!-- Telehealth Card -->
+        <div class="disc-card fade">
+          <div class="disc-card-header">
+            <div class="disc-icon disc-icon-teal" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l4.55-2.28A1 1 0 0 1 21 8.6v6.8a1 1 0 0 1-1.45.88L15 14"/><rect x="3" y="6" width="12" height="12" rx="2"/></svg>
+            </div>
+            <h3>Telehealth Is Great For</h3>
+          </div>
+          <ul class="disc-list" role="list" aria-label="What telehealth physical therapy is great for">
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>Pain driven by posture, movement patterns, and strength</li>
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>Exercise-based rehab and progressing your home program</li>
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>Desk-setup and daily-habit coaching in your real environment</li>
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>Managing chronic pain and staying active between visits</li>
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>Busy schedules, long commutes, or living far from a clinic you trust</li>
+            <li><span class="disc-dot disc-dot-teal" aria-hidden="true"></span>People who will actually do the training between sessions</li>
+          </ul>
+        </div>
+
+        <!-- In-Person Card -->
+        <div class="disc-card fade d1">
+          <div class="disc-card-header">
+            <div class="disc-icon disc-icon-navy" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Better In Person</h3>
+          </div>
+          <ul class="disc-list" role="list" aria-label="What is better treated in person">
+            <li><span class="disc-dot disc-dot-navy" aria-hidden="true"></span>Hands-on manual therapy and soft-tissue work</li>
+            <li><span class="disc-dot disc-dot-navy" aria-hidden="true"></span>Spinal adjustments and joint mobilization</li>
+            <li><span class="disc-dot disc-dot-navy" aria-hidden="true"></span>Active Release Technique and dry needling</li>
+            <li><span class="disc-dot disc-dot-navy" aria-hidden="true"></span>New or acute injuries that need hands-on evaluation</li>
+            <li><span class="disc-dot disc-dot-navy" aria-hidden="true"></span>Anything that simply feels better with a provider in the room</li>
+          </ul>
+          <a href="/services/sports-physical-therapy/" class="disc-cta-link">
+            Explore in-person physical therapy
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Combined advantage -->
+      <div class="disc-together fade">
+        <div class="disc-together-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3>Not sure which you need? Start with a virtual visit.</h3>
+          <p>Because Helms Performance offers both telehealth and in-person care, you never have to guess. Book a virtual visit and Dr. Helms will assess your situation, get you started right away, and tell you honestly if hands-on care would help you more. If you're near Bethesda, that can happen in our clinic. If you're farther away, he'll help you understand what to look for locally. You get the convenience of telehealth with the judgment of a full clinical practice behind it.</p>
+          <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red" style="margin-top:1.25rem;">Book Now</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1251,36 +1338,36 @@
     <div class="wrap">
       <div class="expect-grid">
         <div class="expect-copy fade">
-          <span class="eyebrow">Your First Visit</span>
-          <h2 id="expect-h">What to Expect From Your First Appointment</h2>
-          <p>Your first visit is a conversation as much as a treatment. Dr. Helms takes the time to understand your history and goals before developing a plan specific to you.</p>
+          <span class="eyebrow">Your First Virtual Visit</span>
+          <h2 id="expect-h">What to Expect From Your First Telehealth Appointment</h2>
+          <p>Your first visit is a conversation and an assessment, just over video. Dr. Helms wants to understand not just where you're hurting, but what you want to get back to. From there, he builds a clear plan and gets to work.</p>
           <ol class="steps">
             <li class="step">
-              <span class="step-n" aria-hidden="true">1</span>
+              <span class="step-n">1</span>
               <div class="step-body">
-                <strong>Intake And Assessment</strong>
-                <p>Dr. Helms reviews your history, pain pattern, and goals. He identifies which muscles and trigger points are involved and why.</p>
+                <strong>Easy, Secure Sign-On</strong>
+                <p>You'll get a private video link when you book. Join from a phone, tablet, or laptop, with a few feet of open floor space and comfortable clothes.</p>
               </div>
             </li>
             <li class="step">
-              <span class="step-n" aria-hidden="true">2</span>
+              <span class="step-n">2</span>
               <div class="step-body">
-                <strong>Dry Needling Treatment</strong>
-                <p>Thin filaments are placed into target areas. Most patients feel a brief twitch or deep pressure, followed by a noticeable release.</p>
+                <strong>A Live Movement Evaluation</strong>
+                <p>Dr. Helms guides you through simple movements on camera to assess your strength, mobility, and patterns. Pain rarely lives in isolation, so he looks at the whole picture.</p>
               </div>
             </li>
             <li class="step">
-              <span class="step-n" aria-hidden="true">3</span>
+              <span class="step-n">3</span>
               <div class="step-body">
-                <strong>Manual Therapy And Movement</strong>
-                <p>After needling, Dr. Helms often follows with chiropractic work, soft tissue therapy, or corrective exercises to reinforce the release.</p>
+                <strong>Coaching and Treatment, Same Visit</strong>
+                <p>You start right away. Dr. Helms walks you through targeted exercises and self-treatment techniques, correcting your form in real time so you leave with a sense of direction.</p>
               </div>
             </li>
             <li class="step">
-              <span class="step-n" aria-hidden="true">4</span>
+              <span class="step-n">4</span>
               <div class="step-body">
-                <strong>Your Recovery Plan</strong>
-                <p>You leave with a clear picture of what is causing your pain and a realistic plan, with timelines you can count on.</p>
+                <strong>A Personalized Home Plan</strong>
+                <p>You'll finish with exercises tailored to your goals and clear instructions on how and how often to do them, plus a picture of what your recovery looks like.</p>
               </div>
             </li>
           </ol>
@@ -1288,100 +1375,41 @@
         <div class="expect-visual fade d1" aria-hidden="true">
           <div class="ev-item">
             <div class="ev-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10l4.55-2.28A1 1 0 0 1 23 8.6v6.8a1 1 0 0 1-1.45.88L17 14"/></svg>
             </div>
             <div>
-              <strong>Targets the source, not just symptoms</strong>
-              <span>Reaches the trigger point directly for lasting relief.</span>
+              <strong>All you need is a device and a little space</strong>
+              <span>No special equipment. A phone, tablet, or computer with a camera and a few feet of floor is enough to get started.</span>
             </div>
           </div>
           <div class="ev-item">
             <div class="ev-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11V5a1.5 1.5 0 0 1 3 0v5"/><path d="M12 10V4a1.5 1.5 0 0 1 3 0v6"/><path d="M15 10V5a1.5 1.5 0 0 1 3 0v8"/><path d="M18 9a1.5 1.5 0 0 1 3 0v5c0 4-3 7-7 7h-1c-3 0-4-1.5-5-3l-3-5c-.5-1 0-2 1-2.2 1-.2 1.8.3 2.3 1L9 13"/></svg>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
             </div>
             <div>
-              <strong>Combined with chiropractic and PT</strong>
-              <span>A complete approach, not a standalone treatment.</span>
+              <strong>One-on-one with Dr. Helms</strong>
+              <span>Every visit is with Dr. Helms directly, no aides or assistants. The person who assesses you is the person treating you.</span>
             </div>
           </div>
           <div class="ev-item">
             <div class="ev-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <div>
-              <strong>Helms Performance, Bethesda MD</strong>
-              <span>Steps from the Bethesda Metro. Same-day appointments available.</span>
+              <strong>Care in your real environment</strong>
+              <span>Because you're at home, Dr. Helms can see your desk, your setup, and your daily space, and help you fix what's contributing to your pain.</span>
             </div>
           </div>
           <div class="ev-item">
             <div class="ev-icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 12l2 2 4-4"/></svg>
             </div>
             <div>
-              <strong>One-on-one, every visit</strong>
-              <span>Dr. Helms works with you directly, no hand-off to an assistant.</span>
+              <strong>A full clinic behind you</strong>
+              <span>This isn't an app. It's a working practice, so if you ever need hands-on care, Dr. Helms will tell you and help you plan the next step.</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section bg-navy" aria-labelledby="reviews-h">
-    <div class="wrap">
-      <div class="sh fade">
-        <span class="eyebrow">Patient Stories</span>
-        <h2 id="reviews-h">Relief Patients Can Feel</h2>
-        <p>From runners getting back on the road to desk workers easing stubborn neck tension, here is what dry needling has done for people around Bethesda.</p>
-      </div>
-      <div class="review-grid">
-
-        <div class="review-card fade">
-          <div class="review-stars" role="img" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-quote">Paul performed dry needling on me for neck and shoulder pain relief. I felt great afterwards, and much of the lingering pain in my neck and shoulder was gone.</p>
-          <div class="review-meta">
-            <span class="review-name">John H.</span>
-            <span class="review-type">Neck &amp; shoulder pain</span>
-          </div>
-        </div>
-
-        <div class="review-card fade d1">
-          <div class="review-stars" role="img" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-quote">Back to running like nothing happened thanks to Dr. Paul! Extremely professional and informative, and helpful even after treatment. From dry needling to exercises post visit, I could not have asked for better help for my knee and back pain. With all the pain gone, I can now focus on improving and getting even stronger.</p>
-          <div class="review-meta">
-            <span class="review-name">Pedro C.</span>
-            <span class="review-type">Knee &amp; back pain</span>
-          </div>
-        </div>
-
-        <div class="review-card fade d2">
-          <div class="review-stars" role="img" aria-label="5 out of 5 stars">
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <svg viewBox="0 0 24 24" fill="#f4b740" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          </div>
-          <p class="review-quote">This is the first time I tried dry needling for neck pain relief, and I think I am hooked!</p>
-          <div class="review-meta">
-            <span class="review-name">Shahirah M.</span>
-            <span class="review-type">Neck &amp; shoulder pain</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -1396,45 +1424,28 @@
               src="/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
               alt="Dr. Paul Helms, sports chiropractor and physical therapist at Helms Performance in Bethesda, MD"
               width="420" height="525"
-              loading="lazy"
-              decoding="async">
+              loading="lazy" decoding="async">
           </div>
           <div class="about-badge">
             <strong>Dr. Paul Helms</strong>
-            <span>Sports Chiropractor, Bethesda MD</span>
+            <span>Sports Chiropractor &amp; Physical Therapist, Bethesda MD</span>
           </div>
         </div>
         <div class="about-copy fade d1">
           <span class="eyebrow">Your Provider</span>
           <h2 id="about-h">Dr. Paul Helms</h2>
-
-          <!-- Stats row -->
-          <div class="about-stats" aria-label="Dr. Helms credentials at a glance">
-            <div class="about-stat">
-              <span class="about-stat-num">NFL &amp; NBA</span>
-              <span class="about-stat-label">Athletes treated</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-num">2-in-1</span>
-              <span class="about-stat-label">Chiro + PT under one roof</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-num">1-on-1</span>
-              <span class="about-stat-label">Every single appointment</span>
-            </div>
-          </div>
-
-          <p>Dr. Helms has worked with patients ranging from weekend runners and desk workers to professional athletes in the NFL and NBA. His practice is built to welcome everyone. Whether pain is slowing down your morning walk or keeping you off the field, you are in the right place.</p>
-          <p>He combines dry needling with sports chiropractic and physical therapy to find the root cause of your pain, not just manage its symptoms. Every appointment is one-on-one, and every treatment plan is built around your specific goals and activity level.</p>
+          <p>Dr. Paul Helms founded Helms Performance to offer the kind of care he wanted to see more of: hands-on, one-on-one, and built around the whole person, not just the injury. He brings both sports chiropractic and physical therapy together in a single practice so patients don't have to choose between them, or coordinate care across multiple offices.</p>
+          <p>Dr. Helms has worked with patients ranging from weekend runners and recreational athletes to professional athletes in the NFL, NBA, and CrossFit. He frames that range as a credential for everyone: if you work with the best, you know what good movement looks like, and you can recognize when it's missing, regardless of how active the patient is.</p>
           <ul class="cred-list">
             <li><span class="cred-dot"></span>Doctor of Chiropractic</li>
             <li><span class="cred-dot"></span>Licensed in dry needling</li>
             <li><span class="cred-dot"></span>Sports physical therapy training and application</li>
             <li><span class="cred-dot"></span>Certified in Active Release Technique and Fascial Stretch Therapy</li>
+            <li><span class="cred-dot"></span>Offers virtual physical therapy to patients nationwide</li>
             <li><span class="cred-dot"></span>Experience with patients ranging from weekend runners to NFL and NBA athletes</li>
-            <li><span class="cred-dot"></span>Located at 7625 Wisconsin Ave, Suite 219, Bethesda, MD 20814</li>
+            <li><span class="cred-dot"></span>In-person clinic at 7625 Wisconsin Ave, Suite 219, Bethesda, MD 20814</li>
           </ul>
-          <a href="/about" class="btn btn-outline">Learn about Dr. Helms</a>
+          <a href="/about/" class="btn btn-outline">Learn More About Dr. Helms</a>
         </div>
       </div>
     </div>
@@ -1445,51 +1456,33 @@
     <div class="wrap">
       <div class="sh fade">
         <span class="eyebrow">Common Questions</span>
-        <h2 id="faq-h">Dry Needling FAQs</h2>
-        <p>Answers to the questions we hear most often, so you know exactly what to expect before you book.</p>
+        <h2 id="faq-h">Telehealth Physical Therapy FAQs</h2>
       </div>
       <div class="faq-wrap fade">
-
         <details open>
-          <summary>Does dry needling hurt? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Most patients feel a brief twitch or deep pressure when the thin filament reaches the trigger point. This local twitch response is a sign the treatment is working. It is not a sharp or lasting pain. Many people describe it as a momentary muscle cramp followed by a sense of release. Mild soreness afterward, similar to how you feel after a hard workout, is common for 24 to 48 hours and is a normal part of the healing process.</p>
+          <summary>What is telehealth physical therapy?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">Telehealth physical therapy, also called virtual or online physical therapy, is a physical therapy session delivered over secure video instead of in person. You connect with Dr. Paul Helms from home using a phone, tablet, or computer. He assesses how you move, watches your form in real time, and guides you through exercises and self-treatment strategies. It is the same expert care as an in-clinic visit, delivered remotely so you can be seen without the drive.</p>
         </details>
-
         <details>
-          <summary>Is dry needling the same as acupuncture? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">They both use thin filaments, but they are different disciplines with different goals. Acupuncture comes from traditional Chinese medicine and works with energy meridians. Dry needling is grounded in Western anatomy and sports medicine. It specifically targets trigger points and dysfunctional muscle tissue based on your pain pattern and clinical findings. Dr. Helms uses dry needling as part of a broader sports chiropractic and physical therapy approach.</p>
+          <summary>How does virtual physical therapy work?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">You book online and receive a secure video link. At your appointment, Dr. Helms talks through your history and goals, then asks you to perform a few simple movements so he can assess your strength, mobility, and movement patterns on camera. From there he coaches you through targeted exercises, shows you how to adjust your setup at home or at your desk, and builds a personalized plan you can follow between visits. All you need is a device with a camera and a bit of open floor space.</p>
         </details>
-
         <details>
-          <summary>Is dry needling safe? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Yes. When performed by a trained provider, dry needling has an excellent safety record. The thin filaments are single-use and sterile. Serious complications are rare. Dr. Helms reviews your health history before each treatment to confirm it is the right approach for you.</p>
+          <summary>Do you take insurance for telehealth physical therapy?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">Helms Performance is an out-of-network provider, and telehealth visits are self-pay, just like our in-person care. We keep it this way on purpose. It means Dr. Helms answers only to you, not an insurance company, so your time is spent on care instead of paperwork and pre-authorizations. You get seen quickly, often within a day or two, with a full one-on-one visit every time. Many patients use HSA or FSA funds, or submit for out-of-network reimbursement through their plan, and we're happy to provide the documentation you need to file a claim. Call the office at <a href="tel:3015785197" style="color:var(--teal);">301-578-5197</a> if you'd like to talk through your options before booking.</p>
         </details>
-
         <details>
-          <summary>How many sessions will I need? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">It depends on how long you have had the problem and how your body responds. Many patients notice meaningful improvement after 2 to 4 sessions. Chronic conditions may take longer. After your first appointment, Dr. Helms will give you a clear picture of what to expect and a realistic plan, not an open-ended course of care.</p>
+          <summary>Is virtual physical therapy worth it, and who is it right for?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">For many people, yes. Research shows virtual physical therapy can be just as effective as in-person care for a wide range of conditions, especially those driven by movement patterns, muscle imbalance, and strength. It is a great fit if you have a busy schedule, live far from the clinic, are managing a desk-related ache, or simply prefer being coached through exercises in your own space. Conditions that need hands-on manual therapy may be better served in person, and Dr. Helms will tell you honestly if that is the case for you.</p>
         </details>
-
         <details>
-          <summary>Is dry needling covered by insurance? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Coverage varies by plan. Dry needling is sometimes billed under physical therapy or chiropractic codes and may be reimbursable depending on your insurance. We recommend calling your provider before your visit. Our team can help clarify what questions to ask them.</p>
+          <summary>Where do you offer virtual physical therapy?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">Helms Performance offers virtual physical therapy to patients across the United States. Dr. Helms is licensed to provide care nationwide, so wherever you are in the country, you can book a one-on-one telehealth visit. Our in-person clinic is in Bethesda, Maryland, so if you're local and want hands-on treatment, that option is available too. If you have any questions about whether virtual care is right for your situation, contact our team before you book.</p>
         </details>
-
         <details>
-          <summary>How much does dry needling cost? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Dry needling can be included in any appointment, with all appointments costing $165. During an appointment, Dr. Helms can use any modality or technique to help you achieve your goals. If dry needling is the right fit, he performs it at no extra charge.</p>
+          <summary>How much does telehealth physical therapy cost?<span class="faq-plus" aria-hidden="true">+</span></summary>
+          <p class="faq-body">Virtual visits are self-pay, with straightforward, transparent pricing and no surprise bills. Many patients find telehealth comparable to or more affordable than in-person care once you factor in travel, parking, and time away from work, and there's no insurance middleman adding delays or denials. HSA and FSA funds are welcome. For current pricing, reach out to our team or book online and we'll walk you through it before your first visit.</p>
         </details>
-
-        <details>
-          <summary>Can dry needling help with plantar fasciitis or sciatica? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Yes. Both are among the most common reasons patients come to us for dry needling. For plantar fasciitis, trigger points in the calf and foot muscles often contribute to heel pain that stretching alone will not resolve. For sciatica, tight hip and glute muscles can compress the sciatic nerve, and needling those areas often significantly reduces radiating pain. Dr. Helms will assess your specific pattern to confirm dry needling is the right tool for your situation.</p>
-        </details>
-
-        <details>
-          <summary>Is dry needling legal in Maryland? <span class="faq-plus" aria-hidden="true">+</span></summary>
-          <p class="faq-body">Yes. Dry needling is legal and regulated in Maryland. Licensed chiropractors and physical therapists who have completed specific training are permitted to perform dry needling. Some states restrict it, which is why patients occasionally wonder, but Maryland is not one of them. Dr. Helms is fully licensed and trained, so you can feel confident about the care you receive at Helms Performance in Bethesda.</p>
-        </details>
-
       </div>
     </div>
   </section>
@@ -1497,9 +1490,9 @@
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Book An Appointment">
     <div class="wrap">
-      <h2>Ready to Get Out of Pain?</h2>
-      <p>Whether you are dealing with a stubborn injury, chronic tension that will not quit, or pain that has kept you from the things you love, we are here to help. Book a visit with Dr. Helms in Bethesda, MD.</p>
-      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+      <h2>Get Back to Training. Stay There.</h2>
+      <p>If an injury has been dictating your training for weeks, one video call is an easy place to start. Dr. Helms will find what's driving it and give you a plan you can actually run with. Book online or call, we're ready when you are.</p>
+      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book A Virtual Visit</a>
       <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>
     </div>
   </div>
@@ -1507,14 +1500,14 @@
   <!-- GOOGLE MAPS -->
   <div class="map-wrap">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.7!2d-77.0941841!3d38.9865208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dcb7cc4690793b%3A0xefc8c96111cd10fb!2sHelms+Performance!5e0!3m2!1sen!2sus!4v1747500000000!5m2!1sen!2sus"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.7!2d-77.0941841!3d38.9865208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15.0!3m3!1m2!1s0x87dcb7cc4690793b%3A0xefc8c96111cd10fb!2sHelms+Performance!5e0!3m2!1sen!2sus!4v1747500000000!5m2!1sen!2sus"
       width="100%"
       height="360"
       style="border:0; display:block;"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="Helms Performance location — 7625 Wisconsin Ave Suite 219, Bethesda MD 20814"
+      title="Helms Performance location, 7625 Wisconsin Ave Suite 219, Bethesda MD 20814"
       aria-label="Google Maps showing Helms Performance location in Bethesda MD">
     </iframe>
   </div>
@@ -1530,21 +1523,20 @@
         <div class="footer-col">
           <h3>Services</h3>
           <ul>
-            <li><a href="/services/dry-needling/">Dry Needling</a></li>
+            <li><a href="/services/sports-physical-therapy/">Sports Physical Therapy</a></li>
+            <li><a href="/services/sports-chiropractor/">Sports Chiropractic</a></li>
             <li><a href="/services/active-release-technique">Active Release Technique</a></li>
-            <li><a href="/services/sports-chiropractic">Sports Chiropractic</a></li>
-            <li><a href="/services/fascial-stretch-therapy">Fascial Stretch Therapy</a></li>
-            <li><a href="/services/myofascial-release">Myofascial Release</a></li>
+            <li><a href="/services/dry-needling/">Dry Needling</a></li>
             <li><a href="/services/telehealth-physical-therapy/">Telehealth Physical Therapy</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3>Links</h3>
           <ul>
-            <li><a href="/about">About Dr. Helms</a></li>
-            <li><a href="/conditions">Conditions</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
+            <li><a href="/about/">About Dr. Helms</a></li>
+            <li><a href="/conditions/">Conditions</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -1568,24 +1560,29 @@
     </div>
   </footer>
 
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta-bar" id="mobile-cta-bar" role="complementary" aria-label="Book an appointment">
+    <div class="mobile-cta-text">
+      <strong>Ready to book?</strong>
+      <span>Virtual visits nationwide</span>
+    </div>
+    <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book Now</a>
+    <button class="mobile-cta-close" id="mobile-cta-close" aria-label="Dismiss booking bar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
   <script>
-    // ---- NAV SCROLL STATE (rAF-throttled) -----------------------
-    // Batches scroll reads into one DOM write per animation frame
+    /* Nav scroll */
     (function () {
-      var nav     = document.getElementById('main-nav');
+      var nav = document.getElementById('main-nav');
       if (!nav) return;
-      var ticking = false;
-      function update() {
-        nav.classList.toggle('scrolled', window.scrollY > 40);
-        ticking = false;
-      }
-      window.addEventListener('scroll', function () {
-        if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
-      }, { passive: true });
-      update();
+      function tick() { nav.classList.toggle('scrolled', window.scrollY > 40); }
+      window.addEventListener('scroll', tick, { passive: true });
+      tick();
     }());
 
-    // ---- HAMBURGER + MOBILE NAV ---------------------------------
+    /* Hamburger */
     (function () {
       var hamburger = document.getElementById('hamburger');
       var navLinks  = document.getElementById('nav-links');
@@ -1594,7 +1591,6 @@
       function closeAll() {
         navLinks.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
         navLinks.querySelectorAll('.nav-item.open').forEach(function (i) { i.classList.remove('open'); });
       }
 
@@ -1604,17 +1600,11 @@
         if (opening) {
           navLinks.classList.add('open');
           hamburger.setAttribute('aria-expanded', 'true');
-          document.body.style.overflow = 'hidden';
-          // Move focus to first nav item so keyboard/screen reader users are in the menu
-          var first = navLinks.querySelector('.nav-item > a');
-          if (first) setTimeout(function () { first.focus(); }, 50);
         } else {
           closeAll();
-          hamburger.focus();
         }
       });
 
-      // Mobile accordion for sub-menus
       navLinks.querySelectorAll('.has-dropdown > a').forEach(function (link) {
         link.addEventListener('click', function (e) {
           if (window.innerWidth > 1100) return;
@@ -1626,87 +1616,51 @@
         });
       });
 
-      // Close on outside click
       document.addEventListener('click', function (e) {
         if (!e.target.closest('#main-nav')) closeAll();
       });
 
-      // Escape closes nav and returns focus to hamburger
       document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && navLinks.classList.contains('open')) {
-          closeAll();
-          hamburger.focus();
-        }
+        if (e.key === 'Escape') closeAll();
       });
     }());
 
-    // ---- DESKTOP DROPDOWN KEYBOARD NAVIGATION -------------------
-    // Implements ARIA Authoring Practices: arrow keys, Escape, Tab
-    (function () {
-      document.querySelectorAll('.has-dropdown').forEach(function (item) {
-        var trigger  = item.querySelector(':scope > a');
-        var dropdown = item.querySelector('.dropdown');
-        if (!trigger || !dropdown) return;
-
-        trigger.setAttribute('aria-haspopup', 'true');
-        trigger.setAttribute('aria-expanded', 'false');
-
-        function open()  { trigger.setAttribute('aria-expanded', 'true');  }
-        function close() { trigger.setAttribute('aria-expanded', 'false'); }
-
-        // Sync aria-expanded with CSS hover state
-        item.addEventListener('mouseenter', open);
-        item.addEventListener('mouseleave', close);
-
-        // Arrow keys from trigger open dropdown and focus first/last item
-        trigger.addEventListener('keydown', function (e) {
-          if (window.innerWidth <= 1100) return;
-          var links = Array.from(dropdown.querySelectorAll('a'));
-          if (!links.length) return;
-          if (e.key === 'ArrowDown') { e.preventDefault(); open(); links[0].focus(); }
-          if (e.key === 'ArrowUp')   { e.preventDefault(); open(); links[links.length - 1].focus(); }
-        });
-
-        // Arrow keys within open dropdown
-        dropdown.addEventListener('keydown', function (e) {
-          if (window.innerWidth <= 1100) return;
-          var links = Array.from(dropdown.querySelectorAll('a'));
-          var idx   = links.indexOf(document.activeElement);
-          if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            if (idx < links.length - 1) links[idx + 1].focus();
-          } else if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            if (idx > 0) links[idx - 1].focus();
-            else { close(); trigger.focus(); }
-          } else if (e.key === 'Escape') {
-            e.preventDefault(); close(); trigger.focus();
-          } else if (e.key === 'Tab') {
-            // Close when focus leaves the dropdown naturally
-            setTimeout(function () {
-              if (!item.contains(document.activeElement)) close();
-            }, 0);
-          }
-        });
-      });
-    }());
-
-    // ---- SCROLL-TRIGGERED FADE-IN ------------------------------
+    /* Fade-in on scroll */
     (window.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(function () {
-      // Immediately reveal all elements for users who prefer reduced motion
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.querySelectorAll('.fade').forEach(function (el) { el.classList.add('in'); });
-        return;
-      }
-      // rootMargin fires the observer 40px before the element reaches the bottom edge,
-      // preventing tall sections from triggering too late
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
         });
-      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0.1 });
       document.querySelectorAll('.fade').forEach(function (el) { io.observe(el); });
     });
+
+    /* Mobile sticky CTA — show after scrolling past hero, hide near footer */
+    (function () {
+      var bar   = document.getElementById('mobile-cta-bar');
+      var close = document.getElementById('mobile-cta-close');
+      if (!bar || !close) return;
+
+      var dismissed = false;
+
+      close.addEventListener('click', function () {
+        dismissed = true;
+        bar.style.display = 'none';
+        document.body.style.paddingBottom = '0';
+      });
+
+      function update() {
+        if (dismissed || window.innerWidth > 768) return;
+        var scrolled   = window.scrollY > 500;
+        var footer     = document.querySelector('footer');
+        var nearFooter = footer ? window.scrollY + window.innerHeight > footer.offsetTop - 80 : false;
+        bar.style.display = (scrolled && !nearFooter) ? 'flex' : 'none';
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+      update();
+    }());
   </script>
 
 </body>
