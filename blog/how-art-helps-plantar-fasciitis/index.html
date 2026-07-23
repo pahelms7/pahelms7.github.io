@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
+  <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <!-- Microsoft Clarity (deferred until interaction or idle) -->
+  <script type="text/javascript">
+    (function(){
+      function loadClarity(){
+        if (window.__clarityLoaded) return; window.__clarityLoaded = true;
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w5jyh1xhzq");
+      }
+      var evts = ['scroll','mousemove','touchstart','keydown','click'];
+      function go(){ evts.forEach(function(e){ window.removeEventListener(e, go); }); loadClarity(); }
+      evts.forEach(function(e){ window.addEventListener(e, go, {passive:true}); });
+      setTimeout(loadClarity, 3000);
+    })();
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SST8FVX7Z');
+    // Track click-to-call as a GA4 key event (Phone_Call_Conversion) -> Google Ads phone-call conversion
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href^="tel:"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'Phone_Call_Conversion', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    });
+    // Track "Book An Appointment" clicks (Jane booking, opens new tab) as a GA4 event
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href*="janeapp.com"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'booking_appointment_click', {
+        link_url: link.getAttribute('href')
+      });
+    });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ART for Plantar Fasciitis: How It Helps | Helms Performance</title>
+  <meta name="description" content="Active Release Technique targets the fascia and soft tissue driving plantar fasciitis pain. Dr. Paul Helms explains the approach at Helms Performance in Bethesda, MD.">
+  <meta name="keywords" content="active release technique for plantar fasciitis, plantar fasciitis treatment, active release technique near me, soft tissue therapy, plantar fasciitis Bethesda MD">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#162e4a">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://helmsperformance.com/blog/how-art-helps-plantar-fasciitis/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://helmsperformance.com/blog/how-art-helps-plantar-fasciitis/">
+  <meta property="og:title" content="Active Release Technique for Plantar Fasciitis: How It Helps">
+  <meta property="og:description" content="Plantar fasciitis is rarely just a foot problem. Here is how Active Release Technique treats the fascia and calf tissue behind that stubborn heel pain.">
+  <meta property="og:site_name" content="Helms Performance">
+  <meta property="og:image" content="https://helmsperformance.com/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="360">
+  <meta property="og:image:alt" content="Dr. Paul Helms performing a hands-on calf and foot soft tissue technique at Helms Performance in Bethesda, MD">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://helmsperformance.com/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp">
+
+  <!-- Article meta -->
+  <meta property="article:published_time" content="2026-08-10">
+  <meta property="article:modified_time" content="2026-08-10">
+  <meta property="article:author" content="Dr. Paul Helms">
+  <meta property="article:section" content="Active Release Technique">
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image"
+    href="/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp"
+    imagesrcset="/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md-small.webp 400w, /assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp 640w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
+    fetchpriority="high">
+
+  <!-- Resource hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://helmsperformance.janeapp.com">
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap"></noscript>
+
+  <style>
+    /* ---- RESET -------------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img, video { max-width: 100%; display: block; }
+    ul, ol { list-style: none; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+    /* ---- TOKENS ------------------------------------------------- */
+    :root {
+      --bg:      #F8F7F4;
+      --surface: #FFFFFF;
+      --ink:     #1A1A1A;
+      --muted:   #6B7280;
+      --navy:    #1D3557;
+      --navy-dk: #162e4a;
+      --red:     #E63946;
+      --border:  #E5E7EB;
+      --teal:    #457B9D;
+
+      --xs: 0.5rem;
+      --sm: 1rem;
+      --md: 2rem;
+      --lg: 4rem;
+      --xl: 7rem;
+
+      --r:    12px;
+      --r-sm: 6px;
+      --max:  1100px;
+
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      font-synthesis: none;
+    }
+
+    /* ---- TYPE --------------------------------------------------- */
+    h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 600; line-height: 1.14; letter-spacing: -0.025em; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.125rem);  font-weight: 600; line-height: 1.22;  letter-spacing: -0.02em;  }
+    h3 { font-size: 1.0625rem; font-weight: 600; line-height: 1.3; }
+    p  { line-height: 1.75; }
+    a  { color: inherit; text-decoration: none; }
+
+    /* ---- LAYOUT ------------------------------------------------- */
+    .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--md); }
+    .section     { padding-block: var(--xl); }
+    .section-sm  { padding-block: var(--lg); }
+    .bg-white { background: var(--surface); }
+    .bg-gray  { background: var(--bg); }
+    .bg-navy  { background: var(--navy); color: #fff; }
+
+    /* ---- EYEBROW ----------------------------------------------- */
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 0.625rem;
+    }
+
+    /* ---- BUTTONS ----------------------------------------------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.875rem 1.875rem; border-radius: var(--r-sm);
+      font-family: inherit; font-size: 0.9375rem; font-weight: 600;
+      text-decoration: none; cursor: pointer; border: 2px solid transparent;
+      transition: background 150ms, color 150ms, border-color 150ms, box-shadow 150ms;
+      white-space: nowrap; line-height: 1;
+      touch-action: manipulation;
+    }
+    .btn-red   { background: #D8313E;   color: #fff; border-color: #D8313E; }
+    .btn-red:hover { background: #c1121f; border-color: #c1121f; box-shadow: 0 4px 14px rgba(230,57,70,.3); }
+    .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.45); }
+    .btn-ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.85); }
+    .btn-outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---- NAV ---------------------------------------------------- */
+    .nav {
+      position: fixed; inset-block-start: 0; inset-inline: 0;
+      z-index: 200;
+      display: flex; align-items: center; justify-content: space-between; gap: var(--md);
+      padding-inline: var(--md); padding-block: 1.25rem;
+      transition: background 250ms, box-shadow 250ms, padding-block 250ms;
+    }
+    .nav.scrolled {
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,.09);
+      padding-block: 0.875rem;
+    }
+    .nav-logo {
+      font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em;
+      color: #fff; white-space: nowrap; flex-shrink: 0; text-decoration: none;
+    }
+    .nav.scrolled .nav-logo { color: var(--navy); }
+    .nav-links { display: flex; gap: 0.125rem; flex: 1; justify-content: center; align-items: center; }
+    .nav-item { position: relative; }
+    .nav-item > a {
+      display: flex; align-items: center; gap: 0.3rem;
+      color: rgba(255,255,255,.72); font-size: 0.9375rem;
+      padding: 0.4rem 0.625rem; border-radius: var(--r-sm);
+      transition: color 150ms, background 150ms; white-space: nowrap;
+    }
+    .nav-item > a:hover { color: #fff; }
+    .nav.scrolled .nav-item > a { color: var(--muted); }
+    .nav.scrolled .nav-item > a:hover { color: var(--ink); background: var(--bg); }
+    .nav-chevron {
+      width: 14px; height: 14px; flex-shrink: 0;
+      stroke: currentColor; fill: none; stroke-width: 2.5;
+      stroke-linecap: round; stroke-linejoin: round;
+      transition: transform 200ms;
+    }
+    .nav-item.open > a .nav-chevron { transform: rotate(180deg); }
+    .nav-right { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+    .nav-cta { padding: 0.625rem 1.375rem; font-size: 0.875rem; }
+
+    /* Dropdown shared */
+    .dropdown a {
+      display: block; padding: 0.5rem 1.125rem;
+      font-size: 0.9rem; color: var(--ink);
+      transition: background 100ms, color 100ms; white-space: nowrap;
+    }
+    .dropdown a:hover { background: var(--bg); color: var(--navy); }
+
+    /* Dropdown - desktop */
+    @media (min-width: 1101px) {
+      .dropdown {
+        position: absolute; top: calc(100% + 0.5rem); left: 50%;
+        background: #fff; border-radius: var(--r-sm);
+        box-shadow: 0 8px 32px rgba(0,0,0,.13), 0 0 0 1px rgba(0,0,0,.05);
+        min-width: 230px; padding: 0.375rem 0;
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transform: translateX(-50%) translateY(-6px);
+        transition: opacity 150ms, transform 150ms, visibility 0s 150ms;
+        z-index: 10;
+      }
+      .dropdown::before {
+        content: ''; position: absolute;
+        inset-inline: 0; top: -0.5rem; height: 0.5rem;
+      }
+      .has-dropdown:hover .dropdown {
+        opacity: 1; visibility: visible; pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+        transition: opacity 150ms, transform 150ms, visibility 0s;
+      }
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; justify-content: center; align-items: center;
+      gap: 5px; width: 44px; height: 44px;
+      background: transparent; border: none; cursor: pointer;
+      padding: 0; border-radius: var(--r-sm); flex-shrink: 0;
+      touch-action: manipulation;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: rgba(255,255,255,.85); border-radius: 2px;
+      transform-origin: center;
+      transition: transform 250ms ease, opacity 200ms, width 200ms;
+    }
+    .nav.scrolled .hamburger span { background: var(--navy); }
+    .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; width: 0; }
+    .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav */
+    @media (max-width: 1100px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        display: none; position: fixed; top: 62px; inset-inline: 0;
+        background: #fff; flex-direction: column; align-items: stretch;
+        gap: 0; flex: unset; justify-content: flex-start;
+        overflow-y: auto; max-height: calc(100dvh - 62px);
+        box-shadow: 0 8px 24px rgba(0,0,0,.1);
+        border-top: 1px solid var(--border);
+        padding-bottom: 1.5rem; z-index: 199;
+      }
+      .nav-links.open { display: flex; }
+      .nav-item { border-bottom: 1px solid var(--border); }
+      .nav-item:last-child { border-bottom: none; }
+      .nav-item > a {
+        color: var(--ink) !important; padding: 1rem 1.5rem;
+        border-radius: 0; justify-content: space-between; font-size: 1rem;
+        min-height: 44px;
+      }
+      .nav-item > a:hover { background: var(--bg); color: var(--navy) !important; }
+      .dropdown { display: none; background: var(--bg); border-radius: 0; padding: 0; }
+      .nav-item.open .dropdown { display: block; }
+      .dropdown a {
+        padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted); white-space: normal;
+        min-height: 44px; display: flex; align-items: center;
+      }
+      .dropdown li:last-child a { border-bottom: none; }
+      .dropdown a:hover { color: var(--navy); background: #e8eef4; }
+    }
+
+    /* ---- ARTICLE HERO ------------------------------------------- */
+    .post-hero {
+      position: relative;
+      background: var(--navy-dk);
+      overflow: hidden;
+    }
+    .post-hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 40%, rgba(69,123,157,.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 50% at 10% 80%, rgba(230,57,70,.07) 0%, transparent 60%);
+    }
+    .post-hero-grid-lines {
+      position: absolute; inset: 0; opacity: 0.035;
+      background-image:
+        linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .post-hero-inner {
+      position: relative; z-index: 1; width: 100%;
+      max-width: var(--max); margin-inline: auto;
+      padding-inline: var(--md);
+      padding-block-start: 130px; padding-block-end: var(--lg);
+      display: grid; grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--lg); align-items: center;
+    }
+    .post-hero-image { border-radius: 16px; overflow: hidden; }
+    .post-hero-image img {
+      width: 100%; height: clamp(260px, 34vh, 380px);
+      object-fit: cover; object-position: center;
+      border-radius: 16px; display: block;
+    }
+    @media (max-width: 768px) {
+      .post-hero-inner { grid-template-columns: 1fr; gap: var(--md); padding-block-start: 100px; }
+      .post-hero-image { order: -1; }
+      .post-hero-image img { height: 52vw; min-height: 200px; }
+    }
+    .post-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .post-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+    .post-hero h1 { color: #fff; max-width: 18ch; margin-bottom: 1rem; }
+    .post-hero h1 span { color: #7fafc8; }
+    .post-meta {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      font-size: 0.85rem; color: rgba(255,255,255,.5); letter-spacing: 0.02em;
+    }
+    .post-meta-sep { opacity: .4; }
+
+    /* ---- BREADCRUMB --------------------------------------------- */
+    .breadcrumb {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.375rem;
+      font-size: 0.8125rem; color: rgba(255,255,255,.45);
+      margin-bottom: 1rem;
+    }
+    .breadcrumb a { color: rgba(255,255,255,.65); transition: color 150ms; }
+    .breadcrumb a:hover { color: #fff; }
+    .bc-sep {
+      width: 14px; height: 14px; flex-shrink: 0;
+      stroke: rgba(255,255,255,.25); fill: none; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+    .breadcrumb [aria-current="page"] { color: rgba(255,255,255,.65); font-weight: 600; }
+
+    /* ---- ARTICLE BODY ------------------------------------------- */
+    .article-body { max-width: 720px; margin-inline: auto; }
+    .article-body > .lead {
+      font-size: 1.1875rem; line-height: 1.7; color: var(--ink);
+      margin-bottom: var(--md);
+    }
+    .article-body h2 {
+      color: var(--navy); margin-top: var(--lg); margin-bottom: 0.875rem;
+    }
+    .article-body h3 {
+      color: var(--navy); font-size: 1.1875rem; margin-top: var(--md); margin-bottom: 0.5rem;
+    }
+    .article-body p {
+      color: #353a42; margin-bottom: 1.125rem; font-size: 1.0625rem;
+    }
+    .article-body ul.bullets {
+      margin: 0 0 1.25rem; padding: 0; display: flex; flex-direction: column; gap: 0.65rem;
+    }
+    .article-body ul.bullets li {
+      position: relative; padding-left: 1.5rem;
+      color: #353a42; font-size: 1.0625rem; line-height: 1.65;
+    }
+    .article-body ul.bullets li::before {
+      content: ''; position: absolute; left: 0; top: 0.6rem;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--red);
+    }
+    .article-body ol.steps {
+      margin: 0 0 1.25rem; padding: 0; display: flex; flex-direction: column; gap: 0.65rem; counter-reset: step;
+    }
+    .article-body ol.steps li {
+      position: relative; padding-left: 2.25rem;
+      color: #353a42; font-size: 1.0625rem; line-height: 1.65;
+    }
+    .article-body ol.steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 0.1rem;
+      width: 1.6rem; height: 1.6rem; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      font-size: 0.8125rem; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .article-body strong { color: var(--ink); }
+    .article-body a.inline-link { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a.inline-link:hover { color: var(--navy); }
+
+    /* ---- KEY TAKEAWAY CALLOUT ----------------------------------- */
+    .takeaway {
+      background: var(--surface);
+      border-left: 3px solid var(--teal);
+      border-radius: var(--r-sm);
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+      padding: 1.25rem 1.5rem; margin: var(--md) 0;
+    }
+    .takeaway strong { display: block; color: var(--navy); font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .takeaway p { margin: 0; color: var(--muted); font-size: 1rem; }
+
+    /* ---- INLINE CTA --------------------------------------------- */
+    .inline-cta { text-align: center; margin: var(--lg) 0 var(--md); }
+
+    /* ---- FAQ ---------------------------------------------------- */
+    .faq-wrap { max-width: 720px; margin-inline: auto; }
+    .faq-wrap details {
+      border-top: 1px solid var(--border);
+      padding-block: 1.125rem;
+    }
+    .faq-wrap details:last-child { border-bottom: 1px solid var(--border); }
+    .faq-wrap summary {
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between;
+      align-items: flex-start; gap: var(--sm);
+      font-size: 1.0625rem; font-weight: 600;
+      color: var(--ink); user-select: none;
+      min-height: 44px; padding-block: 0.25rem;
+    }
+    .faq-wrap summary::-webkit-details-marker { display: none; }
+    .faq-plus {
+      flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+      background: var(--bg); border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.125rem; font-weight: 300; color: var(--red);
+      line-height: 1; margin-top: 1px;
+      transition: background 150ms, border-color 150ms, color 150ms;
+    }
+    details[open] .faq-plus { background: var(--red); border-color: var(--red); color: #fff; }
+    .faq-body {
+      padding-top: 0.75rem; color: var(--muted);
+      font-size: 0.9375rem; line-height: 1.72; max-width: 60ch;
+    }
+
+    /* ---- CTA BAND ----------------------------------------------- */
+    .cta-band { background: var(--navy); padding-block: var(--lg); text-align: center; }
+    .cta-band .wrap { max-width: 620px; }
+    .cta-band h2 { color: #fff; margin-bottom: 0.875rem; }
+    .cta-band p  { color: rgba(255,255,255,.65); margin-inline: auto; margin-bottom: var(--md); font-size: 1.05rem; }
+    .cta-sub { margin-top: var(--sm); font-size: 0.8125rem; color: rgba(255,255,255,.35); }
+    .cta-sub a { color: rgba(255,255,255,.5); }
+    .cta-sub a:hover { color: rgba(255,255,255,.85); }
+
+    /* ---- RELATED ------------------------------------------------ */
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    @media (max-width: 760px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      background: var(--surface); border-radius: var(--r);
+      border-left: 3px solid var(--red); padding: 1.25rem 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+      transition: box-shadow 200ms, transform 200ms; display: block; color: inherit;
+    }
+    .related-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
+    .related-card span { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+    .related-card h3 { color: var(--navy); margin-top: 0.4rem; }
+
+    /* ---- FOOTER ------------------------------------------------- */
+    footer {
+      background: #111827; color: rgba(255,255,255,.55);
+      padding-block: var(--xl) var(--lg);
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: var(--lg); margin-bottom: var(--xl);
+    }
+    .footer-brand strong { display: block; color: #fff; font-size: 1.0625rem; margin-bottom: 0.625rem; }
+    .footer-brand p { font-size: 0.9rem; max-width: 28ch; line-height: 1.65; }
+    .footer-col h3 {
+      color: rgba(255,255,255,.3); font-size: 0.6875rem;
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.875rem;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-col a { color: rgba(255,255,255,.52); font-size: 0.9375rem; transition: color 150ms; }
+    .footer-col a:hover { color: #fff; }
+    .footer-hours { font-size: 0.9rem; line-height: 2.1; }
+    .footer-bottom {
+      padding-top: var(--md); border-top: 1px solid rgba(255,255,255,.07);
+      display: flex; justify-content: space-between;
+      font-size: 0.8125rem; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .footer-bottom a { color: rgba(255,255,255,.35); }
+    .footer-bottom a:hover { color: rgba(255,255,255,.75); }
+    @media (max-width: 860px) {
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } }
+
+    /* ---- ANIMATIONS -------------------------------------------- */
+    .fade {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .fade.in { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: .1s; }
+    .d2 { transition-delay: .2s; }
+    .d3 { transition-delay: .3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .fade.in { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ---- SKIP LINK + FOCUS ------------------------------------- */
+    .skip-link {
+      position: absolute; top: -100%; left: 1rem;
+      background: var(--navy); color: #fff;
+      font-size: 0.9rem; font-weight: 600;
+      padding: 0.625rem 1.125rem; border-radius: var(--r-sm);
+      z-index: 9999; text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; outline: 3px solid var(--teal); outline-offset: 2px; }
+    :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: var(--r-sm); }
+    .btn:focus-visible { outline-offset: 3px; }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  </style>
+
+  <!-- JSON-LD: BlogPosting schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Active Release Technique for Plantar Fasciitis: How It Helps",
+    "description": "Active Release Technique targets the fascia and soft tissue driving plantar fasciitis pain. Dr. Paul Helms explains the approach at Helms Performance in Bethesda, MD.",
+    "image": "https://helmsperformance.com/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp",
+    "datePublished": "2026-08-10",
+    "dateModified": "2026-08-10",
+    "author": {
+      "@type": "Person",
+      "name": "Dr. Paul Helms",
+      "jobTitle": "Sports Chiropractor",
+      "worksFor": { "@id": "https://helmsperformance.com/#business" }
+    },
+    "publisher": { "@id": "https://helmsperformance.com/#business" },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://helmsperformance.com/blog/how-art-helps-plantar-fasciitis/"
+    },
+    "articleSection": "Active Release Technique",
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  <!-- JSON-LD: MedicalBusiness (LocalBusiness) schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Helms Performance",
+    "description": "Sports chiropractic and sports physical therapy in Bethesda, MD. Dr. Paul Helms offers Active Release Technique, dry needling, fascial stretch therapy, and more.",
+    "url": "https://helmsperformance.com",
+    "telephone": "+13015785197",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7625 Wisconsin Ave, Suite 219",
+      "addressLocality": "Bethesda",
+      "addressRegion": "MD",
+      "postalCode": "20814",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9865208,
+      "longitude": -77.0941841
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+        "opens": "09:00:00",
+        "closes": "18:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday"],
+        "opens": "09:00:00",
+        "closes": "19:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday"],
+        "opens": "09:00:00",
+        "closes": "17:00:00"
+      }
+    ],
+    "medicalSpecialty": "PhysicalTherapy",
+    "priceRange": "$$",
+    "image": [
+      "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+      "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+      "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
+    ],
+    "@id": "https://helmsperformance.com/#business"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://helmsperformance.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://helmsperformance.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Active Release Technique for Plantar Fasciitis", "item": "https://helmsperformance.com/blog/how-art-helps-plantar-fasciitis/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many ART sessions does plantar fasciitis usually take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It varies with how long the pain has been around and what is driving it. Many people notice a change within the first few visits, and a common course runs somewhere in the range of about six to eight sessions alongside home care. Dr. Helms reassesses as you go and adjusts the plan, so you are not signed up for an open-ended schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Active Release Technique be combined with physical therapy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, and they pair well. ART frees up the restricted tissue, and physical therapy and targeted exercises then build strength and mobility so the relief lasts. At Helms Performance in Bethesda, MD, we often blend hands-on soft tissue work with movement and calf and foot exercises in the same plan, rather than treating them as separate tracks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Active Release Technique for plantar fasciitis painful?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most people describe it as a firm, deep pressure with a strong stretch, and some tender spots can be sensitive during treatment. It should stay within a manageable range, and Dr. Helms adjusts the pressure to you. Mild soreness for a day afterward, similar to how you feel after a deep massage, is common and usually settles quickly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I get Active Release Technique for plantar fasciitis near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr. Paul Helms provides Active Release Technique at Helms Performance in Bethesda, MD, a short walk from the Bethesda Metro. He has advanced ART training and will first confirm through a hands-on exam that your heel pain is a good fit for this approach before starting a plan built around your goals."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main">
+    <a href="/" class="nav-logo">Helms Performance</a>
+
+    <ul class="nav-links" id="nav-links">
+
+      <li class="nav-item has-dropdown">
+        <a href="/services/">
+          Services
+          <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="/services/dry-needling/">Dry Needling</a></li>
+          <li><a href="/services/sports-chiropractor/">Sports Chiropractic</a></li>
+          <li><a href="/services/sports-physical-therapy/">Sports Physical Therapy</a></li>
+          <li><a href="/services/active-release-technique/">Active Release Technique</a></li>
+          <li><a href="/services/fascial-stretch-therapy/">Fascial Stretch Therapy</a></li>
+          <li><a href="/services/myofascial-release/">Myofascial Release</a></li>
+          <li><a href="/services/manual-therapy/">Manual Therapy</a></li>
+          <li><a href="/services/therapeutic-massage/">Therapeutic Massage</a></li>
+          <li><a href="/services/functional-strength-training/">Functional Strength Training</a></li>
+          <li><a href="/services/personal-training/">Personal Training</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-dropdown">
+        <a href="/conditions/">
+          Conditions
+          <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="/conditions/back-pain/">Back Pain</a></li>
+          <li><a href="/conditions/neck-pain/">Neck Pain</a></li>
+          <li><a href="/conditions/shoulder-pain/">Shoulder Pain</a></li>
+          <li><a href="/conditions/knee-pain/">Knee Pain</a></li>
+          <li><a href="/conditions/hip-pain/">Hip Pain</a></li>
+          <li><a href="/conditions/sciatica/">Sciatica Pain</a></li>
+          <li><a href="/conditions/elbow-pain/">Elbow Pain</a></li>
+          <li><a href="/conditions/ankle-pain/">Ankle Pain</a></li>
+          <li><a href="/conditions/wrist-pain/">Wrist Pain</a></li>
+          <li><a href="/conditions/tmj/">TMJ Pain</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="/about/">About</a></li>
+      <li class="nav-item"><a href="/blog/">Blog</a></li>
+      <li class="nav-item"><a href="/contact/">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
+    </div>
+  </nav>
+
+  <!-- ARTICLE HERO -->
+  <header class="post-hero" id="main-content" tabindex="-1">
+    <div class="post-hero-bg" aria-hidden="true"></div>
+    <div class="post-hero-grid-lines" aria-hidden="true"></div>
+    <div class="post-hero-inner">
+      <div class="post-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          <a href="/blog/">Blog</a>
+          <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          <span aria-current="page">ART for Plantar Fasciitis</span>
+        </nav>
+        <div class="post-tag"><span class="post-tag-dot" aria-hidden="true"></span>Active Release Technique · Bethesda, MD</div>
+        <h1>Active Release Technique for Plantar Fasciitis: <span>How It Helps</span></h1>
+        <div class="post-meta">
+          <span>By Dr. Paul Helms</span>
+          <span class="post-meta-sep">|</span>
+          <span>6 min read</span>
+          <span class="post-meta-sep">|</span>
+          <span>Updated August 2026</span>
+        </div>
+      </div>
+      <div class="post-hero-image">
+        <img
+          src="/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp"
+          srcset="/assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md-small.webp 400w, /assets/images/blog/how-art-helps-plantar-fasciitis-bethesda-md.webp 640w"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          width="640" height="360"
+          alt="Dr. Paul Helms performing a hands-on calf and foot soft tissue technique on a patient at Helms Performance in Bethesda, MD"
+          fetchpriority="high">
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="section bg-white">
+    <div class="wrap">
+      <div class="article-body">
+
+        <p class="lead"><strong>Active Release Technique for plantar fasciitis</strong> is one of the hands-on tools I reach for most when that first painful step out of bed just will not go away. Plantar fasciitis is rarely just a foot problem. Whether you are a runner whose heel bites at the start of every mile or a teacher who is on your feet in the classroom all day, the tight tissue behind the pain usually runs from your heel up into your calf. In my practice at Helms Performance in Bethesda, MD, treating that whole chain, not only the sore spot, is what tends to move the needle.</p>
+
+        <p>Before we go further, one important note. Heel pain has more than one possible cause, so a proper diagnosis comes first. This article explains how Active Release Technique can help once plantar fasciitis has been confirmed by a professional. If you are unsure what is causing your pain, that is exactly what an exam is for.</p>
+
+        <h2>How Active Release Technique for Plantar Fasciitis Works</h2>
+        <p>Active Release Technique, often shortened to ART, is a massage and movement-based technique that treats problems with muscles, tendons, ligaments, fascia, and nerves. In plain terms, the provider uses hands-on pressure while you move the area through its range, so the treatment works the tissue as it lengthens and glides.</p>
+        <p>Plantar fasciitis involves the plantar fascia, the thick band of connective tissue that runs along the bottom of your foot and supports your arch. When that tissue and the muscles feeding into it get tight and irritated, every step can pull on an already sensitive heel. ART aims to restore healthy movement in that tissue, ease the tension, and help the area calm down so it can heal.</p>
+        <div class="takeaway">
+          <strong>In one sentence</strong>
+          <p>ART uses guided pressure and movement to free up the tight fascia and calf tissue that keep tugging on a sore heel.</p>
+        </div>
+
+        <div class="inline-cta">
+          <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+        </div>
+
+        <h2>What ART Targets in the Foot and Calf</h2>
+        <p>Here is the part many people miss. The heel is where you feel plantar fasciitis, but the tightness that feeds it often lives higher up. Your calf muscles connect through the Achilles into the back of the heel, and when they are stiff, they add a constant pull on the plantar fascia. That is why treating the foot alone often falls short.</p>
+        <p>With ART for plantar fasciitis, we usually work several linked areas:</p>
+        <ul class="bullets">
+          <li><strong>The plantar fascia</strong> along the arch and toward the heel, where the pain shows up</li>
+          <li><strong>The calf muscles</strong>, the gastrocnemius and soleus, which pull on the heel through the Achilles</li>
+          <li><strong>The small muscles of the foot</strong> that support your arch and take a beating with each step</li>
+          <li><strong>The Achilles region</strong>, where calf tension transfers straight down to the heel</li>
+        </ul>
+        <p>Freeing up this whole chain, rather than only the tender spot, is what makes the relief more likely to hold. It also lines up with how we treat other lower-leg issues, so if your heel pain travels toward the ankle it is worth a look at how we approach <a class="inline-link" href="/conditions/ankle-pain/">ankle pain</a> as well.</p>
+
+        <h2>What a Treatment Session Looks Like</h2>
+        <p>If you have never had ART, here is what to expect so nothing feels like a surprise. A typical session follows a simple flow.</p>
+        <ol class="steps">
+          <li><strong>A quick check-in.</strong> We review how your heel has felt, what makes it worse, and how you moved since your last visit.</li>
+          <li><strong>Hands-on treatment.</strong> Dr. Helms applies firm, precise pressure to the tight tissue while you flex and point your foot, so the fascia and calf work through their range.</li>
+          <li><strong>Movement and home care.</strong> We add a few targeted stretches or exercises for your calf and foot to keep the tissue moving between visits.</li>
+          <li><strong>A plan for next time.</strong> We talk through how the area is responding and what to focus on before you come back.</li>
+        </ol>
+        <p>ART is a firm technique, and some tender spots can be sensitive during treatment. It should stay within a manageable range, and I adjust the pressure to you. Most people feel a strong stretch and a sense of release, sometimes with mild soreness the next day, similar to a deep massage. Because ART is a form of hands-on <a class="inline-link" href="/services/active-release-technique/">Active Release Technique</a> care, it pairs naturally with the rest of a treatment plan.</p>
+
+        <h2>What to Expect Over the Course of Treatment</h2>
+        <p>Plantar fasciitis did not appear overnight, and it usually does not resolve in a single visit. That said, many people notice a change fairly early, often within the first few sessions, as the tissue starts to move better and the heel calms down. I want to be honest that timelines vary from person to person, and stubborn cases can take longer.</p>
+        <p>ART works best as part of a bigger picture. On its own, hands-on work loosens the tissue, but lasting relief comes when we also address why the fascia got overloaded in the first place. That might mean calf and foot strengthening, a look at your footwear, gradual changes to your training, and a few daily habits. Our <a class="inline-link" href="/services/sports-physical-therapy/">sports physical therapy</a> often works hand in hand with ART for exactly that reason.</p>
+        <div class="takeaway">
+          <strong>The takeaway</strong>
+          <p>ART frees the tight tissue behind your heel pain. Pairing it with the right exercises and small daily changes is what helps keep the relief.</p>
+        </div>
+
+        <h2>Dr. Paul's Final Thoughts</h2>
+        <p>Plantar fasciitis can wear you down, that first step in the morning, the ache that creeps back by the afternoon. The good news is that it usually responds well to the right care. Active Release Technique gives us a direct way to work on the tight fascia and calf tissue driving the pain, and paired with targeted movement, it can help you get back to walking, standing, and training comfortably.</p>
+        <p>If heel pain is holding you back, you do not have to just push a heating pad on it and hope. Get it looked at, confirm what is going on, and start a plan that fits you. Dr. Paul Helms and the team at Helms Performance in Bethesda, MD are here to help you relieve the pain and get back to the activities you love.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- FAQ -->
+  <section class="section bg-gray" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sh" style="text-align:center; margin-bottom:var(--lg);">
+        <span class="eyebrow">Common Questions</span>
+        <h2 id="faq-h" style="color:var(--navy);">Active Release Technique for Plantar Fasciitis FAQs</h2>
+      </div>
+      <div class="faq-wrap">
+        <details>
+          <summary>How many ART sessions does plantar fasciitis usually take? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">It varies with how long the pain has been around and what is driving it. Many people notice a change within the first few visits, and a common course runs somewhere in the range of about six to eight sessions alongside home care. Dr. Helms reassesses as you go and adjusts the plan, so you are not signed up for an open-ended schedule.</div>
+        </details>
+        <details>
+          <summary>Can Active Release Technique be combined with physical therapy? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Yes, and they pair well. ART frees up the restricted tissue, and physical therapy and targeted exercises then build strength and mobility so the relief lasts. At Helms Performance in Bethesda, MD, we often blend hands-on soft tissue work with movement and calf and foot exercises in the same plan, rather than treating them as separate tracks.</div>
+        </details>
+        <details>
+          <summary>Is Active Release Technique for plantar fasciitis painful? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Most people describe it as a firm, deep pressure with a strong stretch, and some tender spots can be sensitive during treatment. It should stay within a manageable range, and Dr. Helms adjusts the pressure to you. Mild soreness for a day afterward, similar to how you feel after a deep massage, is common and usually settles quickly.</div>
+        </details>
+        <details>
+          <summary>Where can I get Active Release Technique for plantar fasciitis near me? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Dr. Paul Helms provides Active Release Technique at Helms Performance in Bethesda, MD, a short walk from the Bethesda Metro. He has advanced ART training and will first confirm through a hands-on exam that your heel pain is a good fit for this approach before starting a plan built around your goals.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section-sm bg-white" aria-labelledby="related-h">
+    <div class="wrap">
+      <div class="sh" style="margin-bottom:var(--md);">
+        <span class="eyebrow">Keep Reading</span>
+        <h2 id="related-h" style="color:var(--navy); font-size:1.5rem;">Related from the blog</h2>
+      </div>
+      <div class="related-grid">
+        <a class="related-card" href="/services/active-release-technique/">
+          <span>Service</span>
+          <h3>Active Release Technique in Bethesda, MD</h3>
+        </a>
+        <a class="related-card" href="/conditions/ankle-pain/">
+          <span>Condition</span>
+          <h3>Ankle and Foot Pain Relief</h3>
+        </a>
+        <a class="related-card" href="/services/sports-physical-therapy/">
+          <span>Service</span>
+          <h3>Sports Physical Therapy</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band" aria-label="Book An Appointment">
+    <div class="wrap">
+      <h2>Tired of That First Painful Step?</h2>
+      <p>Let us take a look at what is really driving your heel pain and build a plan to relieve it. Book a visit with Dr. Helms in Bethesda, MD, and get back to walking, standing, and training comfortably.</p>
+      <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+      <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer aria-label="Site footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong>Helms Performance</strong>
+          <p>Sports chiropractic and physical therapy in Bethesda, MD.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/services/dry-needling/">Dry Needling</a></li>
+            <li><a href="/services/active-release-technique">Active Release Technique</a></li>
+            <li><a href="/services/sports-chiropractic">Sports Chiropractic</a></li>
+            <li><a href="/services/fascial-stretch-therapy">Fascial Stretch Therapy</a></li>
+            <li><a href="/services/myofascial-release">Myofascial Release</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="/about">About Dr. Helms</a></li>
+            <li><a href="/conditions">Conditions</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Hours</h3>
+          <div class="footer-hours">
+            <div>Mon, Tue, Wed: 9AM to 6PM</div>
+            <div>Thursday: 9AM to 7PM</div>
+            <div>Friday: 9AM to 5PM</div>
+          </div>
+          <p style="margin-top:.875rem; font-size:.9rem; line-height:1.8;">
+            <a href="tel:3015785197">301-578-5197</a><br>
+            7625 Wisconsin Ave, Suite 219<br>
+            Bethesda, MD 20814
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2025 Helms Performance. All rights reserved.</span>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- NAV SCROLL STATE (rAF-throttled) -----------------------
+    (function () {
+      var nav = document.getElementById('main-nav');
+      if (!nav) return;
+      var ticking = false;
+      function update() {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      update();
+    }());
+
+    // ---- HAMBURGER + MOBILE NAV ---------------------------------
+    (function () {
+      var hamburger = document.getElementById('hamburger');
+      var navLinks  = document.getElementById('nav-links');
+      if (!hamburger || !navLinks) return;
+
+      function closeAll() {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        navLinks.querySelectorAll('.nav-item.open').forEach(function (i) { i.classList.remove('open'); });
+      }
+
+      hamburger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var opening = !navLinks.classList.contains('open');
+        if (opening) {
+          navLinks.classList.add('open');
+          hamburger.setAttribute('aria-expanded', 'true');
+          document.body.style.overflow = 'hidden';
+          var first = navLinks.querySelector('.nav-item > a');
+          if (first) setTimeout(function () { first.focus(); }, 50);
+        } else {
+          closeAll();
+          hamburger.focus();
+        }
+      });
+
+      navLinks.querySelectorAll('.has-dropdown > a').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (window.innerWidth > 1100) return;
+          e.preventDefault();
+          var item = link.closest('.nav-item');
+          var wasOpen = item.classList.contains('open');
+          navLinks.querySelectorAll('.nav-item.open').forEach(function (i) { i.classList.remove('open'); });
+          if (!wasOpen) item.classList.add('open');
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('#main-nav')) closeAll();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+          closeAll();
+          hamburger.focus();
+        }
+      });
+    }());
+
+    // ---- DESKTOP DROPDOWN KEYBOARD NAVIGATION -------------------
+    (function () {
+      document.querySelectorAll('.has-dropdown').forEach(function (item) {
+        var trigger  = item.querySelector(':scope > a');
+        var dropdown = item.querySelector('.dropdown');
+        if (!trigger || !dropdown) return;
+
+        trigger.setAttribute('aria-haspopup', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+
+        function open()  { trigger.setAttribute('aria-expanded', 'true');  }
+        function close() { trigger.setAttribute('aria-expanded', 'false'); }
+
+        item.addEventListener('mouseenter', open);
+        item.addEventListener('mouseleave', close);
+
+        trigger.addEventListener('keydown', function (e) {
+          if (window.innerWidth <= 1100) return;
+          var links = Array.from(dropdown.querySelectorAll('a'));
+          if (!links.length) return;
+          if (e.key === 'ArrowDown') { e.preventDefault(); open(); links[0].focus(); }
+          if (e.key === 'ArrowUp')   { e.preventDefault(); open(); links[links.length - 1].focus(); }
+        });
+
+        dropdown.addEventListener('keydown', function (e) {
+          if (window.innerWidth <= 1100) return;
+          var links = Array.from(dropdown.querySelectorAll('a'));
+          var idx   = links.indexOf(document.activeElement);
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (idx < links.length - 1) links[idx + 1].focus();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (idx > 0) links[idx - 1].focus();
+            else { close(); trigger.focus(); }
+          } else if (e.key === 'Escape') {
+            e.preventDefault(); close(); trigger.focus();
+          } else if (e.key === 'Tab') {
+            setTimeout(function () {
+              if (!item.contains(document.activeElement)) close();
+            }, 0);
+          }
+        });
+      });
+    }());
+
+    // ---- SCROLL-TRIGGERED FADE-IN ------------------------------
+    (window.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.fade').forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.fade').forEach(function (el) { io.observe(el); });
+    });
+  </script>
+
+</body>
+</html>

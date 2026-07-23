@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
+  <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <!-- Microsoft Clarity (deferred until interaction or idle) -->
+  <script type="text/javascript">
+    (function(){
+      function loadClarity(){
+        if (window.__clarityLoaded) return; window.__clarityLoaded = true;
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "w5jyh1xhzq");
+      }
+      var evts = ['scroll','mousemove','touchstart','keydown','click'];
+      function go(){ evts.forEach(function(e){ window.removeEventListener(e, go); }); loadClarity(); }
+      evts.forEach(function(e){ window.addEventListener(e, go, {passive:true}); });
+      setTimeout(loadClarity, 3000);
+    })();
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2SST8FVX7Z');
+    // Track click-to-call as a GA4 key event (Phone_Call_Conversion) -> Google Ads phone-call conversion
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href^="tel:"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'Phone_Call_Conversion', {
+        phone_number: link.getAttribute('href').replace('tel:', '')
+      });
+    });
+    // Track "Book An Appointment" clicks (Jane booking, opens new tab) as a GA4 event
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var link = t && t.closest ? t.closest('a[href*="janeapp.com"]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'booking_appointment_click', {
+        link_url: link.getAttribute('href')
+      });
+    });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Does Insurance Cover Telehealth Physical Therapy?</title>
+  <meta name="description" content="Does insurance cover telehealth physical therapy? Dr. Paul Helms explains Medicare and private plan coverage, what to ask your insurer, and self-pay options.">
+  <meta name="keywords" content="does insurance cover telehealth physical therapy, does medicare cover telehealth physical therapy, virtual physical therapy cost, telehealth physical therapy insurance, online physical therapy coverage">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#162e4a">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://helmsperformance.com/blog/does-insurance-cover-telehealth-physical-therapy/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://helmsperformance.com/blog/does-insurance-cover-telehealth-physical-therapy/">
+  <meta property="og:title" content="Does Insurance Cover Telehealth Physical Therapy?">
+  <meta property="og:description" content="Medicare and private plans often cover virtual physical therapy, but the details vary. Here is what to ask your insurer before you book.">
+  <meta property="og:site_name" content="Helms Performance">
+  <meta property="og:image" content="https://helmsperformance.com/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="360">
+  <meta property="og:image:alt" content="Dr. Paul Helms working through a rehabilitation exercise with a patient at Helms Performance in Bethesda, MD">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://helmsperformance.com/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp">
+
+  <!-- Article meta -->
+  <meta property="article:published_time" content="2026-07-23">
+  <meta property="article:modified_time" content="2026-07-23">
+  <meta property="article:author" content="Dr. Paul Helms">
+  <meta property="article:section" content="Telehealth">
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image"
+    href="/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp"
+    imagesrcset="/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md-small.webp 400w, /assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp 640w"
+    imagesizes="(max-width: 768px) 100vw, 50vw"
+    fetchpriority="high">
+
+  <!-- Resource hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://helmsperformance.janeapp.com">
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap"></noscript>
+
+  <style>
+    /* ---- RESET -------------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img, video { max-width: 100%; display: block; }
+    ul, ol { list-style: none; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+    /* ---- TOKENS ------------------------------------------------- */
+    :root {
+      --bg:      #F8F7F4;
+      --surface: #FFFFFF;
+      --ink:     #1A1A1A;
+      --muted:   #6B7280;
+      --navy:    #1D3557;
+      --navy-dk: #162e4a;
+      --red:     #E63946;
+      --border:  #E5E7EB;
+      --teal:    #457B9D;
+
+      --xs: 0.5rem;
+      --sm: 1rem;
+      --md: 2rem;
+      --lg: 4rem;
+      --xl: 7rem;
+
+      --r:    12px;
+      --r-sm: 6px;
+      --max:  1100px;
+
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
+      font-synthesis: none;
+    }
+
+    /* ---- TYPE --------------------------------------------------- */
+    h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 600; line-height: 1.14; letter-spacing: -0.025em; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.125rem);  font-weight: 600; line-height: 1.22;  letter-spacing: -0.02em;  }
+    h3 { font-size: 1.0625rem; font-weight: 600; line-height: 1.3; }
+    p  { line-height: 1.75; }
+    a  { color: inherit; text-decoration: none; }
+
+    /* ---- LAYOUT ------------------------------------------------- */
+    .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--md); }
+    .section     { padding-block: var(--xl); }
+    .section-sm  { padding-block: var(--lg); }
+    .bg-white { background: var(--surface); }
+    .bg-gray  { background: var(--bg); }
+    .bg-navy  { background: var(--navy); color: #fff; }
+
+    /* ---- EYEBROW ----------------------------------------------- */
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 0.625rem;
+    }
+
+    /* ---- BUTTONS ----------------------------------------------- */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      padding: 0.875rem 1.875rem; border-radius: var(--r-sm);
+      font-family: inherit; font-size: 0.9375rem; font-weight: 600;
+      text-decoration: none; cursor: pointer; border: 2px solid transparent;
+      transition: background 150ms, color 150ms, border-color 150ms, box-shadow 150ms;
+      white-space: nowrap; line-height: 1;
+      touch-action: manipulation;
+    }
+    .btn-red   { background: #D8313E;   color: #fff; border-color: #D8313E; }
+    .btn-red:hover { background: #c1121f; border-color: #c1121f; box-shadow: 0 4px 14px rgba(230,57,70,.3); }
+    .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.45); }
+    .btn-ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.85); }
+    .btn-outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---- NAV ---------------------------------------------------- */
+    .nav {
+      position: fixed; inset-block-start: 0; inset-inline: 0;
+      z-index: 200;
+      display: flex; align-items: center; justify-content: space-between; gap: var(--md);
+      padding-inline: var(--md); padding-block: 1.25rem;
+      transition: background 250ms, box-shadow 250ms, padding-block 250ms;
+    }
+    .nav.scrolled {
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,.09);
+      padding-block: 0.875rem;
+    }
+    .nav-logo {
+      font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em;
+      color: #fff; white-space: nowrap; flex-shrink: 0; text-decoration: none;
+    }
+    .nav.scrolled .nav-logo { color: var(--navy); }
+    .nav-links { display: flex; gap: 0.125rem; flex: 1; justify-content: center; align-items: center; }
+    .nav-item { position: relative; }
+    .nav-item > a {
+      display: flex; align-items: center; gap: 0.3rem;
+      color: rgba(255,255,255,.72); font-size: 0.9375rem;
+      padding: 0.4rem 0.625rem; border-radius: var(--r-sm);
+      transition: color 150ms, background 150ms; white-space: nowrap;
+    }
+    .nav-item > a:hover { color: #fff; }
+    .nav.scrolled .nav-item > a { color: var(--muted); }
+    .nav.scrolled .nav-item > a:hover { color: var(--ink); background: var(--bg); }
+    .nav-chevron {
+      width: 14px; height: 14px; flex-shrink: 0;
+      stroke: currentColor; fill: none; stroke-width: 2.5;
+      stroke-linecap: round; stroke-linejoin: round;
+      transition: transform 200ms;
+    }
+    .nav-item.open > a .nav-chevron { transform: rotate(180deg); }
+    .nav-right { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+    .nav-cta { padding: 0.625rem 1.375rem; font-size: 0.875rem; }
+
+    /* Dropdown shared */
+    .dropdown a {
+      display: block; padding: 0.5rem 1.125rem;
+      font-size: 0.9rem; color: var(--ink);
+      transition: background 100ms, color 100ms; white-space: nowrap;
+    }
+    .dropdown a:hover { background: var(--bg); color: var(--navy); }
+
+    /* Dropdown - desktop */
+    @media (min-width: 1101px) {
+      .dropdown {
+        position: absolute; top: calc(100% + 0.5rem); left: 50%;
+        background: #fff; border-radius: var(--r-sm);
+        box-shadow: 0 8px 32px rgba(0,0,0,.13), 0 0 0 1px rgba(0,0,0,.05);
+        min-width: 230px; padding: 0.375rem 0;
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transform: translateX(-50%) translateY(-6px);
+        transition: opacity 150ms, transform 150ms, visibility 0s 150ms;
+        z-index: 10;
+      }
+      .dropdown::before {
+        content: ''; position: absolute;
+        inset-inline: 0; top: -0.5rem; height: 0.5rem;
+      }
+      .has-dropdown:hover .dropdown {
+        opacity: 1; visibility: visible; pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+        transition: opacity 150ms, transform 150ms, visibility 0s;
+      }
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; justify-content: center; align-items: center;
+      gap: 5px; width: 44px; height: 44px;
+      background: transparent; border: none; cursor: pointer;
+      padding: 0; border-radius: var(--r-sm); flex-shrink: 0;
+      touch-action: manipulation;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: rgba(255,255,255,.85); border-radius: 2px;
+      transform-origin: center;
+      transition: transform 250ms ease, opacity 200ms, width 200ms;
+    }
+    .nav.scrolled .hamburger span { background: var(--navy); }
+    .hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; width: 0; }
+    .hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav */
+    @media (max-width: 1100px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        display: none; position: fixed; top: 62px; inset-inline: 0;
+        background: #fff; flex-direction: column; align-items: stretch;
+        gap: 0; flex: unset; justify-content: flex-start;
+        overflow-y: auto; max-height: calc(100dvh - 62px);
+        box-shadow: 0 8px 24px rgba(0,0,0,.1);
+        border-top: 1px solid var(--border);
+        padding-bottom: 1.5rem; z-index: 199;
+      }
+      .nav-links.open { display: flex; }
+      .nav-item { border-bottom: 1px solid var(--border); }
+      .nav-item:last-child { border-bottom: none; }
+      .nav-item > a {
+        color: var(--ink) !important; padding: 1rem 1.5rem;
+        border-radius: 0; justify-content: space-between; font-size: 1rem;
+        min-height: 44px;
+      }
+      .nav-item > a:hover { background: var(--bg); color: var(--navy) !important; }
+      .dropdown { display: none; background: var(--bg); border-radius: 0; padding: 0; }
+      .nav-item.open .dropdown { display: block; }
+      .dropdown a {
+        padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted); white-space: normal;
+        min-height: 44px; display: flex; align-items: center;
+      }
+      .dropdown li:last-child a { border-bottom: none; }
+      .dropdown a:hover { color: var(--navy); background: #e8eef4; }
+    }
+
+    /* ---- ARTICLE HERO ------------------------------------------- */
+    .post-hero {
+      position: relative;
+      background: var(--navy-dk);
+      overflow: hidden;
+    }
+    .post-hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 40%, rgba(69,123,157,.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 50% at 10% 80%, rgba(230,57,70,.07) 0%, transparent 60%);
+    }
+    .post-hero-grid-lines {
+      position: absolute; inset: 0; opacity: 0.035;
+      background-image:
+        linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .post-hero-inner {
+      position: relative; z-index: 1; width: 100%;
+      max-width: var(--max); margin-inline: auto;
+      padding-inline: var(--md);
+      padding-block-start: 130px; padding-block-end: var(--lg);
+      display: grid; grid-template-columns: 1.1fr 0.9fr;
+      gap: var(--lg); align-items: center;
+    }
+    .post-hero-image { border-radius: 16px; overflow: hidden; }
+    .post-hero-image img {
+      width: 100%; height: clamp(260px, 34vh, 380px);
+      object-fit: cover; object-position: center;
+      border-radius: 16px; display: block;
+    }
+    @media (max-width: 768px) {
+      .post-hero-inner { grid-template-columns: 1fr; gap: var(--md); padding-block-start: 100px; }
+      .post-hero-image { order: -1; }
+      .post-hero-image img { height: 52vw; min-height: 200px; }
+    }
+    .post-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(230,57,70,.15); border: 1px solid rgba(230,57,70,.3); border-radius: 100px; padding: 0.375rem 0.875rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f7a0a6; margin-bottom: 1.25rem; }
+    .post-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+    .post-hero h1 { color: #fff; max-width: 18ch; margin-bottom: 1rem; }
+    .post-hero h1 span { color: #7fafc8; }
+    .post-meta {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      font-size: 0.85rem; color: rgba(255,255,255,.5); letter-spacing: 0.02em;
+    }
+    .post-meta-sep { opacity: .4; }
+
+    /* ---- BREADCRUMB --------------------------------------------- */
+    .breadcrumb {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.375rem;
+      font-size: 0.8125rem; color: rgba(255,255,255,.45);
+      margin-bottom: 1rem;
+    }
+    .breadcrumb a { color: rgba(255,255,255,.65); transition: color 150ms; }
+    .breadcrumb a:hover { color: #fff; }
+    .bc-sep {
+      width: 14px; height: 14px; flex-shrink: 0;
+      stroke: rgba(255,255,255,.25); fill: none; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+    .breadcrumb [aria-current="page"] { color: rgba(255,255,255,.65); font-weight: 600; }
+
+    /* ---- ARTICLE BODY ------------------------------------------- */
+    .article-body { max-width: 720px; margin-inline: auto; }
+    .article-body > .lead {
+      font-size: 1.1875rem; line-height: 1.7; color: var(--ink);
+      margin-bottom: var(--md);
+    }
+    .article-body h2 {
+      color: var(--navy); margin-top: var(--lg); margin-bottom: 0.875rem;
+    }
+    .article-body h3 {
+      color: var(--navy); font-size: 1.1875rem; margin-top: var(--md); margin-bottom: 0.5rem;
+    }
+    .article-body p {
+      color: #353a42; margin-bottom: 1.125rem; font-size: 1.0625rem;
+    }
+    .article-body ul.bullets {
+      margin: 0 0 1.25rem; padding: 0; display: flex; flex-direction: column; gap: 0.65rem;
+    }
+    .article-body ul.bullets li {
+      position: relative; padding-left: 1.5rem;
+      color: #353a42; font-size: 1.0625rem; line-height: 1.65;
+    }
+    .article-body ul.bullets li::before {
+      content: ''; position: absolute; left: 0; top: 0.6rem;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--red);
+    }
+    .article-body ol.steps {
+      margin: 0 0 1.25rem; padding: 0; display: flex; flex-direction: column; gap: 0.65rem; counter-reset: step;
+    }
+    .article-body ol.steps li {
+      position: relative; padding-left: 2.25rem;
+      color: #353a42; font-size: 1.0625rem; line-height: 1.65;
+    }
+    .article-body ol.steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 0.1rem;
+      width: 1.6rem; height: 1.6rem; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      font-size: 0.8125rem; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .article-body strong { color: var(--ink); }
+    .article-body a.inline-link { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .article-body a.inline-link:hover { color: var(--navy); }
+
+    /* ---- KEY TAKEAWAY CALLOUT ----------------------------------- */
+    .takeaway {
+      background: var(--surface);
+      border-left: 3px solid var(--teal);
+      border-radius: var(--r-sm);
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+      padding: 1.25rem 1.5rem; margin: var(--md) 0;
+    }
+    .takeaway strong { display: block; color: var(--navy); font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .takeaway p { margin: 0; color: var(--muted); font-size: 1rem; }
+
+    /* ---- INLINE CTA --------------------------------------------- */
+    .inline-cta { text-align: center; margin: var(--lg) 0 var(--md); }
+
+    /* ---- FAQ ---------------------------------------------------- */
+    .faq-wrap { max-width: 720px; margin-inline: auto; }
+    .faq-wrap details {
+      border-top: 1px solid var(--border);
+      padding-block: 1.125rem;
+    }
+    .faq-wrap details:last-child { border-bottom: 1px solid var(--border); }
+    .faq-wrap summary {
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between;
+      align-items: flex-start; gap: var(--sm);
+      font-size: 1.0625rem; font-weight: 600;
+      color: var(--ink); user-select: none;
+      min-height: 44px; padding-block: 0.25rem;
+    }
+    .faq-wrap summary::-webkit-details-marker { display: none; }
+    .faq-plus {
+      flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+      background: var(--bg); border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.125rem; font-weight: 300; color: var(--red);
+      line-height: 1; margin-top: 1px;
+      transition: background 150ms, border-color 150ms, color 150ms;
+    }
+    details[open] .faq-plus { background: var(--red); border-color: var(--red); color: #fff; }
+    .faq-body {
+      padding-top: 0.75rem; color: var(--muted);
+      font-size: 0.9375rem; line-height: 1.72; max-width: 60ch;
+    }
+
+    /* ---- CTA BAND ----------------------------------------------- */
+    .cta-band { background: var(--navy); padding-block: var(--lg); text-align: center; }
+    .cta-band .wrap { max-width: 620px; }
+    .cta-band h2 { color: #fff; margin-bottom: 0.875rem; }
+    .cta-band p  { color: rgba(255,255,255,.65); margin-inline: auto; margin-bottom: var(--md); font-size: 1.05rem; }
+    .cta-sub { margin-top: var(--sm); font-size: 0.8125rem; color: rgba(255,255,255,.35); }
+    .cta-sub a { color: rgba(255,255,255,.5); }
+    .cta-sub a:hover { color: rgba(255,255,255,.85); }
+
+    /* ---- RELATED ------------------------------------------------ */
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    @media (max-width: 760px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      background: var(--surface); border-radius: var(--r);
+      border-left: 3px solid var(--red); padding: 1.25rem 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+      transition: box-shadow 200ms, transform 200ms; display: block; color: inherit;
+    }
+    .related-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
+    .related-card span { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+    .related-card h3 { color: var(--navy); margin-top: 0.4rem; }
+
+    /* ---- FOOTER ------------------------------------------------- */
+    footer {
+      background: #111827; color: rgba(255,255,255,.55);
+      padding-block: var(--xl) var(--lg);
+    }
+    .footer-top {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: var(--lg); margin-bottom: var(--xl);
+    }
+    .footer-brand strong { display: block; color: #fff; font-size: 1.0625rem; margin-bottom: 0.625rem; }
+    .footer-brand p { font-size: 0.9rem; max-width: 28ch; line-height: 1.65; }
+    .footer-col h3 {
+      color: rgba(255,255,255,.3); font-size: 0.6875rem;
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.875rem;
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-col a { color: rgba(255,255,255,.52); font-size: 0.9375rem; transition: color 150ms; }
+    .footer-col a:hover { color: #fff; }
+    .footer-hours { font-size: 0.9rem; line-height: 2.1; }
+    .footer-bottom {
+      padding-top: var(--md); border-top: 1px solid rgba(255,255,255,.07);
+      display: flex; justify-content: space-between;
+      font-size: 0.8125rem; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .footer-bottom a { color: rgba(255,255,255,.35); }
+    .footer-bottom a:hover { color: rgba(255,255,255,.75); }
+    @media (max-width: 860px) {
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+    @media (max-width: 480px) { .footer-top { grid-template-columns: 1fr; } }
+
+    /* ---- ANIMATIONS -------------------------------------------- */
+    .fade {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .fade.in { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: .1s; }
+    .d2 { transition-delay: .2s; }
+    .d3 { transition-delay: .3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .fade.in { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ---- SKIP LINK + FOCUS ------------------------------------- */
+    .skip-link {
+      position: absolute; top: -100%; left: 1rem;
+      background: var(--navy); color: #fff;
+      font-size: 0.9rem; font-weight: 600;
+      padding: 0.625rem 1.125rem; border-radius: var(--r-sm);
+      z-index: 9999; text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; outline: 3px solid var(--teal); outline-offset: 2px; }
+    :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: var(--r-sm); }
+    .btn:focus-visible { outline-offset: 3px; }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  </style>
+
+  <!-- JSON-LD: BlogPosting schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Does Insurance Cover Telehealth Physical Therapy?",
+    "description": "Does insurance cover telehealth physical therapy? Dr. Paul Helms explains Medicare and private plan coverage, what to ask your insurer, and self-pay options.",
+    "image": "https://helmsperformance.com/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp",
+    "datePublished": "2026-07-23",
+    "dateModified": "2026-07-23",
+    "author": {
+        "@type": "Person",
+        "name": "Dr. Paul Helms",
+        "jobTitle": "Sports Chiropractor",
+        "worksFor": {
+            "@id": "https://helmsperformance.com/#business"
+        }
+    },
+    "publisher": {
+        "@id": "https://helmsperformance.com/#business"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://helmsperformance.com/blog/does-insurance-cover-telehealth-physical-therapy/"
+    },
+    "articleSection": "Telehealth",
+    "inLanguage": "en-US"
+}
+  </script>
+
+  <!-- JSON-LD: MedicalBusiness (LocalBusiness) schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Helms Performance",
+    "description": "Sports chiropractic and sports physical therapy in Bethesda, MD. Dr. Paul Helms offers dry needling, Active Release Technique, fascial stretch therapy, functional strength training, and more.",
+    "url": "https://helmsperformance.com",
+    "telephone": "+13015785197",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7625 Wisconsin Ave, Suite 219",
+      "addressLocality": "Bethesda",
+      "addressRegion": "MD",
+      "postalCode": "20814",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.9865208,
+      "longitude": -77.0941841
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+        "opens": "09:00:00",
+        "closes": "18:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday"],
+        "opens": "09:00:00",
+        "closes": "19:00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday"],
+        "opens": "09:00:00",
+        "closes": "17:00:00"
+      }
+    ],
+    "medicalSpecialty": "PhysicalTherapy",
+    "priceRange": "$$",
+    "image": [
+      "https://helmsperformance.com/assets/images/misc/sports-rehab-bethesda-md.webp",
+      "https://helmsperformance.com/assets/images/misc/Sports-Chiropractor-Paul-Helms-Bethesda-MD.webp",
+      "https://helmsperformance.com/assets/images/misc/dr-paul-helms-sports-chiropractor-bethesda-md.webp"
+    ],
+    "@id": "https://helmsperformance.com/#business"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://helmsperformance.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://helmsperformance.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Telehealth PT Insurance Coverage", "item": "https://helmsperformance.com/blog/does-insurance-cover-telehealth-physical-therapy/" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Does Medicare cover telehealth physical therapy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Medicare has covered telehealth physical therapy under a series of temporary extensions rather than one permanent rule, so the status can change from year to year. Call the number on the back of your card and ask specifically about outpatient physical therapy delivered by telehealth. If you have a Medicare Advantage plan, check with that private insurer directly, since its benefits can differ."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need a referral for virtual physical therapy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on your plan and your state. Maryland is a direct access state, which means you can generally start physical therapy without a physician referral for a limited period. Your insurance plan may still require a referral or prior authorization in order to pay. Asking both questions before you book saves a great deal of back and forth later."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is telehealth physical therapy cheaper than an in-person visit?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Often, though not always, and the comparison is not just the sticker price. A virtual visit removes travel, parking, and time away from work, which are real costs. If you have a high deductible, a self-pay virtual visit is sometimes less expensive than a covered in-person one. Ask for both numbers and compare them side by side."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use HSA or FSA funds for virtual physical therapy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Health savings and flexible spending accounts can generally be used for physical therapy, including telehealth visits. At Helms Performance we are an out-of-network, self-pay practice, and we are happy to provide the documentation you need for your HSA or FSA, or to submit an out-of-network claim to your insurer yourself."
+            }
+        }
+    ]
+}
+  </script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main">
+    <a href="/" class="nav-logo">Helms Performance</a>
+
+    <ul class="nav-links" id="nav-links">
+
+      <li class="nav-item has-dropdown">
+        <a href="/services/">
+          Services
+          <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="/services/dry-needling/">Dry Needling</a></li>
+          <li><a href="/services/sports-chiropractor/">Sports Chiropractic</a></li>
+          <li><a href="/services/sports-physical-therapy/">Sports Physical Therapy</a></li>
+          <li><a href="/services/active-release-technique/">Active Release Technique</a></li>
+          <li><a href="/services/fascial-stretch-therapy/">Fascial Stretch Therapy</a></li>
+          <li><a href="/services/myofascial-release/">Myofascial Release</a></li>
+          <li><a href="/services/manual-therapy/">Manual Therapy</a></li>
+          <li><a href="/services/therapeutic-massage/">Therapeutic Massage</a></li>
+          <li><a href="/services/functional-strength-training/">Functional Strength Training</a></li>
+          <li><a href="/services/personal-training/">Personal Training</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-dropdown">
+        <a href="/conditions/">
+          Conditions
+          <svg class="nav-chevron" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <ul class="dropdown">
+          <li><a href="/conditions/back-pain/">Back Pain</a></li>
+          <li><a href="/conditions/neck-pain/">Neck Pain</a></li>
+          <li><a href="/conditions/shoulder-pain/">Shoulder Pain</a></li>
+          <li><a href="/conditions/knee-pain/">Knee Pain</a></li>
+          <li><a href="/conditions/hip-pain/">Hip Pain</a></li>
+          <li><a href="/conditions/sciatica/">Sciatica Pain</a></li>
+          <li><a href="/conditions/elbow-pain/">Elbow Pain</a></li>
+          <li><a href="/conditions/ankle-pain/">Ankle Pain</a></li>
+          <li><a href="/conditions/wrist-pain/">Wrist Pain</a></li>
+          <li><a href="/conditions/tmj/">TMJ Pain</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="/about/">About</a></li>
+      <li class="nav-item"><a href="/blog/">Blog</a></li>
+      <li class="nav-item"><a href="/contact/">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
+    </div>
+  </nav>
+
+  <!-- ARTICLE HERO -->
+  <header class="post-hero" id="main-content" tabindex="-1">
+    <div class="post-hero-bg" aria-hidden="true"></div>
+    <div class="post-hero-grid-lines" aria-hidden="true"></div>
+    <div class="post-hero-inner">
+      <div class="post-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          <a href="/blog/">Blog</a>
+          <svg class="bc-sep" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+          <span aria-current="page">Telehealth PT Insurance Coverage</span>
+        </nav>
+        <div class="post-tag"><span class="post-tag-dot" aria-hidden="true"></span>Telehealth &middot; Insurance</div>
+        <h1>Does Insurance Cover <span>Telehealth Physical Therapy?</span></h1>
+        <div class="post-meta">
+          <span>By Dr. Paul Helms</span>
+          <span class="post-meta-sep">|</span>
+          <span>6 min read</span>
+          <span class="post-meta-sep">|</span>
+          <span>Updated July 2026</span>
+        </div>
+      </div>
+      <div class="post-hero-image">
+        <img
+          src="/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp"
+          srcset="/assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md-small.webp 400w, /assets/images/blog/does-insurance-cover-telehealth-physical-therapy-bethesda-md.webp 640w"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          width="640" height="360"
+          alt="Dr. Paul Helms working through a rehabilitation exercise with a patient at Helms Performance in Bethesda, MD"
+          fetchpriority="high">
+      </div>
+    </div>
+  </header>
+
+  <!-- ARTICLE BODY -->
+  <article class="section bg-white">
+    <div class="wrap">
+      <div class="article-body">
+
+        <p class="lead"><strong>Telehealth physical therapy</strong> is covered by many insurance plans today, though the details vary far more than most people expect. Whether you are a runner trying to sort out a hip problem before your next training block, or you simply want help with a back that has been bothering you for months, the question tends to be the same: will my plan pay for a virtual visit? In my practice at Helms Performance in Bethesda, MD, it is one of the first things people ask me. The honest answer is that coverage depends on your specific plan, your state, and even the year, because these rules have changed repeatedly since 2020.</p>
+
+        <p>This article walks through what Medicare and private insurers generally do, the exact questions to ask before you book, and why some clinics, including ours, have chosen to work outside of insurance. You should finish with a clear idea of what to expect instead of a surprise bill.</p>
+
+        <h2>Does Insurance Cover Telehealth Physical Therapy?</h2>
+        <p>In general, yes, but with conditions attached. Telehealth coverage expanded dramatically in 2020, and much of that expansion has stayed in place. Many private plans now reimburse a virtual physical therapy visit at rates similar to an in-person one. Others cover it only for certain diagnoses, only with a physician referral, or only when the provider is in network.</p>
+        <p>Three things usually decide whether your visit is covered:</p>
+        <ul class="bullets">
+          <li><strong>Your plan type.</strong> Employer plans, marketplace plans, Medicare, and Medicaid all treat telehealth differently. Even two plans from the same insurer can differ.</li>
+          <li><strong>Your provider's license and your location.</strong> Providers generally must be licensed in the state where you are physically sitting during the visit, not where the clinic is.</li>
+          <li><strong>How the visit is billed.</strong> Some service codes are approved for telehealth delivery and others are not, so a virtual visit is not always billed the same way as an office visit.</li>
+        </ul>
+        <p>Because of that variability, no article can tell you with certainty what your plan covers. What an article can do is tell you exactly what to ask.</p>
+
+        <div class="inline-cta">
+          <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/15" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+        </div>
+
+        <h2>What Medicare Covers for Telehealth Physical Therapy</h2>
+        <p>Medicare began paying for telehealth physical therapy during the public health emergency, and Congress has extended that flexibility several times since. Those extensions have arrived in stretches rather than as one permanent rule, which means the current status can change from one year to the next.</p>
+        <p>Two practical points matter more than the policy history:</p>
+        <ul class="bullets">
+          <li>These rules have a track record of shifting. What was true last year may not be true on the day you book, so it is worth verifying before your visit rather than after.</li>
+          <li>Medicare Advantage plans are run by private insurers and can offer different telehealth benefits than Original Medicare. If you have an Advantage plan, ask that insurer directly.</li>
+        </ul>
+        <p>If you rely on Medicare, the most useful thing you can do is call the number on the back of your card and ask specifically about outpatient physical therapy delivered by telehealth. A general question about telehealth often gets a general answer that does not actually apply to physical therapy.</p>
+
+        <h2>Private Insurance and Virtual Physical Therapy</h2>
+        <p>Private coverage is broader than it used to be, but the fine print still does most of the work. A plan can cover virtual physical therapy and still leave you with real costs if you have not met your deductible, if the visit carries a specialist copay, or if your provider is out of network.</p>
+        <p>It is also worth separating two words that often get treated as one. Covered and affordable are not the same thing. Patients are sometimes surprised to learn that a covered visit applied against a high deductible costs more than a straightforward self-pay rate. That is not a reason to avoid using your benefits. It is a reason to compare both numbers before you decide.</p>
+
+        <h2>Five Questions to Ask Your Insurer Before You Book</h2>
+        <p>Here is the short script I give patients. It takes about five minutes on the phone and prevents nearly every billing surprise I see.</p>
+        <ol class="steps">
+          <li><strong>Do you cover outpatient physical therapy delivered by telehealth?</strong> Use the words physical therapy, not just telehealth.</li>
+          <li><strong>Do I need a physician referral or prior authorization?</strong> Some plans require one even when the visit is virtual.</li>
+          <li><strong>What is my cost per visit, and does it apply to my deductible?</strong> Ask for the copay or coinsurance amount specifically.</li>
+          <li><strong>How many visits am I allowed per year?</strong> Many plans cap physical therapy visits regardless of how they are delivered.</li>
+          <li><strong>What changes if my provider is out of network?</strong> Ask whether you can submit a claim yourself for partial reimbursement.</li>
+        </ol>
+        <p>Write down the date, the representative's name, and a reference number for the call. If a claim is denied later, that record is often what gets it resolved.</p>
+
+        <h2>Why Helms Performance Works Outside of Insurance</h2>
+        <p>Helms Performance is an out-of-network provider, and our virtual visits are self-pay. That is a deliberate choice, and it is fair to ask why.</p>
+        <p>Insurance-based care tends to shape the visit around what is reimbursable rather than around what is useful. In practice that often means shorter appointments, more paperwork, prior authorizations that delay care by weeks, and a visit cap that has more to do with a policy than with your progress. Working outside that system lets me spend a full session one on one with you, get you started the same week you reach out, and build a plan around your training instead of around a billing code.</p>
+        <p>Plenty of our patients still use their benefits. Health savings and flexible spending funds are welcome, and we are glad to provide the documentation you need to submit for out-of-network reimbursement. You simply do that on your own terms rather than waiting on an approval before anyone has looked at your problem.</p>
+
+        <h2>Is Virtual Physical Therapy Worth Paying For?</h2>
+        <p>If you are weighing a self-pay virtual visit against a covered in-person one, a few things belong on the scale.</p>
+        <ul class="bullets">
+          <li><strong>Time.</strong> A virtual visit removes the drive, the parking, and the hours away from work.</li>
+          <li><strong>Access.</strong> You can usually be seen within days rather than waiting weeks for an opening.</li>
+          <li><strong>Fit.</strong> Problems driven by training load, movement patterns, and strength respond well to coaching, and coaching translates cleanly to video.</li>
+        </ul>
+        <p>There are also situations where in-person care is simply the better tool. Hands-on manual therapy, joint work, and dry needling need a table and a provider in the room. If that is what your body needs, I will tell you. You can read more about how the two compare on our <a class="inline-link" href="/services/telehealth-physical-therapy/">telehealth physical therapy</a> page, or about hands-on options through our <a class="inline-link" href="/services/sports-physical-therapy/">sports physical therapy</a> in Bethesda.</p>
+
+        <div class="takeaway">
+          <strong>The takeaway</strong>
+          <p>Do not assume and do not guess. Five minutes on the phone with your insurer, plus a self-pay quote for comparison, gives you everything you need to make the call.</p>
+        </div>
+
+        <h2>Final Thoughts from Dr. Helms</h2>
+        <p>Coverage for telehealth physical therapy has come a long way, and for many people a virtual visit is now a genuinely affordable option. The frustrating part is that the rules differ by plan and keep changing, which puts the work of checking on you rather than on the system.</p>
+        <p>My advice is simple. Call your insurer and ask the five questions above. Get a self-pay quote so you have something to compare. Then choose based on what actually gets you back to moving well, not on which option looked cheaper at a glance. If you would like help thinking it through, we are happy to talk it over before you book anything.
+      </div>
+    </div>
+  </article>
+
+  <!-- FAQ -->
+  <section class="section bg-gray" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sh" style="text-align:center; margin-bottom:var(--lg);">
+        <span class="eyebrow">Common Questions</span>
+        <h2 id="faq-h" style="color:var(--navy);">Telehealth Physical Therapy Insurance FAQs</h2>
+      </div>
+      <div class="faq-wrap">
+        <details>
+          <summary>Does Medicare cover telehealth physical therapy? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Medicare has covered telehealth physical therapy under a series of temporary extensions rather than one permanent rule, so the status can change from year to year. Call the number on the back of your card and ask specifically about outpatient physical therapy delivered by telehealth. If you have a Medicare Advantage plan, check with that private insurer directly, since its benefits can differ.</div>
+        </details>
+        <details>
+          <summary>Do I need a referral for virtual physical therapy? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">It depends on your plan and your state. Maryland is a direct access state, which means you can generally start physical therapy without a physician referral for a limited period. Your insurance plan may still require a referral or prior authorization in order to pay. Asking both questions before you book saves a great deal of back and forth later.</div>
+        </details>
+        <details>
+          <summary>Is telehealth physical therapy cheaper than an in-person visit? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Often, though not always, and the comparison is not just the sticker price. A virtual visit removes travel, parking, and time away from work, which are real costs. If you have a high deductible, a self-pay virtual visit is sometimes less expensive than a covered in-person one. Ask for both numbers and compare them side by side.</div>
+        </details>
+        <details>
+          <summary>Can I use HSA or FSA funds for virtual physical therapy? <span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-body">Yes. Health savings and flexible spending accounts can generally be used for physical therapy, including telehealth visits. At Helms Performance we are an out-of-network, self-pay practice, and we are happy to provide the documentation you need for your HSA or FSA, or to submit an out-of-network claim to your insurer yourself.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section-sm bg-white" aria-labelledby="related-h">
+    <div class="wrap">
+      <div class="sh" style="margin-bottom:var(--md);">
+        <span class="eyebrow">Keep Reading</span>
+        <h2 id="related-h" style="color:var(--navy); font-size:1.5rem;">Related from the blog</h2>
+      </div>
+      <div class="related-grid">
+        <a class="related-card" href="/services/telehealth-physical-therapy/">
+          <span>Service</span>
+          <h3>Telehealth Physical Therapy</h3>
+        </a>
+        <a class="related-card" href="/services/sports-physical-therapy/">
+          <span>Service</span>
+          <h3>Sports Physical Therapy</h3>
+        </a>
+        <a class="related-card" href="/conditions/back-pain/">
+          <span>Condition</span>
+          <h3>Back Pain Relief</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band" aria-label="Book An Appointment">
+    <div class="wrap">
+      <h2>Have Questions About Cost or Coverage?</h2>
+      <p>We are glad to walk you through self-pay pricing and what documentation you would need for your plan, before you commit to anything. Book a virtual visit with Dr. Helms, or call and just ask.</p>
+      <a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
+      <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer aria-label="Site footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong>Helms Performance</strong>
+          <p>Sports chiropractic and physical therapy in Bethesda, MD.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="/services/dry-needling/">Dry Needling</a></li>
+            <li><a href="/services/active-release-technique">Active Release Technique</a></li>
+            <li><a href="/services/sports-chiropractic">Sports Chiropractic</a></li>
+            <li><a href="/services/fascial-stretch-therapy">Fascial Stretch Therapy</a></li>
+            <li><a href="/services/myofascial-release">Myofascial Release</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="/about">About Dr. Helms</a></li>
+            <li><a href="/conditions">Conditions</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="https://helmsperformance.janeapp.com/" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Hours</h3>
+          <div class="footer-hours">
+            <div>Mon, Tue, Wed: 9AM to 6PM</div>
+            <div>Thursday: 9AM to 7PM</div>
+            <div>Friday: 9AM to 5PM</div>
+          </div>
+          <p style="margin-top:.875rem; font-size:.9rem; line-height:1.8;">
+            <a href="tel:3015785197">301-578-5197</a><br>
+            7625 Wisconsin Ave, Suite 219<br>
+            Bethesda, MD 20814
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>2025 Helms Performance. All rights reserved.</span>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- NAV SCROLL STATE (rAF-throttled) -----------------------
+    (function () {
+      var nav = document.getElementById('main-nav');
+      if (!nav) return;
+      var ticking = false;
+      function update() {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+      }, { passive: true });
+      update();
+    }());
+
+    // ---- HAMBURGER + MOBILE NAV ---------------------------------
+    (function () {
+      var hamburger = document.getElementById('hamburger');
+      var navLinks  = document.getElementById('nav-links');
+      if (!hamburger || !navLinks) return;
+
+      function closeAll() {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        navLinks.querySelectorAll('.nav-item.open').forEach(function (i) { i.classList.remove('open'); });
+      }
+
+      hamburger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var opening = !navLinks.classList.contains('open');
+        if (opening) {
+          navLinks.classList.add('open');
+          hamburger.setAttribute('aria-expanded', 'true');
+          document.body.style.overflow = 'hidden';
+          var first = navLinks.querySelector('.nav-item > a');
+          if (first) setTimeout(function () { first.focus(); }, 50);
+        } else {
+          closeAll();
+          hamburger.focus();
+        }
+      });
+
+      navLinks.querySelectorAll('.has-dropdown > a').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (window.innerWidth > 1100) return;
+          e.preventDefault();
+          var item = link.closest('.nav-item');
+          var wasOpen = item.classList.contains('open');
+          navLinks.querySelectorAll('.nav-item.open').forEach(function (i) { i.classList.remove('open'); });
+          if (!wasOpen) item.classList.add('open');
+        });
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('#main-nav')) closeAll();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+          closeAll();
+          hamburger.focus();
+        }
+      });
+    }());
+
+    // ---- DESKTOP DROPDOWN KEYBOARD NAVIGATION -------------------
+    (function () {
+      document.querySelectorAll('.has-dropdown').forEach(function (item) {
+        var trigger  = item.querySelector(':scope > a');
+        var dropdown = item.querySelector('.dropdown');
+        if (!trigger || !dropdown) return;
+
+        trigger.setAttribute('aria-haspopup', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+
+        function open()  { trigger.setAttribute('aria-expanded', 'true');  }
+        function close() { trigger.setAttribute('aria-expanded', 'false'); }
+
+        item.addEventListener('mouseenter', open);
+        item.addEventListener('mouseleave', close);
+
+        trigger.addEventListener('keydown', function (e) {
+          if (window.innerWidth <= 1100) return;
+          var links = Array.from(dropdown.querySelectorAll('a'));
+          if (!links.length) return;
+          if (e.key === 'ArrowDown') { e.preventDefault(); open(); links[0].focus(); }
+          if (e.key === 'ArrowUp')   { e.preventDefault(); open(); links[links.length - 1].focus(); }
+        });
+
+        dropdown.addEventListener('keydown', function (e) {
+          if (window.innerWidth <= 1100) return;
+          var links = Array.from(dropdown.querySelectorAll('a'));
+          var idx   = links.indexOf(document.activeElement);
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (idx < links.length - 1) links[idx + 1].focus();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (idx > 0) links[idx - 1].focus();
+            else { close(); trigger.focus(); }
+          } else if (e.key === 'Escape') {
+            e.preventDefault(); close(); trigger.focus();
+          } else if (e.key === 'Tab') {
+            setTimeout(function () {
+              if (!item.contains(document.activeElement)) close();
+            }, 0);
+          }
+        });
+      });
+    }());
+
+    // ---- SCROLL-TRIGGERED FADE-IN ------------------------------
+    (window.requestIdleCallback || function (cb) { setTimeout(cb, 1); })(function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.fade').forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.fade').forEach(function (el) { io.observe(el); });
+    });
+  </script>
+
+</body>
+</html>
