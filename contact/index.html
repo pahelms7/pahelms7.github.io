@@ -4,7 +4,24 @@
   <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
   <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <script>
+    (function () {
+      function loadGtag() {
+        if (window.__gtagLoaded) return; window.__gtagLoaded = true;
+        var s = document.createElement('script');
+        s.async = 1;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z';
+        document.head.appendChild(s);
+      }
+      var evts = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+      function go() {
+        evts.forEach(function (e) { window.removeEventListener(e, go); });
+        loadGtag();
+      }
+      evts.forEach(function (e) { window.addEventListener(e, go, { passive: true }); });
+      setTimeout(loadGtag, 2500);
+    })();
+  </script>
   <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
     (function(){
@@ -239,6 +256,10 @@
       --navy:     #1D3557;
       --navy-dk:  #162e4a;
       --red:      #E63946;
+      /* Accessible red for TEXT on light backgrounds. --red is only 3.89:1 on
+         --bg and 4.17:1 on white, both under the 4.5:1 WCAG AA minimum.
+         This passes at 5.81:1 and 6.22:1. Use --red for fills/borders, this for text. */
+      --red-ink:      #C1121F;
       --border:   #E5E7EB;
       --teal:     #457B9D;
 
@@ -458,7 +479,7 @@
     .sh { text-align: center; margin-bottom: 3.5rem; }
     .sh h2 { margin-bottom: 0.75rem; }
     .sh p { margin-inline: auto; color: var(--muted); }
-    .eyebrow { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
+    .eyebrow { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--red-ink); margin-bottom: 0.75rem; }
 
     /* ---- HOW IT WORKS (new section) ----------------------------- */
     .steps-grid {
@@ -573,8 +594,8 @@
     .faq details:last-child { border-bottom: 1px solid var(--border); }
     .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--ink); gap: 1rem; min-height: 44px; }
     .faq summary::-webkit-details-marker { display: none; }
-    .faq-plus { width: 22px; height: 22px; min-width: 22px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 300; color: var(--red); transition: background 150ms, border-color 150ms; }
-    details[open] .faq-plus { background: var(--red); border-color: var(--red); color: #fff; }
+    .faq-plus { width: 22px; height: 22px; min-width: 22px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 300; color: var(--red-ink); transition: background 150ms, border-color 150ms; }
+    details[open] .faq-plus { background: var(--red-ink); border-color: var(--red-ink); color: #fff; }
     .faq-body { padding-top: 0.875rem; color: var(--muted); line-height: 1.75; max-width: unset; }
     .faq-body a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 

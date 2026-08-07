@@ -4,7 +4,24 @@
   <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
   <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <script>
+    (function () {
+      function loadGtag() {
+        if (window.__gtagLoaded) return; window.__gtagLoaded = true;
+        var s = document.createElement('script');
+        s.async = 1;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z';
+        document.head.appendChild(s);
+      }
+      var evts = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+      function go() {
+        evts.forEach(function (e) { window.removeEventListener(e, go); });
+        loadGtag();
+      }
+      evts.forEach(function (e) { window.addEventListener(e, go, { passive: true }); });
+      setTimeout(loadGtag, 2500);
+    })();
+  </script>
   <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
     (function(){
@@ -102,6 +119,10 @@
       --navy:    #1D3557;
       --navy-dk: #162e4a;
       --red:     #E63946;
+      /* Accessible red for TEXT on light backgrounds. --red is only 3.89:1 on
+         --bg and 4.17:1 on white, both under the 4.5:1 WCAG AA minimum.
+         This passes at 5.81:1 and 6.22:1. Use --red for fills/borders, this for text. */
+      --red-ink:     #C1121F;
       --teal:    #457B9D;
       --border:  #E5E7EB;
       --r:       10px;
@@ -147,7 +168,7 @@
     .btn-outline:hover { background: #1D3557; color: #fff; }
 
     /* ── Eyebrow ── */
-    .eyebrow { display: inline-block; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); margin-bottom: 0.75rem; }
+    .eyebrow { display: inline-block; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-ink); margin-bottom: 0.75rem; }
     .sh { max-width: 680px; margin: 0 auto 3.5rem; text-align: center; }
     .sh p { margin: 0.875rem auto 0; color: var(--muted); }
 
@@ -421,8 +442,8 @@
     .faq details:last-child { border-bottom: 1px solid var(--border); }
     .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; font-weight: 600; color: var(--ink); font-size: 1rem; padding-right: 0.25rem; }
     .faq summary::-webkit-details-marker { display: none; }
-    .faq-plus { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 300; color: var(--red); transition: background 150ms; flex-shrink: 0; margin-top: 0.1rem; }
-    details[open] .faq-plus { background: var(--red); border-color: var(--red); color: #fff; }
+    .faq-plus { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.125rem; font-weight: 300; color: var(--red-ink); transition: background 150ms; flex-shrink: 0; margin-top: 0.1rem; }
+    details[open] .faq-plus { background: var(--red-ink); border-color: var(--red-ink); color: #fff; }
     .faq-body { margin-top: 0.875rem; color: var(--muted); font-size: 0.9375rem; line-height: 1.7; padding-right: 2rem; }
 
     /* ── CTA band ── */

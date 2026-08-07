@@ -4,7 +4,24 @@
   <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
   <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <script>
+    (function () {
+      function loadGtag() {
+        if (window.__gtagLoaded) return; window.__gtagLoaded = true;
+        var s = document.createElement('script');
+        s.async = 1;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z';
+        document.head.appendChild(s);
+      }
+      var evts = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+      function go() {
+        evts.forEach(function (e) { window.removeEventListener(e, go); });
+        loadGtag();
+      }
+      evts.forEach(function (e) { window.addEventListener(e, go, { passive: true }); });
+      setTimeout(loadGtag, 2500);
+    })();
+  </script>
   <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
     (function(){

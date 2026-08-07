@@ -4,7 +4,24 @@
   <!-- Clickjacking protection: break out if the page is loaded inside a frame -->
   <script>if (window.self !== window.top) { window.top.location = window.self.location; }</script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z"></script>
+  <script>
+    (function () {
+      function loadGtag() {
+        if (window.__gtagLoaded) return; window.__gtagLoaded = true;
+        var s = document.createElement('script');
+        s.async = 1;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2SST8FVX7Z';
+        document.head.appendChild(s);
+      }
+      var evts = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+      function go() {
+        evts.forEach(function (e) { window.removeEventListener(e, go); });
+        loadGtag();
+      }
+      evts.forEach(function (e) { window.addEventListener(e, go, { passive: true }); });
+      setTimeout(loadGtag, 2500);
+    })();
+  </script>
   <!-- Microsoft Clarity (deferred until interaction or idle) -->
   <script type="text/javascript">
     (function(){
@@ -250,6 +267,10 @@
       --navy:    #1D3557;
       --navy-dk: #162e4a;
       --red:     #E63946;
+      /* Accessible red for TEXT on light backgrounds. --red is only 3.89:1 on
+         --bg and 4.17:1 on white, both under the 4.5:1 WCAG AA minimum.
+         This passes at 5.81:1 and 6.22:1. Use --red for fills/borders, this for text. */
+      --red-ink:     #C1121F;
       --teal:    #457B9D;
       --border:  #E5E7EB;
       --xs: 0.5rem; --sm: 1rem; --md: 2rem; --lg: 4rem; --xl: 7rem;
@@ -281,7 +302,7 @@
     .eyebrow {
       display: inline-block; font-size: 0.6875rem; font-weight: 600;
       letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--red); margin-bottom: 0.625rem;
+      color: var(--red-ink); margin-bottom: 0.625rem;
     }
     .bg-dk .eyebrow { color: #7fafc8; }
 
