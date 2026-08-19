@@ -667,7 +667,14 @@
       stroke-linecap: round; stroke-linejoin: round;
     }
     .breadcrumb [aria-current="page"] { color: rgba(255,255,255,.65); font-weight: 600; }
-</style>
+
+    .visit-facts{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:var(--r);padding:var(--sm) var(--sm);margin-top:var(--md)}
+    .visit-facts h3{margin:0 0 var(--xs);font-size:1.05rem;color:var(--navy)}
+    .visit-facts dl{margin:0;display:flex;flex-direction:column;gap:var(--xs)}
+    .visit-facts dt{font-weight:700;color:var(--ink);font-size:.9rem}
+    .visit-facts dd{margin:0;color:var(--muted);font-size:.95rem;line-height:1.6}
+    @media(min-width:640px){.visit-facts dl>div{display:grid;grid-template-columns:9.5rem 1fr;gap:var(--sm);align-items:baseline}}
+  </style>
 
   <!-- JSON-LD: FAQPage schema for rich results -->
   <script type="application/ld+json">
@@ -799,7 +806,7 @@
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
-      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
+      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book Your First Visit</a>
     </div>
   </nav>
 
@@ -1016,6 +1023,15 @@
               </div>
             </li>
           </ol>
+
+          <div class="visit-facts">
+            <h3>The practical details</h3>
+            <dl>
+              <div><dt>How long</dt><dd>One hour, one-on-one with Dr. Helms.</dd></div>
+              <div><dt>What it costs</dt><dd>$165, a flat fee for the visit.</dd></div>
+              <div><dt>Insurance</dt><dd>We do not accept insurance directly. You can pay with an HSA or FSA card, and we will give you a superbill, an itemized receipt you can submit to your insurer for reimbursement.</dd></div>
+            </dl>
+          </div>
         </div>
         <div class="expect-visual fade d1" aria-hidden="true">
           <div class="ev-item">
@@ -1181,7 +1197,7 @@
             <li><a href="/about/">About Dr. Helms</a></li>
             <li><a href="/conditions/">Conditions</a></li>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
+            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer">Book Your First Visit</a></li>
           </ul>
         </div>
         <div class="footer-col">

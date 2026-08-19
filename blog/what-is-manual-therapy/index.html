@@ -562,6 +562,13 @@
     :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: var(--r-sm); }
     .btn:focus-visible { outline-offset: 3px; }
     @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  
+    .visit-facts{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:var(--r);padding:var(--sm) var(--sm);margin-top:var(--md)}
+    .visit-facts h3{margin:0 0 var(--xs);font-size:1.05rem;color:var(--navy)}
+    .visit-facts dl{margin:0;display:flex;flex-direction:column;gap:var(--xs)}
+    .visit-facts dt{font-weight:700;color:var(--ink);font-size:.9rem}
+    .visit-facts dd{margin:0;color:var(--muted);font-size:.95rem;line-height:1.6}
+    @media(min-width:640px){.visit-facts dl>div{display:grid;grid-template-columns:9.5rem 1fr;gap:var(--sm);align-items:baseline}}
   </style>
 
   <!-- JSON-LD: BlogPosting schema -->
@@ -785,7 +792,7 @@
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
-      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book A Visit</a>
+      <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red nav-cta">Book Your First Visit</a>
     </div>
   </nav>
 
@@ -880,6 +887,15 @@
           <li><strong>Movement in the same visit.</strong> Right after the hands-on portion, we load the new range with a few simple movements so your body registers it.</li>
           <li><strong>Your plan.</strong> You leave with a short home program, a realistic timeline, and a clear idea of what would tell us to change course.</li>
         </ol>
+
+          <div class="visit-facts">
+            <h3>The practical details</h3>
+            <dl>
+              <div><dt>How long</dt><dd>One hour, one-on-one with Dr. Helms.</dd></div>
+              <div><dt>What it costs</dt><dd>$165, a flat fee for the visit.</dd></div>
+              <div><dt>Insurance</dt><dd>We do not accept insurance directly. You can pay with an HSA or FSA card, and we will give you a superbill, an itemized receipt you can submit to your insurer for reimbursement.</dd></div>
+            </dl>
+          </div>
         <p>Most sessions run forty to sixty minutes. Mild soreness for a day afterward is common and normal, similar to how you feel after a solid workout.</p>
 
         <h2>Manual Therapy at Helms Performance</h2>
@@ -983,7 +999,7 @@
             <li><a href="/about">About Dr. Helms</a></li>
             <li><a href="/conditions">Conditions</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer">Book A Visit</a></li>
+            <li><a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer">Book Your First Visit</a></li>
           </ul>
         </div>
         <div class="footer-col">
