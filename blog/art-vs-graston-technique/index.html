@@ -570,6 +570,51 @@
     @media (max-width: 400px){
       .nav-cta{padding-inline:.55rem}
     }
+  
+    /* Comparison table (shared pattern from condition pages) */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--r);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      margin-bottom: 1.5rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 0.9rem;
+      min-width: 680px;
+    }
+    .compare-table th {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.875rem 1.125rem;
+      text-align: left;
+      font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .compare-table td {
+      padding: 0.875rem 1.125rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .compare-table td strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: rgba(248,247,244,.65); }
+    .compare-table tbody tr:hover td { background: #eef2f7; transition: background 120ms; }
+    .table-note {
+      font-size: 0.9rem; color: var(--muted); max-width: none;
+      padding: 0.25rem 0;
+    }
+    .table-note a {
+      color: var(--navy); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px;
+    }
+    .table-note a:hover { color: var(--red-ink); }
   </style>
 
   <!-- JSON-LD: BlogPosting schema -->
@@ -818,7 +863,9 @@
     <div class="wrap">
       <div class="article-body">
 
-        <p class="lead">If a coach or a friend has recommended the <strong>Graston Technique</strong>, and someone else swears Active Release Technique is the thing that finally helped them, it is easy to assume they are two names for the same treatment. They are not. Both ease tight, restricted soft tissue, and both can leave you a little sore the next day, but the way they work is genuinely different. Whether you are a runner chasing a stubborn calf or a parent whose shoulder aches from lifting a toddler, here is a clear, honest look at how the two compare and how Dr. Helms decides which one fits.</p>
+        <p class="lead">Active Release Technique and the Graston Technique both treat restricted soft tissue, but they work differently. ART uses the clinician's hands to hold a specific tissue while you move through a range of motion. Graston uses smooth stainless steel tools glided over the skin to find and treat adhesions.</p>
+
+        <p>If a coach or a friend has recommended the <strong>Graston Technique</strong>, and someone else swears Active Release Technique is the thing that finally helped them, it is easy to assume they are two names for the same treatment. They are not. Both ease tight, restricted soft tissue, and both can leave you a little sore the next day, but the way they work is genuinely different. Whether you are a runner chasing a stubborn calf or a parent whose shoulder aches from lifting a toddler, here is a clear, honest look at how the two compare and how Dr. Helms decides which one fits.</p>
 
         <h2>What the Graston Technique Is</h2>
         <p>The Graston Technique is a form of instrument-assisted soft tissue mobilization: a treatment where smooth, stainless steel tools are glided over the skin to find and ease areas of tightness, restriction, and scar tissue. Instead of hands alone, the provider uses the edge of a tool to comb through the muscle and connective tissue, a bit like ironing out a wrinkle.</p>
@@ -942,7 +989,24 @@
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Book An Appointment">
     <div class="wrap">
-      <h2>Find Out Which Approach Fits You</h2>
+      
+        <div class="table-wrap fade" role="region" aria-label="Active Release Technique compared with Graston Technique" tabindex="0">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Active Release Technique</th><th scope="col">Graston Technique</th></tr>
+            </thead>
+            <tbody>
+            <tr><td><strong>How it works</strong></td><td>Clinician's hands hold the tissue while you move the limb through a range of motion</td><td>Smooth stainless steel tools are glided over the skin to find and treat adhesions</td></tr>
+            <tr><td><strong>What it feels like</strong></td><td>Firm pressure with a pulling or stretching sensation as you move</td><td>A scraping or grinding sensation over the treated area</td></tr>
+            <tr><td><strong>Best suited to</strong></td><td>Precise, layered restrictions and nerve entrapment</td><td>Broad areas of scar tissue and dense, widespread adhesion</td></tr>
+            <tr><td><strong>Afterward</strong></td><td>Mild soreness for a day, similar to a workout</td><td>Possible temporary redness or light bruising</td></tr>
+            <tr><td><strong>Session length</strong></td><td>Part of a one-hour visit</td><td>Part of a one-hour visit</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note fade">Both are available at Helms Performance in Bethesda, MD. Dr. Helms chooses between them based on what your assessment shows, and often uses both in the same plan.</p>
+
+        <h2>Find Out Which Approach Fits You</h2>
       <p>Book an Active Release Technique assessment with Dr. Helms in Bethesda, MD. He will examine the area, explain your options in plain English, and build a plan to relieve your pain and get you back to the activities you love.</p>
       <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
       <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>

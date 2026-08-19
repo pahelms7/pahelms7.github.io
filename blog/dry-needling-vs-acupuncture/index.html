@@ -562,6 +562,51 @@
     @media (max-width: 400px){
       .nav-cta{padding-inline:.55rem}
     }
+  
+    /* Comparison table (shared pattern from condition pages) */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--r);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      margin-bottom: 1.5rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 0.9rem;
+      min-width: 680px;
+    }
+    .compare-table th {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.875rem 1.125rem;
+      text-align: left;
+      font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .compare-table td {
+      padding: 0.875rem 1.125rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .compare-table td strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: rgba(248,247,244,.65); }
+    .compare-table tbody tr:hover td { background: #eef2f7; transition: background 120ms; }
+    .table-note {
+      font-size: 0.9rem; color: var(--muted); max-width: none;
+      padding: 0.25rem 0;
+    }
+    .table-note a {
+      color: var(--navy); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px;
+    }
+    .table-note a:hover { color: var(--red-ink); }
   </style>
 
   <!-- JSON-LD: BlogPosting schema -->
@@ -810,7 +855,9 @@
     <div class="wrap">
       <div class="article-body">
 
-        <p class="lead">Maybe a friend swears acupuncture finally calmed their lower back. Maybe your running coach told you dry needling loosened up a stubborn calf. The two sound a lot alike, they both involve thin needles, and the names get used as if they mean the same thing. They do not. Whether you are training for a 10K or simply trying to garden without your shoulder flaring up, here is a clear, friendly breakdown of how dry needling and acupuncture differ, and how to pick the one that fits what you need.</p>
+        <p class="lead">Dry needling and acupuncture both use thin needles, but they come from different traditions and target different things. Dry needling is a Western technique that places a needle into a tight band of muscle, called a trigger point, to help it release. Acupuncture is rooted in traditional Chinese medicine and places needles along meridian points.</p>
+
+        <p>Maybe a friend swears acupuncture finally calmed their lower back. Maybe your running coach told you dry needling loosened up a stubborn calf. The two sound a lot alike, they both involve thin needles, and the names get used as if they mean the same thing. They do not. Whether you are training for a 10K or simply trying to garden without your shoulder flaring up, here is a clear, friendly breakdown of how dry needling and acupuncture differ, and how to pick the one that fits what you need.</p>
 
         <h2>The short answer</h2>
         <p>Dry needling and acupuncture both place thin, sterile filaments into the body. That is where the similarity ends. They come from different traditions, they aim at different things, and the people who perform them train in different ways.</p>
@@ -947,7 +994,24 @@
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Book An Appointment">
     <div class="wrap">
-      <h2>Not Sure Which One You Need?</h2>
+      
+        <div class="table-wrap fade" role="region" aria-label="Dry needling compared with acupuncture" tabindex="0">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Dry Needling</th><th scope="col">Acupuncture</th></tr>
+            </thead>
+            <tbody>
+            <tr><td><strong>Tradition</strong></td><td>Western medicine, based on muscle and nerve anatomy</td><td>Traditional Chinese medicine, based on meridian theory</td></tr>
+            <tr><td><strong>What it targets</strong></td><td>A tight band of muscle called a trigger point</td><td>Points along meridians said to influence energy flow</td></tr>
+            <tr><td><strong>Goal</strong></td><td>Release the muscle, restore movement, reduce pain</td><td>Restore balance and the flow of energy, or qi</td></tr>
+            <tr><td><strong>Typical sensation</strong></td><td>A brief deep twitch or cramp as the muscle lets go</td><td>Usually little to no sensation</td></tr>
+            <tr><td><strong>Who performs it in Maryland</strong></td><td>Trained physical therapists and chiropractors</td><td>Licensed acupuncturists</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note fade">Dry needling is offered at Helms Performance in Bethesda, MD. Both approaches are legitimate. They simply answer different questions.</p>
+
+        <h2>Not Sure Which One You Need?</h2>
       <p>Tell us what is bothering you and we will help you find the right approach. Book a visit with Dr. Helms in Bethesda, MD, and get a clear, honest plan to relieve your pain and get back to the activities you love.</p>
       <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
       <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>

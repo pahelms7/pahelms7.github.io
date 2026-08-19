@@ -562,6 +562,51 @@
     @media (max-width: 400px){
       .nav-cta{padding-inline:.55rem}
     }
+  
+    /* Comparison table (shared pattern from condition pages) */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--r);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      margin-bottom: 1.5rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 0.9rem;
+      min-width: 680px;
+    }
+    .compare-table th {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.875rem 1.125rem;
+      text-align: left;
+      font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .compare-table td {
+      padding: 0.875rem 1.125rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .compare-table td strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: rgba(248,247,244,.65); }
+    .compare-table tbody tr:hover td { background: #eef2f7; transition: background 120ms; }
+    .table-note {
+      font-size: 0.9rem; color: var(--muted); max-width: none;
+      padding: 0.25rem 0;
+    }
+    .table-note a {
+      color: var(--navy); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px;
+    }
+    .table-note a:hover { color: var(--red-ink); }
   </style>
 
   <!-- JSON-LD: BlogPosting schema -->
@@ -810,7 +855,9 @@
     <div class="wrap">
       <div class="article-body">
 
-        <p class="lead">When people search <strong>sports medicine vs physical therapy</strong>, what they usually want to know is simple: who should I see to get out of pain and back to what I love? The short answer is that sports chiropractic and physical therapy are two different disciplines, and often the best plan uses both. Whether you are a soccer player with a cranky knee or a grandparent who wants to walk the neighborhood without back pain, here is a clear, friendly breakdown of how they differ and when each one makes sense.</p>
+        <p class="lead">Sports chiropractic and physical therapy are two distinct disciplines that often work best together. Chiropractic focuses on the spine, joints, and nervous system, using adjustments and soft tissue work. Physical therapy focuses on restoring movement and rebuilding strength through exercise and progressive loading.</p>
+
+        <p>When people search <strong>sports medicine vs physical therapy</strong>, what they usually want to know is simple: who should I see to get out of pain and back to what I love? The short answer is that sports chiropractic and physical therapy are two different disciplines, and often the best plan uses both. Whether you are a soccer player with a cranky knee or a grandparent who wants to walk the neighborhood without back pain, here is a clear, friendly breakdown of how they differ and when each one makes sense.</p>
 
         <h2>What Sports Chiropractic Focuses On</h2>
         <p>Sports chiropractic centers on the spine, the joints, and the nervous system that connects them. Using hands-on adjustments and soft tissue work, a sports chiropractor helps restore movement to joints that have become stiff or restricted, calms down irritated tissue, and takes pressure off nerves. The goal is to relieve pain and get you moving freely again.</p>
@@ -932,7 +979,24 @@
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Book An Appointment">
     <div class="wrap">
-      <h2>Not Sure Which One You Need?</h2>
+      
+        <div class="table-wrap fade" role="region" aria-label="Sports chiropractic compared with physical therapy" tabindex="0">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Sports Chiropractic</th><th scope="col">Physical Therapy</th></tr>
+            </thead>
+            <tbody>
+            <tr><td><strong>Focus</strong></td><td>Spine, joints, and the nervous system connecting them</td><td>Movement patterns, strength, and functional capacity</td></tr>
+            <tr><td><strong>Main tools</strong></td><td>Adjustments, soft tissue work, Active Release Technique</td><td>Exercise prescription, progressive loading, movement retraining</td></tr>
+            <tr><td><strong>Typical goal</strong></td><td>Restore joint motion and reduce pain quickly</td><td>Rebuild strength so the problem does not return</td></tr>
+            <tr><td><strong>Best suited to</strong></td><td>Restricted joints, acute pain, nerve irritation</td><td>Rehabilitation after injury, recurring problems, building durability</td></tr>
+            <tr><td><strong>Timeline</strong></td><td>Often relief within the first few visits</td><td>Usually six to twelve weeks of progressive work</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note fade">Dr. Helms is trained in both and offers them under one roof in Bethesda, MD, so your care can shift between disciplines as your needs change.</p>
+
+        <h2>Not Sure Which One You Need?</h2>
       <p>You do not have to decide alone. Book a consultation with Dr. Helms in Bethesda, MD, and he will assess which approach fits your situation, whether that is sports chiropractic, physical therapy, or a smart blend of both.</p>
       <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
       <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>

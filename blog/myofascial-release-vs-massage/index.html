@@ -562,6 +562,51 @@
     @media (max-width: 400px){
       .nav-cta{padding-inline:.55rem}
     }
+  
+    /* Comparison table (shared pattern from condition pages) */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: var(--r);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      margin-bottom: 1.5rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 0.9rem;
+      min-width: 680px;
+    }
+    .compare-table th {
+      background: var(--navy);
+      color: #fff;
+      padding: 0.875rem 1.125rem;
+      text-align: left;
+      font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .compare-table td {
+      padding: 0.875rem 1.125rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+    .compare-table td strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) td { background: rgba(248,247,244,.65); }
+    .compare-table tbody tr:hover td { background: #eef2f7; transition: background 120ms; }
+    .table-note {
+      font-size: 0.9rem; color: var(--muted); max-width: none;
+      padding: 0.25rem 0;
+    }
+    .table-note a {
+      color: var(--navy); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px;
+    }
+    .table-note a:hover { color: var(--red-ink); }
   </style>
 
   <!-- JSON-LD: BlogPosting schema -->
@@ -829,7 +874,9 @@
     <div class="wrap">
       <div class="article-body">
 
-<p class="lead">Maybe a friend swears massage finally calmed their stiff hip. Maybe your physical therapist recommended <strong>myofascial release</strong> for the same problem. Both involve hands on the body, both can feel similar on the table, and patients often use the words interchangeably. They are not the same thing. Whether you are a runner with a stubborn calf or a parent whose neck tightens up by Wednesday at the desk, here is a plain-English guide to how myofascial release and massage differ, and how to pick the one that fits.</p>
+<p class="lead">Myofascial release and massage both involve hands-on work, but they target different tissue at different speeds. Massage works mainly on muscle to ease tension and support relaxation. Myofascial release applies slow, sustained pressure to fascia, the connective tissue wrapping every muscle, and holds it until the restriction releases.</p>
+
+        <p>Maybe a friend swears massage finally calmed their stiff hip. Maybe your physical therapist recommended <strong>myofascial release</strong> for the same problem. Both involve hands on the body, both can feel similar on the table, and patients often use the words interchangeably. They are not the same thing. Whether you are a runner with a stubborn calf or a parent whose neck tightens up by Wednesday at the desk, here is a plain-English guide to how myofascial release and massage differ, and how to pick the one that fits.</p>
 
         <h2>The Short Answer</h2>
         <p>Massage therapy and myofascial release both involve hands-on work, but they aim at different things and they move at very different speeds.</p>
@@ -963,7 +1010,24 @@
   <!-- CTA BAND -->
   <div class="cta-band" aria-label="Book An Appointment">
     <div class="wrap">
-      <h2>Not Sure Which One Fits?</h2>
+      
+        <div class="table-wrap fade" role="region" aria-label="Myofascial release compared with massage" tabindex="0">
+          <table class="compare-table">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Myofascial Release</th><th scope="col">Massage</th></tr>
+            </thead>
+            <tbody>
+            <tr><td><strong>Tissue treated</strong></td><td>Fascia, the connective tissue wrapping every muscle</td><td>Muscle tissue, primarily</td></tr>
+            <tr><td><strong>Pace</strong></td><td>Slow and sustained, holding one area for minutes</td><td>Flowing and rhythmic across larger areas</td></tr>
+            <tr><td><strong>Primary goal</strong></td><td>Release a specific restriction and restore movement</td><td>Ease general tension and support relaxation</td></tr>
+            <tr><td><strong>What it feels like</strong></td><td>Deep, dull pressure that gradually gives way</td><td>Broad, comfortable pressure</td></tr>
+            <tr><td><strong>Best suited to</strong></td><td>Chronic tightness that stretching has not resolved</td><td>General tension, stress, and recovery between training</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note fade">Both are offered at Helms Performance in Bethesda, MD. If you are not sure which fits, an assessment on your first visit will tell you.</p>
+
+        <h2>Not Sure Which One Fits?</h2>
       <p>Tell us what is bothering you and we will help you choose the right approach. Book a visit with Dr. Helms in Bethesda, MD, and get a clear, honest plan to relieve your pain and get back to the activities you love.</p>
       <a href="https://helmsperformance.janeapp.com/#/staff_member/1/treatment/13" target="_blank" rel="noopener noreferrer" class="btn btn-red">Book An Appointment</a>
       <p class="cta-sub">Or call <a href="tel:3015785197">301-578-5197</a> to speak with our team</p>
