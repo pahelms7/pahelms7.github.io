@@ -673,6 +673,24 @@
 
     /* ---- SMOOTH SCROLL ------------------------------------------ */
     @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  
+    /* Mobile nav fit: the longer "Book Your First Visit" label needs room.
+       Vertical padding and font-size are left untouched so nav height stays
+       identical and the .nav-links dropdown (top:62px) remains aligned. */
+    @media (max-width: 1100px){
+      .nav{gap:1rem}
+      .nav-logo{min-width:0;flex-shrink:1;overflow:hidden;text-overflow:ellipsis}
+      .nav-right{flex-shrink:0}
+    }
+    @media (max-width: 600px){
+      .nav{padding-inline:1rem;gap:.6rem}
+      .nav-logo{font-size:.9rem}
+      .nav-right{gap:.5rem}
+      .nav-cta{padding-inline:.7rem}
+    }
+    @media (max-width: 400px){
+      .nav-cta{padding-inline:.55rem}
+    }
   </style>
 </head>
 
