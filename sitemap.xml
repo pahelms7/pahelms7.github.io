@@ -304,4 +304,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://helmsperformance.com/blog/what-is-therapeutic-massage/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/therapeutic-massage-vs-deep-tissue/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/massage-between-visits-at-home/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
