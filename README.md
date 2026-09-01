@@ -50,3 +50,27 @@ GitHub Pages redeploys automatically (~1 minute).
 
 ## DNS
 DNS is managed at the domain registrar. Do NOT modify MX, SPF, DKIM, or DMARC records — those handle email delivery.
+
+## llms.txt is enforced, not remembered
+
+`llms.txt` is how AI assistants enumerate this site. A page missing from it is invisible to them
+even when it ranks normally in Google. It has no generator, so it used to drift silently: on
+2026-09-01 it was found 10 blog posts behind, some published three weeks earlier.
+
+Three layers now keep it honest, all calling the same script:
+
+| Layer | When it runs | What it does |
+|---|---|---|
+| `scripts/llms-sync.py` | on demand | reports drift; `--fix` scaffolds the missing entries |
+| `seo-audit` Check 9 | every site change | **errors** on any live page missing from llms.txt |
+| `scripts/pre-commit` hook | every commit touching a page | **blocks** the commit |
+
+Install the hook once per clone (git does not version `.git/hooks`):
+
+```bash
+cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+```
+
+Bypass with `git commit --no-verify` when a page is deliberately unlisted. Deliberate omissions
+belong in `IGNORE` at the top of `scripts/llms-sync.py`, which currently holds `/` (covered by the
+file's header) and `/privacy-policy/`.

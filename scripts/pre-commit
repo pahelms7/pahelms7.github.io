@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# Blocks a commit that adds or removes a page without updating llms.txt.
+#
+# Install:   cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+# Remove:    rm .git/hooks/pre-commit
+# Bypass:    git commit --no-verify        (use when you know the page is deliberately unlisted)
+#
+# Git hooks are not versioned, so this lives in scripts/ and is copied into place.
+
+REPO="$(git rev-parse --show-toplevel)"
+
+# Only bother when the commit touches pages or llms.txt itself.
+if ! git diff --cached --name-only | grep -qE '(index\.html|llms\.txt)$'; then
+    exit 0
+fi
+
+if ! python3 "$REPO/scripts/llms-sync.py"; then
+    echo
+    echo "COMMIT BLOCKED: llms.txt does not list every live page."
+    echo "AI assistants enumerate this site from llms.txt, so an unlisted page is"
+    echo "invisible to them even when it ranks in Google."
+    echo
+    echo "  Fix:    python3 scripts/llms-sync.py --fix && git add llms.txt"
+    echo "  Skip:   git commit --no-verify   (only if the page is deliberately unlisted)"
+    echo
+    exit 1
+fi
+
+exit 0
