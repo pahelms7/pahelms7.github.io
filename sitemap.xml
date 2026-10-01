@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -355,6 +355,24 @@
   <url>
     <loc>https://helmsperformance.com/blog/tmj-exercises/</loc>
     <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/dry-needling-side-effects/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/how-art-helps-neck-pain/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/chiropractic-for-shoulder-pain/</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
