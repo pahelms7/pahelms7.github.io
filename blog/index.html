@@ -360,6 +360,16 @@
       "@type": "ListItem",
       "position": 33,
       "url": "https://helmsperformance.com/blog/chiropractic-for-shoulder-pain/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://helmsperformance.com/blog/can-a-chiropractor-help-with-vertigo/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "url": "https://helmsperformance.com/blog/physical-therapy-for-vertigo-what-to-expect/"
     }
   ]
 }
@@ -898,6 +908,7 @@
       <button class="pill" data-filter="hip" role="listitem" aria-pressed="false">Hip Pain</button>
       <button class="pill" data-filter="tmj" role="listitem" aria-pressed="false">TMJ</button>
       <button class="pill" data-filter="ankle-wrist" role="listitem" aria-pressed="false">Ankle &amp; Wrist</button>
+      <button class="pill" data-filter="vertigo" role="listitem" aria-pressed="false">Vertigo &amp; Dizziness</button>
     </div>
   </div>
 </div>
@@ -1495,6 +1506,28 @@
         </div>
       </article>
 
+      <!-- === CLUSTER 13: VERTIGO & DIZZINESS === -->
+
+      <article class="article-card condition-card fade d1" data-category="vertigo">
+        <div class="badge badge-condition">Vertigo &amp; Dizziness</div>
+        <h3><a href="/blog/can-a-chiropractor-help-with-vertigo/">Can a Chiropractor Help With Vertigo?</a></h3>
+        <p>Yes, when the vertigo comes from loose inner ear crystals or from the neck, and once the cause has been screened. Here is which types respond to care, what treatment involves, and when to see a physician first.</p>
+        <div class="card-foot">
+          <a class="read-link" href="/blog/can-a-chiropractor-help-with-vertigo/">Read article <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <span class="read-time">8 min</span>
+        </div>
+      </article>
+
+      <article class="article-card condition-card fade d2" data-category="vertigo">
+        <div class="badge badge-condition">Vertigo &amp; Dizziness</div>
+        <h3><a href="/blog/physical-therapy-for-vertigo-what-to-expect/">Physical Therapy for Vertigo: What Happens at Your First Visit</a></h3>
+        <p>A walk through the first hour in order: the conversation, the lying-down test for the inner ear, the neck exam, and treatment the same day, plus how to prepare and what to expect afterward.</p>
+        <div class="card-foot">
+          <a class="read-link" href="/blog/physical-therapy-for-vertigo-what-to-expect/">Read article <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <span class="read-time">8 min</span>
+        </div>
+      </article>
+
       <!-- Empty state (shown when no filter match) -->
       <div class="empty-state" id="empty-state" aria-live="polite">
         <p>No articles found for this topic yet. Check back soon, or <a href="/blog/" style="color:var(--navy);font-weight:600;">view all articles</a>.</p>
@@ -1639,7 +1672,7 @@
         p.classList.remove('active', 'active-condition');
         p.setAttribute('aria-pressed', 'false');
       });
-      var isCondition = ['back-sciatica','neck-shoulder','knee','hip','tmj','ankle-wrist'].indexOf(filter) !== -1;
+      var isCondition = ['back-sciatica','neck-shoulder','knee','hip','tmj','ankle-wrist','vertigo'].indexOf(filter) !== -1;
       pill.classList.add(isCondition ? 'active-condition' : 'active');
       pill.setAttribute('aria-pressed', 'true');
 
