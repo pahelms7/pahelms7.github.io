@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://helmsperformance.com/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -189,7 +189,7 @@
   </url>
   <url>
     <loc>https://helmsperformance.com/services/active-release-technique/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -331,6 +331,36 @@
   <url>
     <loc>https://helmsperformance.com/blog/what-is-active-release-technique/</loc>
     <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/does-active-release-technique-hurt/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/how-often-active-release-technique/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/active-release-technique-for-shoulder-pain/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/active-release-technique-for-sciatica/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://helmsperformance.com/blog/active-release-technique-for-tennis-elbow/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
